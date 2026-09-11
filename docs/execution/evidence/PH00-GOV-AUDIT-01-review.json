@@ -11,7 +11,9 @@
     "REVIEW01": {
       "passed": true,
       "detail": "Đã đối chiếu AC01-AC03 với audit report, validation report, ADR-010, blocker register và completion manifest. Không có lỗi chặn trong scope planning; rủi ro contract/CI được giữ ở task owner sau.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-review.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-review.md"
+      ]
     }
   },
   "artifacts": [
@@ -21,5 +23,5 @@
     }
   ],
   "decision": "approved",
-  "completion_sha256": "35e05beabbb3c43a8eae52fa6c53c5ad0556d4d2b70f4f6114e064e6b4ba8436"
+  "completion_sha256": "25ac60d5d070020e0c808a79751d066ca471e54650a56d28a255ffd9338dbdb8"
 }

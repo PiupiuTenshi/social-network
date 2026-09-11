@@ -1,117 +1,115 @@
 {
-    "version":  1,
-    "kind":  "completion",
-    "task_id":  "PH01-FE-FOUNDATION-01",
-    "task_fingerprint":  "97f0a3cfe2dc4e37608f0b603b45a07bef7d22a2958eab38538ce6ca0538cd28",
-    "actor":  "Codex under project owner approval",
-    "recorded_at":  "2026-09-11T15:37:54.8313578Z",
-    "environment":  "Windows PowerShell; Node/npm locked frontend workspace.",
-    "baseline":  "Current worktree; PH01-FE-FOUNDATION-01 revalidation in progress.",
-    "checks":  {
-                   "AC01":  {
-                                "passed":  true,
-                                "detail":  "The locked workspace passes typecheck, lint and production build; current shell retains responsive navigation, safe fallback and disabled feature flags.",
-                                "artifacts":  [
-                                                  "frontend/package.json",
-                                                  "frontend/package-lock.json",
-                                                  "frontend/src/app/app.routes.ts",
-                                                  "frontend/src/app/core/feature-flags.ts",
-                                                  "frontend/src/app/shell/shell.component.ts",
-                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                                              ]
-                            },
-                   "AC02":  {
-                                "passed":  true,
-                                "detail":  "Foundation harness validates keyboard/focus, 44px targets, contrast, reduced motion, responsive rules and safe disabled links.",
-                                "artifacts":  [
-                                                  "frontend/scripts/verify-foundation.mjs",
-                                                  "frontend/src/styles.scss",
-                                                  "frontend/src/app/shell/shell.component.html",
-                                                  "frontend/src/app/shell/shell.component.scss",
-                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                                              ]
-                            }
-               },
-    "artifacts":  [
-                      {
-                          "path":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md",
-                          "sha256":  "d459155150a984a71dcfbc27d53f73e7dfa1dd4628655cabab457b9a05656cd5"
-                      },
-                      {
-                          "path":  "frontend/package.json",
-                          "sha256":  "de551b02ad1f811d677763965e13e268605f41f40fafb43e964c2ebcfcf84675"
-                      },
-                      {
-                          "path":  "frontend/package-lock.json",
-                          "sha256":  "494f0ee4b5c93c9cc15e84efc89c4af26af418429d961913cc96108e030c746d"
-                      },
-                      {
-                          "path":  "frontend/src/styles.scss",
-                          "sha256":  "8aed361f38624fb17014d388d2bb4d20ed208b62e18253535112fe86c403ca2a"
-                      },
-                      {
-                          "path":  "design/tokens/tokens.generated.css",
-                          "sha256":  "c75fc5ccf11c53d37d838f097a0ccff604a6a668b642885e541438f42de69496"
-                      },
-                      {
-                          "path":  "frontend/src/app/app.routes.ts",
-                          "sha256":  "df0f3f74a395240d5decb57cc8dc23d70e7a84893a8cce9910f28a714038de42"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/feature-flags.ts",
-                          "sha256":  "7d71d3c573ea7dde2d5949bba9b43d1b82ced12ff0a67e7f0714497cfd6843f1"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/feature-enabled.guard.ts",
-                          "sha256":  "a793073f23c5d6cee2a526e37e1f5b8b77f2dd00bbfd19bfdc3161fe8c2b0c5d"
-                      },
-                      {
-                          "path":  "frontend/src/app/shell/shell.component.ts",
-                          "sha256":  "d9234b35eca1e1441c31b69e5c8ef05faed4e5650f522fb91b3dc0f4d1665b98"
-                      },
-                      {
-                          "path":  "frontend/src/app/shell/shell.component.html",
-                          "sha256":  "e2a7a58072d1281121dded6bc5e6c029b13a8f4e129a6ecc281cd7e987cc043d"
-                      },
-                      {
-                          "path":  "frontend/src/app/shell/shell.component.scss",
-                          "sha256":  "3a3dab80a77258d65730de3abd4cdecf8001892d21a2f59e5ff77cac5ad2ad98"
-                      },
-                      {
-                          "path":  "frontend/scripts/verify-foundation.mjs",
-                          "sha256":  "f51cc65c24b75fff696b7b2ad2d1dc8a37fbb767aede1cae1af9381bb233b5ff"
-                      }
-                  ],
-    "impact":  {
-                   "classification":  "none",
-                   "scopes":  [
-
-                              ],
-                   "summary":  "Receipt-only revalidation; no source or contract behavior changed.",
-                   "artifacts":  [
-                                     "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                                 ]
-               },
-    "commands":  [
-                     {
-                         "command":  "npm.cmd --prefix frontend run typecheck",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run lint",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run test:foundation",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run build",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
-                     }
-                 ]
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH01-FE-FOUNDATION-01",
+  "task_fingerprint": "97f0a3cfe2dc4e37608f0b603b45a07bef7d22a2958eab38538ce6ca0538cd28",
+  "actor": "Codex under project owner approval",
+  "recorded_at": "2026-09-11T15:37:54.8313578Z",
+  "environment": "Windows PowerShell; Node/npm locked frontend workspace.",
+  "baseline": "Current worktree; PH01-FE-FOUNDATION-01 revalidation in progress.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "The locked workspace passes typecheck, lint and production build; current shell retains responsive navigation, safe fallback and disabled feature flags.",
+      "artifacts": [
+        "frontend/package.json",
+        "frontend/package-lock.json",
+        "frontend/src/app/app.routes.ts",
+        "frontend/src/app/core/feature-flags.ts",
+        "frontend/src/app/shell/shell.component.ts",
+        "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "Foundation harness validates keyboard/focus, 44px targets, contrast, reduced motion, responsive rules and safe disabled links.",
+      "artifacts": [
+        "frontend/scripts/verify-foundation.mjs",
+        "frontend/src/styles.scss",
+        "frontend/src/app/shell/shell.component.html",
+        "frontend/src/app/shell/shell.component.scss",
+        "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md",
+      "sha256": "d459155150a984a71dcfbc27d53f73e7dfa1dd4628655cabab457b9a05656cd5"
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "de551b02ad1f811d677763965e13e268605f41f40fafb43e964c2ebcfcf84675"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "494f0ee4b5c93c9cc15e84efc89c4af26af418429d961913cc96108e030c746d"
+    },
+    {
+      "path": "frontend/src/styles.scss",
+      "sha256": "8aed361f38624fb17014d388d2bb4d20ed208b62e18253535112fe86c403ca2a"
+    },
+    {
+      "path": "design/tokens/tokens.generated.css",
+      "sha256": "c75fc5ccf11c53d37d838f097a0ccff604a6a668b642885e541438f42de69496"
+    },
+    {
+      "path": "frontend/src/app/app.routes.ts",
+      "sha256": "df0f3f74a395240d5decb57cc8dc23d70e7a84893a8cce9910f28a714038de42"
+    },
+    {
+      "path": "frontend/src/app/core/feature-flags.ts",
+      "sha256": "7d71d3c573ea7dde2d5949bba9b43d1b82ced12ff0a67e7f0714497cfd6843f1"
+    },
+    {
+      "path": "frontend/src/app/core/feature-enabled.guard.ts",
+      "sha256": "a793073f23c5d6cee2a526e37e1f5b8b77f2dd00bbfd19bfdc3161fe8c2b0c5d"
+    },
+    {
+      "path": "frontend/src/app/shell/shell.component.ts",
+      "sha256": "d9234b35eca1e1441c31b69e5c8ef05faed4e5650f522fb91b3dc0f4d1665b98"
+    },
+    {
+      "path": "frontend/src/app/shell/shell.component.html",
+      "sha256": "e2a7a58072d1281121dded6bc5e6c029b13a8f4e129a6ecc281cd7e987cc043d"
+    },
+    {
+      "path": "frontend/src/app/shell/shell.component.scss",
+      "sha256": "3a3dab80a77258d65730de3abd4cdecf8001892d21a2f59e5ff77cac5ad2ad98"
+    },
+    {
+      "path": "frontend/scripts/verify-foundation.mjs",
+      "sha256": "f51cc65c24b75fff696b7b2ad2d1dc8a37fbb767aede1cae1af9381bb233b5ff"
+    }
+  ],
+  "impact": {
+    "classification": "none",
+    "scopes": [],
+    "summary": "Receipt-only revalidation; no source or contract behavior changed.",
+    "artifacts": [
+      "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+    ]
+  },
+  "commands": [
+    {
+      "command": "npm.cmd --prefix frontend run typecheck",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run lint",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run test:foundation",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md"
+    }
+  ]
 }

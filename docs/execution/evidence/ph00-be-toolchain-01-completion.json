@@ -45,7 +45,7 @@
     },
     {
       "path": "Directory.Packages.props",
-      "sha256": "7038412bd1ba7660b7942a4d4a97c225df0f79d9373539427e2d53d32f0d133b"
+      "sha256": "2d9b9ba415a41c65b47ae044ccef4d8997ec43343bb5e853af2a5799006d07f7"
     },
     {
       "path": "frontend/package-lock.json",
@@ -65,7 +65,7 @@
     },
     {
       "path": "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
-      "sha256": "44a6991f4006eae89a1abef35b7e2e2b95104dcd5f2271c8c13bdf00be263033"
+      "sha256": "636bda85a59203efcef50b075ab9f395d504e491fd92a9059eafb40a33804fae"
     },
     {
       "path": "scripts/verify_toolchain.ps1",

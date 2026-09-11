@@ -1,91 +1,91 @@
 {
-    "version":  1,
-    "kind":  "completion",
-    "task_id":  "PH01-DATA-INFRA-01",
-    "task_fingerprint":  "640de44845b9baed7f7053798f92770b646d84324d5abad7e68e665b728adf75",
-    "actor":  "Codex",
-    "recorded_at":  "2026-09-11T01:58:37.8511660+07:00",
-    "environment":  "Windows PowerShell; local Docker Desktop; Docker Compose verification",
-    "baseline":  "Local working tree after G0-01 reacceptance; no Git, remote, production, deployment, or destructive product migration.",
-    "checks":  {
-                   "AC01":  {
-                                "passed":  true,
-                                "detail":  "MÃ¡Â»â„¢t lÃ¡Â»â€¡nh dÃ¡Â»Â±ng hÃ¡ÂºÂ¡ tÃ¡ÂºÂ§ng, healthcheck vÃƒÂ  volumes Ã„â€˜Ã¡ÂºÂ¡t; thiÃ¡ÂºÂ¿u cÃ¡ÂºÂ¥u hÃƒÂ¬nh fail fast.",
-                                "artifacts":  [
-                                                  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
-                                                  "deploy/compose/compose.infrastructure.yml",
-                                                  "scripts/infra/infrastructure.ps1",
-                                                  "scripts/infra/verify-infrastructure.ps1",
-                                                  "scripts/infra/verify-kafka-persistence.ps1",
-                                                  "deploy/compose/migrations/run-infrastructure-migration.sh"
-                                              ]
-                            },
-                   "AC02":  {
-                                "passed":  true,
-                                "detail":  "Credential mÃ¡Â»â„¢t dÃ¡Â»â€¹ch vÃ¡Â»Â¥ khÃƒÂ´ng truy cÃ¡ÂºÂ­p DB dÃ¡Â»â€¹ch vÃ¡Â»Â¥ khÃƒÂ¡c; khÃƒÂ´ng public cÃ¡Â»â€¢ng DB/broker.",
-                                "artifacts":  [
-                                                  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
-                                                  "deploy/compose/compose.infrastructure.yml",
-                                                  "scripts/infra/infrastructure.ps1",
-                                                  "scripts/infra/verify-infrastructure.ps1",
-                                                  "scripts/infra/verify-kafka-persistence.ps1",
-                                                  "deploy/compose/migrations/run-infrastructure-migration.sh"
-                                              ]
-                            },
-                   "AC03":  {
-                                "passed":  true,
-                                "detail":  "ChÃ¡Â»â€° mÃ¡Â»â„¢t runner migration; khÃƒÂ´ng auto-migrate tÃ¡Â»Â« mÃ¡Â»â€”i replica; cÃƒÂ³ test restart/restore tÃ¡Â»â€˜i thiÃ¡Â»Æ’u.",
-                                "artifacts":  [
-                                                  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
-                                                  "deploy/compose/compose.infrastructure.yml",
-                                                  "scripts/infra/infrastructure.ps1",
-                                                  "scripts/infra/verify-infrastructure.ps1",
-                                                  "scripts/infra/verify-kafka-persistence.ps1",
-                                                  "deploy/compose/migrations/run-infrastructure-migration.sh"
-                                              ]
-                            }
-               },
-    "artifacts":  [
-                      {
-                          "path":  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
-                          "sha256":  "6e40c6a2ddb220f803a4afba07b0def57b37ea9db41577f2b4883deeb9cbb9ad"
-                      },
-                      {
-                          "path":  "deploy/compose/compose.infrastructure.yml",
-                          "sha256":  "8d485f548b6ba4448417e03c65886ebebebfc4a196c9338381316c81447aa58d"
-                      },
-                      {
-                          "path":  "scripts/infra/infrastructure.ps1",
-                          "sha256":  "65e177a55d051cb16861537d4145416317c9f6dbf7bc10c533e45cd5f57d7251"
-                      },
-                      {
-                          "path":  "scripts/infra/verify-infrastructure.ps1",
-                          "sha256":  "e5279fbfefe57c016b4034b3e5576cd6122769025170946b4724ac3aeb9f53bd"
-                      },
-                      {
-                          "path":  "scripts/infra/verify-kafka-persistence.ps1",
-                          "sha256":  "007b1c1d075c492482d3f71e7909b64e58213fbf1d6b0e1928257bafd8636218"
-                      },
-                      {
-                          "path":  "deploy/compose/migrations/run-infrastructure-migration.sh",
-                          "sha256":  "c811133de45e85ab347cf99f4099a5d7f7c6039bba2801325de302f67d74bacf"
-                      }
-                  ],
-    "commands":  [
-                     {
-                         "command":  "powershell -ExecutionPolicy Bypass -File scripts/infra/verify-infrastructure.ps1",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
-                     },
-                     {
-                         "command":  "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/infra/verify-kafka-persistence.ps1",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
-                     },
-                     {
-                         "command":  "$env:PYTHONPATH = Join-Path (Get-Location) work/document-audit/python-deps; python -X utf8 scripts/validate_vibe_kit.py",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
-                     }
-                 ]
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH01-DATA-INFRA-01",
+  "task_fingerprint": "640de44845b9baed7f7053798f92770b646d84324d5abad7e68e665b728adf75",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T01:58:37.8511660+07:00",
+  "environment": "Windows PowerShell; local Docker Desktop; Docker Compose verification",
+  "baseline": "Local working tree after G0-01 reacceptance; no Git, remote, production, deployment, or destructive product migration.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "MÃ¡Â»â„¢t lÃ¡Â»â€¡nh dÃ¡Â»Â±ng hÃ¡ÂºÂ¡ tÃ¡ÂºÂ§ng, healthcheck vÃƒÂ  volumes Ã„â€˜Ã¡ÂºÂ¡t; thiÃ¡ÂºÂ¿u cÃ¡ÂºÂ¥u hÃƒÂ¬nh fail fast.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
+        "deploy/compose/compose.infrastructure.yml",
+        "scripts/infra/infrastructure.ps1",
+        "scripts/infra/verify-infrastructure.ps1",
+        "scripts/infra/verify-kafka-persistence.ps1",
+        "deploy/compose/migrations/run-infrastructure-migration.sh"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "Credential mÃ¡Â»â„¢t dÃ¡Â»â€¹ch vÃ¡Â»Â¥ khÃƒÂ´ng truy cÃ¡ÂºÂ­p DB dÃ¡Â»â€¹ch vÃ¡Â»Â¥ khÃƒÂ¡c; khÃƒÂ´ng public cÃ¡Â»â€¢ng DB/broker.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
+        "deploy/compose/compose.infrastructure.yml",
+        "scripts/infra/infrastructure.ps1",
+        "scripts/infra/verify-infrastructure.ps1",
+        "scripts/infra/verify-kafka-persistence.ps1",
+        "deploy/compose/migrations/run-infrastructure-migration.sh"
+      ]
+    },
+    "AC03": {
+      "passed": true,
+      "detail": "ChÃ¡Â»â€° mÃ¡Â»â„¢t runner migration; khÃƒÂ´ng auto-migrate tÃ¡Â»Â« mÃ¡Â»â€”i replica; cÃƒÂ³ test restart/restore tÃ¡Â»â€˜i thiÃ¡Â»Æ’u.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
+        "deploy/compose/compose.infrastructure.yml",
+        "scripts/infra/infrastructure.ps1",
+        "scripts/infra/verify-infrastructure.ps1",
+        "scripts/infra/verify-kafka-persistence.ps1",
+        "deploy/compose/migrations/run-infrastructure-migration.sh"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md",
+      "sha256": "6e40c6a2ddb220f803a4afba07b0def57b37ea9db41577f2b4883deeb9cbb9ad"
+    },
+    {
+      "path": "deploy/compose/compose.infrastructure.yml",
+      "sha256": "8d485f548b6ba4448417e03c65886ebebebfc4a196c9338381316c81447aa58d"
+    },
+    {
+      "path": "scripts/infra/infrastructure.ps1",
+      "sha256": "65e177a55d051cb16861537d4145416317c9f6dbf7bc10c533e45cd5f57d7251"
+    },
+    {
+      "path": "scripts/infra/verify-infrastructure.ps1",
+      "sha256": "e5279fbfefe57c016b4034b3e5576cd6122769025170946b4724ac3aeb9f53bd"
+    },
+    {
+      "path": "scripts/infra/verify-kafka-persistence.ps1",
+      "sha256": "007b1c1d075c492482d3f71e7909b64e58213fbf1d6b0e1928257bafd8636218"
+    },
+    {
+      "path": "deploy/compose/migrations/run-infrastructure-migration.sh",
+      "sha256": "c811133de45e85ab347cf99f4099a5d7f7c6039bba2801325de302f67d74bacf"
+    }
+  ],
+  "commands": [
+    {
+      "command": "powershell -ExecutionPolicy Bypass -File scripts/infra/verify-infrastructure.ps1",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
+    },
+    {
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/infra/verify-kafka-persistence.ps1",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
+    },
+    {
+      "command": "$env:PYTHONPATH = Join-Path (Get-Location) work/document-audit/python-deps; python -X utf8 scripts/validate_vibe_kit.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md"
+    }
+  ]
 }

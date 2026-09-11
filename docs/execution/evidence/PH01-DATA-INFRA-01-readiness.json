@@ -11,37 +11,51 @@
     "DOR01": {
       "passed": true,
       "detail": "The local infrastructure-only scope, exclusions, AC01-AC03 and stop conditions are explicit.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR02": {
       "passed": true,
       "detail": "G0, ADR-0012 and operations baseline lock database ownership, migration and environment decisions needed by this task.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR03": {
       "passed": true,
       "detail": "Separate roles, fail-fast secrets, internal-only network, advisory lock and synthetic-only restore probe address the relevant risks.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR04": {
       "passed": true,
       "detail": "G0-01 is DONE and its reviewed PH00 handoff is present locally.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR05": {
       "passed": true,
       "detail": "Docker daemon, Compose version, config/up/health/ACL/lock/restart/restore commands and acceptance outcomes are defined.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR06": {
       "passed": true,
       "detail": "Only an idempotent infrastructure migration ledger is planned, guarded by an advisory lock; product and destructive migrations are excluded.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     },
     "DOR07": {
       "passed": true,
       "detail": "The executor may create local infrastructure configuration and synthetic test data only; Git, production and P1 operations remain excluded.",
-      "artifacts": ["docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH01-DATA-INFRA-01-readiness-report.md"
+      ]
     }
   },
   "artifacts": [

@@ -46,7 +46,14 @@ def scope_valid(value):
 
 
 def file_hash(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    """Hash source text independently of checkout line endings; keep binary exact."""
+    data = path.read_bytes()
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        return hashlib.sha256(data).hexdigest()
+    canonical = text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def now():
@@ -366,10 +373,39 @@ def template(gate, ident, kind):
     return e
 
 
+def migrate_line_ending_hashes(plan, state):
+    """One-time, auditable receipt migration after adopting canonical text hashes."""
+    nodes = validate_graph(plan)
+    for ident, record in state["tasks"].items():
+        for slot in ("readiness", "completion", "review"):
+            ref = record.get(slot)
+            if not ref:
+                continue
+            path = local_path(ROOT, ref["path"])
+            evidence = load_json(path)
+            for artifact in evidence.get("artifacts", []):
+                artifact["sha256"] = file_hash(local_path(ROOT, artifact["path"]))
+            if evidence.get("kind") == "review":
+                completion = record.get("completion")
+                if completion:
+                    evidence["completion_sha256"] = file_hash(local_path(ROOT, completion["path"]))
+            write_json(path, evidence)
+            ref["sha256"] = file_hash(path)
+    # Rebind dependency receipts in deterministic dependency order.
+    for ident in nodes:
+        record = state["tasks"].get(ident)
+        if record and "dependencies" in record:
+            record["dependencies"] = {dep: digest(state["tasks"][dep]) for dep in nodes[ident]["depends_on"]}
+    state["history"].append({"at": now(), "action": "migrate_line_ending_hashes",
+                             "task_id": "SYSTEM", "previous": {},
+                             "record_hash": digest(state["tasks"])})
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("validate")
+    sub.add_parser("migrate-line-ending-hashes")
     p = sub.add_parser("status")
     p.add_argument("--phase")
     sub.add_parser("next")
@@ -386,15 +422,20 @@ def main():
             p.add_argument("kind", choices=["readiness", "completion", "review"])
             p.add_argument("--output", required=True)
     args = parser.parse_args()
-    mutations = {"prepare", "start", "submit", "accept", "block", "reopen"}
+    mutations = {"prepare", "start", "submit", "accept", "block", "reopen", "migrate-line-ending-hashes"}
     try:
         if args.command in mutations:
             with state_lock(STATE):
                 gate = Gate(ROOT, load_json(PLAN), load_json(STATE))
-                path = local_path(ROOT, args.evidence) if hasattr(args, "evidence") else None
-                gate.mutate(args.command, args.id, path, getattr(args, "reason", None))
+                if args.command == "migrate-line-ending-hashes":
+                    migrate_line_ending_hashes(gate.plan, gate.state)
+                    print("Đã chuyển receipt sang hash văn bản chuẩn LF; thay đổi nội dung vẫn bị phát hiện.")
+                else:
+                    path = local_path(ROOT, args.evidence) if hasattr(args, "evidence") else None
+                    gate.mutate(args.command, args.id, path, getattr(args, "reason", None))
                 write_json(STATE, gate.state)
-                print(args.id, *gate.status(args.id))
+                if args.command != "migrate-line-ending-hashes":
+                    print(args.id, *gate.status(args.id))
             return 0
         gate = Gate(ROOT, load_json(PLAN), load_json(STATE))
         if args.command == "validate":

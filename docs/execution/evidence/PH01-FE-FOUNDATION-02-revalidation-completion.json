@@ -1,141 +1,139 @@
 {
-    "version":  1,
-    "kind":  "completion",
-    "task_id":  "PH01-FE-FOUNDATION-02",
-    "task_fingerprint":  "b7e988d3faebeec27ee85607f8bfd5df1ee6504c0deffead4b3409789feeb275",
-    "actor":  "Codex under project owner approval",
-    "recorded_at":  "2026-09-11T15:39:56.9258722Z",
-    "environment":  "Windows PowerShell; Node/npm locked Angular workspace.",
-    "baseline":  "Current worktree; PH01-FE-FOUNDATION-02 revalidation in progress.",
-    "checks":  {
-                   "AC01":  {
-                                "passed":  true,
-                                "detail":  "Generated P0 types, memory-only token storage and the single-flight refresh coordinator are present and passed concurrent refresh/retry harness cases.",
-                                "artifacts":  [
-                                                  "frontend/scripts/generate-p0-types.mjs",
-                                                  "frontend/src/app/core/api/p0-contract.types.ts",
-                                                  "frontend/src/app/core/auth/access-token-store.ts",
-                                                  "frontend/src/app/core/auth/auth-refresh-coordinator.ts",
-                                                  "frontend/tests/adapter-harness.ts",
-                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                                              ]
-                            },
-                   "AC02":  {
-                                "passed":  true,
-                                "detail":  "The P0 client maps failures, preserves retry state, supports cancellation and separates SignalR lifecycle from LiveKit; harness and Angular verification passed.",
-                                "artifacts":  [
-                                                  "frontend/src/app/core/http/problem-details.ts",
-                                                  "frontend/src/app/core/http/p0-api-client.ts",
-                                                  "frontend/src/app/core/realtime/realtime-adapter.ts",
-                                                  "frontend/tests/adapter-harness.ts",
-                                                  "frontend/tsconfig.adapter-harness.json",
-                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                                              ]
-                            }
-               },
-    "artifacts":  [
-                      {
-                          "path":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md",
-                          "sha256":  "c0cfed9e9bec6ad30bc7c642a5b668ead01536392a158ccc7d04345300dd2a0e"
-                      },
-                      {
-                          "path":  "docs/adr/0014-browser-refresh-cookie-policy.md",
-                          "sha256":  "713a0017bacee27f7e8b8829ee6661ae7a4df16666b178585177f7c4820cd85c"
-                      },
-                      {
-                          "path":  "docs/contracts/p0/openapi.json",
-                          "sha256":  "82e5863cf2d487049bef361402b8c57f4fba50865828084ad9ea929a4c5337e5"
-                      },
-                      {
-                          "path":  "frontend/package.json",
-                          "sha256":  "de551b02ad1f811d677763965e13e268605f41f40fafb43e964c2ebcfcf84675"
-                      },
-                      {
-                          "path":  "frontend/scripts/generate-p0-types.mjs",
-                          "sha256":  "c79c3ac22659537919338db4276ffb1d586f1e6ee7d51fa397fd4a46fac8bdda"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/api/p0-contract.types.ts",
-                          "sha256":  "89cdf8676420dba198eb90dd6f019990ac16a55541fb3f36057937943a059ac8"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/auth/access-token-store.ts",
-                          "sha256":  "b6658a16a24256f42ba8349dfacbb5e52694654179a86555dab2b5a473e76085"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/auth/auth-refresh-coordinator.ts",
-                          "sha256":  "4eafba92b4a2b971c41bfca79595493be23cc256cb3bdb7424e404e98bded5b9"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/http/problem-details.ts",
-                          "sha256":  "dcbe177bc233875b93dd671db3a3aa61fdd35dfba3e0c58f9987e9409c463e7e"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/http/browser-refresh-transport.ts",
-                          "sha256":  "c1a51ac2ad1683ac88d6a0eabf48013c9ee6a13a3b12e81fa72ec4e8abb757f1"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/http/p0-api-client.ts",
-                          "sha256":  "a2fcd57485d057783f13c1c1f1b9d7496810ede3a250b96dbe27986d565717fd"
-                      },
-                      {
-                          "path":  "frontend/src/app/core/realtime/realtime-adapter.ts",
-                          "sha256":  "67b7d1a844f5085fe219cccff1bd902a2d016b9cc06c7f6bb368f66f7d37909a"
-                      },
-                      {
-                          "path":  "frontend/tests/adapter-harness.ts",
-                          "sha256":  "06e3659b261ed9bbb84c3925fa08d35fd91b6dc98d458ddce66a6aa144cda1a6"
-                      },
-                      {
-                          "path":  "frontend/tsconfig.adapter-harness.json",
-                          "sha256":  "735fc050f03e5a056975b6ef12ecd9d84914cb881614318b29ebe02d7ccfd3dd"
-                      }
-                  ],
-    "impact":  {
-                   "classification":  "none",
-                   "scopes":  [
-
-                              ],
-                   "summary":  "Receipt-only revalidation; no product adapter or contract behavior changed.",
-                   "artifacts":  [
-                                     "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                                 ]
-               },
-    "commands":  [
-                     {
-                         "command":  "npm.cmd --prefix frontend run generate:p0-types",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run lint",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run test:adapters",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run typecheck",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "npm.cmd --prefix frontend run build",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "python -X utf8 scripts/validate_p0_contracts.py",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     },
-                     {
-                         "command":  "python -X utf8 scripts/test_task_gate.py",
-                         "exit_code":  0,
-                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
-                     }
-                 ]
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH01-FE-FOUNDATION-02",
+  "task_fingerprint": "b7e988d3faebeec27ee85607f8bfd5df1ee6504c0deffead4b3409789feeb275",
+  "actor": "Codex under project owner approval",
+  "recorded_at": "2026-09-11T15:39:56.9258722Z",
+  "environment": "Windows PowerShell; Node/npm locked Angular workspace.",
+  "baseline": "Current worktree; PH01-FE-FOUNDATION-02 revalidation in progress.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "Generated P0 types, memory-only token storage and the single-flight refresh coordinator are present and passed concurrent refresh/retry harness cases.",
+      "artifacts": [
+        "frontend/scripts/generate-p0-types.mjs",
+        "frontend/src/app/core/api/p0-contract.types.ts",
+        "frontend/src/app/core/auth/access-token-store.ts",
+        "frontend/src/app/core/auth/auth-refresh-coordinator.ts",
+        "frontend/tests/adapter-harness.ts",
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "The P0 client maps failures, preserves retry state, supports cancellation and separates SignalR lifecycle from LiveKit; harness and Angular verification passed.",
+      "artifacts": [
+        "frontend/src/app/core/http/problem-details.ts",
+        "frontend/src/app/core/http/p0-api-client.ts",
+        "frontend/src/app/core/realtime/realtime-adapter.ts",
+        "frontend/tests/adapter-harness.ts",
+        "frontend/tsconfig.adapter-harness.json",
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md",
+      "sha256": "c0cfed9e9bec6ad30bc7c642a5b668ead01536392a158ccc7d04345300dd2a0e"
+    },
+    {
+      "path": "docs/adr/0014-browser-refresh-cookie-policy.md",
+      "sha256": "713a0017bacee27f7e8b8829ee6661ae7a4df16666b178585177f7c4820cd85c"
+    },
+    {
+      "path": "docs/contracts/p0/openapi.json",
+      "sha256": "48a45f276c6e0ff25738581284ff805e0106637731aaf74f4196a36662ce8c5a"
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "de551b02ad1f811d677763965e13e268605f41f40fafb43e964c2ebcfcf84675"
+    },
+    {
+      "path": "frontend/scripts/generate-p0-types.mjs",
+      "sha256": "c79c3ac22659537919338db4276ffb1d586f1e6ee7d51fa397fd4a46fac8bdda"
+    },
+    {
+      "path": "frontend/src/app/core/api/p0-contract.types.ts",
+      "sha256": "89cdf8676420dba198eb90dd6f019990ac16a55541fb3f36057937943a059ac8"
+    },
+    {
+      "path": "frontend/src/app/core/auth/access-token-store.ts",
+      "sha256": "b6658a16a24256f42ba8349dfacbb5e52694654179a86555dab2b5a473e76085"
+    },
+    {
+      "path": "frontend/src/app/core/auth/auth-refresh-coordinator.ts",
+      "sha256": "4eafba92b4a2b971c41bfca79595493be23cc256cb3bdb7424e404e98bded5b9"
+    },
+    {
+      "path": "frontend/src/app/core/http/problem-details.ts",
+      "sha256": "dcbe177bc233875b93dd671db3a3aa61fdd35dfba3e0c58f9987e9409c463e7e"
+    },
+    {
+      "path": "frontend/src/app/core/http/browser-refresh-transport.ts",
+      "sha256": "c1a51ac2ad1683ac88d6a0eabf48013c9ee6a13a3b12e81fa72ec4e8abb757f1"
+    },
+    {
+      "path": "frontend/src/app/core/http/p0-api-client.ts",
+      "sha256": "a2fcd57485d057783f13c1c1f1b9d7496810ede3a250b96dbe27986d565717fd"
+    },
+    {
+      "path": "frontend/src/app/core/realtime/realtime-adapter.ts",
+      "sha256": "67b7d1a844f5085fe219cccff1bd902a2d016b9cc06c7f6bb368f66f7d37909a"
+    },
+    {
+      "path": "frontend/tests/adapter-harness.ts",
+      "sha256": "06e3659b261ed9bbb84c3925fa08d35fd91b6dc98d458ddce66a6aa144cda1a6"
+    },
+    {
+      "path": "frontend/tsconfig.adapter-harness.json",
+      "sha256": "735fc050f03e5a056975b6ef12ecd9d84914cb881614318b29ebe02d7ccfd3dd"
+    }
+  ],
+  "impact": {
+    "classification": "none",
+    "scopes": [],
+    "summary": "Receipt-only revalidation; no product adapter or contract behavior changed.",
+    "artifacts": [
+      "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    ]
+  },
+  "commands": [
+    {
+      "command": "npm.cmd --prefix frontend run generate:p0-types",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run lint",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run test:adapters",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run typecheck",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_p0_contracts.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md"
+    }
+  ]
 }

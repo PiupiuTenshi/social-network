@@ -47,7 +47,7 @@
     },
     {
       "path": "docs/contracts/p0/openapi.json",
-      "sha256": "82e5863cf2d487049bef361402b8c57f4fba50865828084ad9ea929a4c5337e5"
+      "sha256": "48a45f276c6e0ff25738581284ff805e0106637731aaf74f4196a36662ce8c5a"
     },
     {
       "path": "docs/contracts/p0/asyncapi.json",
@@ -59,7 +59,7 @@
     },
     {
       "path": "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
-      "sha256": "44a6991f4006eae89a1abef35b7e2e2b95104dcd5f2271c8c13bdf00be263033"
+      "sha256": "636bda85a59203efcef50b075ab9f395d504e491fd92a9059eafb40a33804fae"
     },
     {
       "path": "tests/Architecture/Architecture.Harness/Program.cs",
@@ -83,7 +83,7 @@
     },
     {
       "path": "docs/contracts/p0/fixtures.json",
-      "sha256": "e3c3a3d61c7b5c5f2295766f6b9bc909905b20b8f2ea47becdf2b63d524c41cf"
+      "sha256": "2cb488727a325f7aaddef7205c0fea5192f1864af2a251529f260856567152b5"
     }
   ],
   "commands": [

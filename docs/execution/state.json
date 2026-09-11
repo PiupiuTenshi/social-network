@@ -5,46 +5,46 @@
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-readiness.json",
-        "sha256": "959fd055171ab231c03e1f2fc02b6f28bd157550b71f419d7d6af65ebd8db61f"
+        "sha256": "f72f56b8d92d5a7b2b12010ba62910433794b5b20d513bed250277125f2e92eb"
       },
       "dependencies": {},
       "updated_at": "2026-09-07T16:02:08.196208+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-completion.json",
-        "sha256": "35e05beabbb3c43a8eae52fa6c53c5ad0556d4d2b70f4f6114e064e6b4ba8436"
+        "sha256": "25ac60d5d070020e0c808a79751d066ca471e54650a56d28a255ffd9338dbdb8"
       },
       "review": {
         "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-review.json",
-        "sha256": "e9206ea4e5056abdaeefc8c338003a8b5f4cb3b83e322d18cafb4d2661641f67"
+        "sha256": "15a41d10d5ce521fb45826ae77dd88f345c1abd9ef942c3cc35a774ad4952a8f"
       }
     },
     "PH00-BE-CONTRACT-01": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
-        "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        "sha256": "82873ef79e5ff6c29d86f86beecf13b7b2e9ab6f723807d62ec89e44e9217bda"
       },
       "dependencies": {
-        "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        "PH00-GOV-AUDIT-01": "e70e33031884670e94cab6ca2bcd993b55ddfad66aa633264563a30f4061c4c5"
       },
       "updated_at": "2026-09-11T04:20:56.770655+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion.json",
-        "sha256": "e552886687d7b58b90bf651ecb55a8abfe8f4197e15e553b136082a559838de6"
+        "sha256": "72cfe7fd0a64b7a0f50109e58f7c64e4434d331ba41f4c78357f65245d44925d"
       },
       "review": {
         "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-review.json",
-        "sha256": "c053285aef4b8218e60d08c38fc2431aeee4732bf0ee01ea11b24fb255795bdd"
+        "sha256": "eaa61dec9795f8f3fe2e4f116e3a93f1fd1b072d301004892284365e29320464"
       }
     },
     "PH00-DATA-BOUNDARY-01": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
-        "sha256": "b4a6cacaf7e38d2e33c5dee04c8494f27d33909ea7badae1dccc73cac32a3966"
+        "sha256": "02aaae26b5cf76db7c1cd9c462729339ce23e344efa6088e798859ce2009486a"
       },
       "dependencies": {
-        "PH00-BE-CONTRACT-01": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+        "PH00-BE-CONTRACT-01": "1ba31ea99e08eb2b258deee5abf7223c128fd2cedaa44d719889f05657fe1d30"
       },
       "updated_at": "2026-09-11T04:21:58.458760+00:00",
       "completion": {
@@ -63,16 +63,16 @@
         "sha256": "e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a"
       },
       "dependencies": {
-        "PH00-DATA-BOUNDARY-01": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+        "PH00-DATA-BOUNDARY-01": "ad306739ccc8b3706fb3229c7e86707a508b278fd2f3d724a16914b5d1ef1d34"
       },
       "updated_at": "2026-09-11T04:24:10.232699+00:00",
       "completion": {
         "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
-        "sha256": "52a764087f3b636e9e1bc9aaab43e8b7cb2c347471526e2ec39e670cf2b36b83"
+        "sha256": "b4c60ff9ffbc667f5476947d30b8f79c78e6506b9e91f8a4699b8208d2c62a6f"
       },
       "review": {
         "path": "docs/execution/evidence/ph00-be-toolchain-01-review.json",
-        "sha256": "6d8582f733b67848d44f7c09018dff860cb4c657db3df0704678f6090f119460"
+        "sha256": "abe479bd2147c0cdeba4e526c3dc9cb9dda25c4d4aaa5b4e3ae059f3bfa31721"
       }
     },
     "G0-01": {
@@ -82,102 +82,102 @@
         "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
       },
       "dependencies": {
-        "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        "PH00-BE-TOOLCHAIN-01": "cdb97c56e833ff27c4f7e7a5b098494f3587e75c427e99458dcc36620d293b98"
       },
       "updated_at": "2026-09-11T04:31:50.273153+00:00",
       "completion": {
         "path": "docs/execution/evidence/G0-01-completion.json",
-        "sha256": "7366422434ced80487928df1b47dcbd8d30a80ed3c95ed75ba7bdd231f193aa2"
+        "sha256": "5dcba9c10c26dcf4f10716441d27b31c9e961fc60b92a189beb5fb56daebd6fd"
       },
       "review": {
         "path": "docs/execution/evidence/G0-01-review.json",
-        "sha256": "85e4de173c2ae49cde4414d4f5e3a15788ce44927de6ecda4c86625f4239ae04"
+        "sha256": "45b476000b18ec4b2f1d09af32beb0c9aec9bb0d8708716280ca9348fd89033e"
       }
     },
     "PH01-DATA-INFRA-01": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
-        "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        "sha256": "d80934e1038c5bfd9530fcc6fb8692be6397c6a0bb750c3c343a0966acdb9275"
       },
       "dependencies": {
-        "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        "G0-01": "106331b81d36a51535efce994514455cd1639e39810c40d92112d906cba1437f"
       },
       "updated_at": "2026-09-10T18:58:56.750587+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion.json",
-        "sha256": "a470b24ee920acdf0248f3efa0177baaaaa2f690733dd86797a6e3b2b726c001"
+        "sha256": "c9c9bf711882a1c147fd5b54e2f659fd4df319a9edd5c09b287472bb1076d553"
       },
       "review": {
         "path": "docs/execution/evidence/PH01-DATA-INFRA-01-review.json",
-        "sha256": "9f5dc3fde95e1e96dfc3c9691fc8ddac6cf375d637d46d7d73c05e56a22f27fa"
+        "sha256": "28718ca421f90486d08a51580e34c24ed8cd62449b6c4ccad380dce5a38d475a"
       }
     },
     "PH01-FE-FOUNDATION-01": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json",
-        "sha256": "9d0cefd37a8e4c6d0e3b49c3a9de66946cac67f942021948c354f40bf33a1ed0"
+        "sha256": "6f57a775fb0ef3d04bf105c401c3f7297119156aae06eade6ec695d1262464fa"
       },
       "dependencies": {
-        "G0-01": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
+        "G0-01": "106331b81d36a51535efce994514455cd1639e39810c40d92112d906cba1437f"
       },
       "updated_at": "2026-09-11T15:38:31.058904+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion.json",
-        "sha256": "9af419c179063712e9fafc1f175e991239176873786ece180e008df9727a987b"
+        "sha256": "2921edea4473c90ff5d1c58a74470fecc5d54015d5da4a37ef24e9c5e9c9efbb"
       },
       "review": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-review.json",
-        "sha256": "8357435eda4346a918e766da79c0765f37c44c04fec32a0d6a1e8ef07118615e"
+        "sha256": "674c9421e57bd9ea450c0c5bd33f3f83e43e4eaaf5868cd6cb188abc03f71b0e"
       }
     },
     "PH01-BE-PLATFORM-01": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json",
-        "sha256": "8e45ac5f22880e5d3e490ab9cb4c9cbb165e51ecd6a6283f8cd6f87d0bd2b38c"
+        "sha256": "f13c25ec3a1601dcbc87b4c9de009ad041e9e72bd153cf03408c06bb5d24a576"
       },
       "dependencies": {
-        "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        "PH01-DATA-INFRA-01": "f779b3eb5c359458a7cf343cc9911d563820c3425899a1af8e1d3ffae7a6a948"
       },
       "updated_at": "2026-09-11T15:41:55.388845+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json",
-        "sha256": "f0fef288fbad2f6081e17cc88f13eef7ca5173d455e30d597301b2afa844138b"
+        "sha256": "bd0b0d06b1db379022806655cf43c3c3314ff7588d0d96edc5f18bd005ade34b"
       },
       "review": {
         "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review.json",
-        "sha256": "cc91d14956dc03025153dcc053614607f2d224faaf185d7f47e474532d2c18e7"
+        "sha256": "cd806c6e7e3cd7c271e2821d8a8e870770ed8c08afef32c8f6882967e0cb2f26"
       }
     },
     "PH01-FE-FOUNDATION-02": {
       "status": "DONE",
       "readiness": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json",
-        "sha256": "bc6662f820c60250fda3251653e8477d6ce581e45c9fd4f7c0dba2d96e6581c1"
+        "sha256": "57983a4fa0b729dcfee2c0bf1fe26b6c6d9371cb108cf0db3d257b3abc3b8a57"
       },
       "dependencies": {
-        "PH01-FE-FOUNDATION-01": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
+        "PH01-FE-FOUNDATION-01": "7bf3ca6f99e38594d916cc35847eb90dde13fd78366bf9b2996cd44208346cf4"
       },
       "updated_at": "2026-09-11T15:40:16.027879+00:00",
       "completion": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion.json",
-        "sha256": "80d7914f9c54ae9154e75bf437a791c5b138700d2f378ba6daaf09df29743eb2"
+        "sha256": "a66b93c799532b93d9d1544511e71edef0fd211f75c895c736ed95f536d9f34e"
       },
       "review": {
         "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-review.json",
-        "sha256": "1e6e6e09c974f5d24115c1559e11949d8ecdf8a75f0496ca62d5c6292f164cf3"
+        "sha256": "59b47ca0cb8436ccfbe0e89d1904273d22ecf36112e1b130eb14e2749b548f1a"
       }
     },
     "PH01-BE-CI-01": {
       "status": "IN_PROGRESS",
       "readiness": {
         "path": "docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json",
-        "sha256": "967038bc38f967ad676f6647434e5e583d90b376340290559245451eae80f77a"
+        "sha256": "d517a0b24fe615a7777e17b9c84896525c57c7d43b056b3f78a2502a18c30bc4"
       },
       "dependencies": {
-        "PH01-BE-PLATFORM-01": "bf4637fb762bc13f94779afc7b001c48fea0b0025facc71cd244e9cedfa96641"
+        "PH01-BE-PLATFORM-01": "9f9085a3b9606d4b8e6dbb05d02b23479c139b489cff1b105d5d3078b0fd11ea"
       },
       "updated_at": "2026-09-11T15:42:58.337210+00:00"
     }
@@ -1955,6 +1955,13 @@
         "updated_at": "2026-09-11T15:42:57.914842+00:00"
       },
       "record_hash": "cfc83b0511982451419564c1f246f9b774a8378f3c9158984a104791e3670229"
+    },
+    {
+      "at": "2026-09-11T16:04:57.281406+00:00",
+      "action": "migrate_line_ending_hashes",
+      "task_id": "SYSTEM",
+      "previous": {},
+      "record_hash": "5c580acf31a39454ed400e60eb19922c980df7d628d08a7c141e822d8b15d3c4"
     }
   ]
 }

@@ -11,17 +11,23 @@
     "AC01": {
       "passed": true,
       "detail": "SOURCE_INVENTORY và baseline DOCX/PDF còn truy vết được; AGENTS.md là file canonical có nội dung và không tự tham chiếu; BL-01 được quyết định trong phạm vi audit.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "AC02": {
       "passed": true,
       "detail": "ADR-010 chấp thuận P0/P1/P2; audit giữ nguyên priority và default-off/hoãn các gap chưa có contract. Báo cáo không dùng trạng thái UI approved để xác nhận API.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "AC03": {
       "passed": true,
       "detail": "Blocker register ánh xạ nhóm unknown tới task owner/đầu ra; report nêu rõ chưa có ứng dụng, SDK lockfile, remote hay kết quả build sản phẩm.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     }
   },
   "artifacts": [

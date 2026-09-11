@@ -11,37 +11,51 @@
     "DOR01": {
       "passed": true,
       "detail": "Audit chỉ xác nhận nguồn, quy tắc và phạm vi; không tạo code, migration, Git remote hoặc thay đổi sản phẩm. AC01-AC03 đã được ánh xạ trong audit report.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "DOR02": {
       "passed": true,
       "detail": "ADR-010 là nguồn priority đã chấp thuận; AGENTS canonical và default-off cho contract-gap được chốt cho audit. Contract/schema cụ thể vẫn do các task owner sau xử lý.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "DOR03": {
       "passed": true,
       "detail": "Audit không xử lý dữ liệu người dùng hay side effect; report yêu cầu default-off capability chưa có contract và giao quyền/privacy/concurrency cho các owner task tương ứng.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "DOR04": {
       "passed": true,
       "detail": "Task đầu tiên không có tiền nhiệm; source inventory, blocker register và ADR-010 đã tồn tại trên snapshot tài liệu đang dùng.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "DOR05": {
       "passed": true,
       "detail": "Validator source, generator, gate, unit tests và kit validator được ghi bằng lệnh/exit code thật; không dùng lệnh build sản phẩm chưa tồn tại.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"
+      ]
     },
     "DOR06": {
       "passed": true,
       "detail": "Planning audit không tạo hay chạy migration và không thay deployment; schema/migration/rollback được giao PH00-DATA-BOUNDARY-01 và PH00-BE-TOOLCHAIN-01.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     },
     "DOR07": {
       "passed": true,
       "detail": "Codex thực hiện planning theo chỉ đạo chủ dự án; AGENTS canonical và READY_GATE nêu rõ dừng khi contract/ownership chưa khóa và cấm Git/production tự động.",
-      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+      "artifacts": [
+        "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"
+      ]
     }
   },
   "artifacts": [
