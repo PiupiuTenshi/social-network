@@ -22,10 +22,10 @@ ccb9db59dfdf21f33f6dc788d27ac327ee8ca9a1f441d537dbb676c9c221fcf1  ./.github/ISSU
 aeb0ffc7b3ef8962e7d2feb8ca5b9f27cf373738862708eb918f2b5f217eba4a  ./.github/ISSUE_TEMPLATE/feature_request.md
 3d1b3b43d52fb3881b5c6362953f9d6a497770081408cc5e88a522fa91334e6f  ./.github/copilot-instructions.md
 8f8b555dc4d5c6e4435f6a6e9cac7c61383cb1128b11de1a9a10cadfe6d49719  ./.github/pull_request_template.md
-d884f114b5a5d4388f5b8fdddfa72bb8854bc293463ce6be5cc4a107b18399cf  ./.github/workflows/ci.yml
+cf5ff5fcd98fa6814ffbbde73f3296e977faac203de1ad1d98f53c0de74b5e3e  ./.github/workflows/ci.yml
 520648562dec3d3740be3dda1882e260f84d09cad5cf7cdc5720766565885848  ./.github/workflows/docs-validation.yml
 ead44c567530cd6db65cc2d87435261ba725ea916fc8a1b67333cd7fded96712  ./.github/workflows/execution-plan.yml
-e08694fb562eb37444cfe18558a89da47b57204bca259786438b7731d1bcbbdd  ./.gitignore
+5c963c6d53b4a50858fb2ce4bf53059e39cae0d91f7ca14994ad87582d1fcc3c  ./.gitignore
 1825d424422fc20ca6aaec4557e0e60816234d7316632b0c5f221d352df2b380  ./.gitmessage
 7f04a2d6d5ad30e647861aa95fcaef625eed2a00116bfb5b4a4b97610d57d07e  ./.markdownlint.json
 3151949a8b43e7df5385b69fbaeb5652bbdc7f7924e4278d550348f42b103f13  ./.nvmrc
@@ -39,11 +39,13 @@ c3fb75a42a65601fa5a964d177cdd8915609643f6dad9d5f01dc159875602a35  ./CONTRIBUTING
 7038412bd1ba7660b7942a4d4a97c225df0f79d9373539427e2d53d32f0d133b  ./Directory.Packages.props
 269d94adb9c9ccd07592b7ab0952853440d596aab10e44cdc349f84895b63755  ./FRONTEND_START_HERE.md
 5086e95fd3a736efdd182d33b0a6ed879b5a6ed7da7a22896063f3f5f2014b23  ./GEMINI.md
-a6d64be0911c0b7112c84108193ddb8b499b580d36a43986c3eccb10caf9dcf8  ./MANIFEST.md
+2e70d039ae2f200b80fac34ccd91695b2caab9114dbeb7ae004d6233c26c6119  ./MANIFEST.md
 5ca024710572bad837b138e49d420a2e07a1669a4e3ba542de26f06ced3f5baa  ./README.md
 0b82b80be6a9ace69e85f709fa8f331145e9b711331d96fc3b96f3288b8eed26  ./RULES.md
 b2fc6d691ea96764687e0ba20e8f4a4928e828168c577871eb98d229bbe7773b  ./SECURITY.md
 ee48f0bcfaf8ce3f11f59954c88c8d3c8cf8decb14c70a99cf9397a5c04c8c59  ./TwightLight.slnx
+ba89f9226f6695283959e7eb464edb0c67d86cb3ff18bcf83e638b403a36e694  ./artifacts/security/SHA256SUMS
+b6dbf3b932c50a24ac9178b0bbd08067848a8526f60a46e6a675b765d6462d00  ./artifacts/security/sbom.cdx.json
 3d219e2c26a9193352ee7ea1a10899b98734a84075329c6b68273913f2c7f13c  ./deploy/compose/.env
 c4a488a3a5c2e1d5f6cfcc0ed4b6262ab9b30625360b3ec038f4bf7b910ff6cf  ./deploy/compose/.env.example
 8d485f548b6ba4448417e03c65886ebebebfc4a196c9338381316c81447aa58d  ./deploy/compose/compose.infrastructure.yml
@@ -504,6 +506,10 @@ b5954d0313878d2d126b353a65276ca14dfc7332744feba0ca93827b43a2fc29  ./docs/executi
 e9206ea4e5056abdaeefc8c338003a8b5f4cb3b83e322d18cafb4d2661641f67  ./docs/execution/evidence/PH00-GOV-AUDIT-01-review.json
 42928313d68ee063883f5a2f75187cc5a4162b50203804b4c45de0cd1f0cfb35  ./docs/execution/evidence/PH00-GOV-AUDIT-01-review.md
 c180cb9697035b6d666e7bea584505ecbc5f6d81cccf690f7be54fe4826901e1  ./docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md
+db1d9198caa9e3dabf1e53ef4054320a3a4efac355535775389653e859c48946  ./docs/execution/evidence/PH01-BE-CI-01-readiness-report.md
+8dd299a1d516035e2c9bb0e885bd941c8a3bd4ac3ef20ef630d70f934445f88d  ./docs/execution/evidence/PH01-BE-CI-01-readiness.initial.json
+8da0a7b21c05134b8e053df0c60f859e18dcb570552668553a20c13be0847dda  ./docs/execution/evidence/PH01-BE-CI-01-readiness.json
+e1e1f5c0c66df83c460999044aae4fc16277ccdf00e887906d0cbf558bc3957a  ./docs/execution/evidence/PH01-BE-CI-01-remote-blocker.md
 ece7e4fcc59e9f67046d78e7742775c9c5e205988959e724eedb3b321b65fd0b  ./docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md
 7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858  ./docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json
 26a8aae748ab1cb85ba65904edfcc18f41647f79b15721b07ad5f4e71e779d1c  ./docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md
@@ -534,7 +540,7 @@ d50c058a66dec5a7e90ba382fed0f69e433d7eab794e355bcc8b414abf0c3c66  ./docs/executi
 e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a  ./docs/execution/evidence/ph00-be-toolchain-01-readiness.json
 6d8582f733b67848d44f7c09018dff860cb4c657db3df0704678f6090f119460  ./docs/execution/evidence/ph00-be-toolchain-01-review.json
 f4ecd5b4fc715c7c980cf28836c22a3796320549ef3054441ce7fcba1b66660e  ./docs/execution/gates/G0-01-ARCHITECTURE-ACCEPTANCE.md
-56229aa450a1c1d9211e2a8efe641fa0d51e6385a406f99e6e38cc4df07b1732  ./docs/execution/plan.json
+90f94bd36d92132869db77455d664ca5ee13ea58d7530a162a73fe6e4ac0cf89  ./docs/execution/plan.json
 8ba64a13bee4747a53c1c5193156e5a2d2120b9690b69f934e55cfeab3501ee0  ./docs/execution/prompts/G0-01.md
 46ed0ab0d7118c2253a240c3861cf5178640e50836a097eabbaff66f0dc13883  ./docs/execution/prompts/G1-01.md
 604194fee301f64b37333a27de4ad08b6eb10d434a2f61baf43128e6d7b324a5  ./docs/execution/prompts/G2-01.md
@@ -853,7 +859,7 @@ d2399f9e792236a9175947789a6c3a7fc356965fe5b6b36411e6330488d88a40  ./docs/executi
 1a695eb7e3ea5bda97fd97967e8d33ee61b15c0a3287df51a191c065b5bf91cf  ./docs/execution/prompts/PH07-GOV-HARDEN-03.md
 284fed1bfa6711c1ac1f1d39f04b060f75cb3ef33beefa88f3e5a0fc214cd676  ./docs/execution/prompts/PH07-GOV-HARDEN-04.md
 7bd0d47fb553e7feaa55bdfb07931f2ad85ef03e57f58b09cfe008c45ed5c6d4  ./docs/execution/prompts/PH08-GOV-REHEARSAL-01.md
-d5b047193affb7edd1fae2f52a5bdf09595179854dd41ee2367ab9d3f6b4267c  ./docs/execution/state.json
+cd195ebd57fda4e1d3babf8997f83cba2ab9a7eaa3414c1f6bb00f62cbb1f20f  ./docs/execution/state.json
 832559d7341c9d85676e6d6b09a9b3ce8026036feb9accb26e9c3b8606a2da96  ./docs/execution/validation/gate-cli.json
 4c15bc4679e8242de493e72fabd2efe2fbaaded17a1549dc9a662c1c7fc96894  ./docs/execution/validation/validate-all.txt
 1b0f9083febe70f61bea4358aedd4e0ee60fe42293970f272239c339603c1c43  ./docs/infra/IMAGE_SELECTION.md
@@ -956,6 +962,8 @@ c8526e980c75e4ea60c8a5b34f695fb5ff0b6803d85e1f79eee99d6698021218  ./prompts/25-u
 b859a6de36c04eafc1d5a02eb653f1231d5eb316a5b911e0a08be2ee06ce0cfd  ./scripts/build_context.py
 faf24c9b1a3ca408368e56e16ea82c8504168500574f5c94e8a13a2415957387  ./scripts/build_execution_plan.py
 c0b6ef5128ad9cd1aafafc0ce79baabe246c65b94b3a234d4eaddc71952f0857  ./scripts/check_markdown_links.py
+9e3e7e3d8e78fa24b9333fcbf1adb12d9c15f814ea6e462d46f438bc3c7923ee  ./scripts/ci/generate_sbom.py
+b73533b5221c318b2f92e1e526dc1d04aae979b172c514b6a7ca25bf82b209cf  ./scripts/ci/write_checksums.py
 05c8be961b5493e18aacfc0fef0110019305e9b06a2aa37d2bd21706b2a96f92  ./scripts/generate_prompt_pack.py
 65e177a55d051cb16861537d4145416317c9f6dbf7bc10c533e45cd5f57d7251  ./scripts/infra/infrastructure.ps1
 4bc5773263f626e51c6a6db5b99a1e64d3cfd8de9c2f1d3f5bddec3afd260eed  ./scripts/infra/new-local-secrets.ps1
@@ -964,7 +972,8 @@ e5279fbfefe57c016b4034b3e5576cd6122769025170946b4724ac3aeb9f53bd  ./scripts/infr
 cbf9caeb7dfb75ffcd26f64993dd3e590d683dee4d7606a360adac33982f77a5  ./scripts/kit_inventory.py
 9604900911fa2821748ebe76f073364535fa7f389c48dd1f3a7a7eae5589c051  ./scripts/refresh_kit_inventory.py
 d2198b32ae1731b0a5c8db0d3a43a8cd67e2e4c53a56d7a579726dd82e633cd7  ./scripts/sync_root_design.py
-c2b6dc574f5aa111d70d0a8b2685fcf268c7679009f16bc2bbc423d54345f6f3  ./scripts/task_gate.py
+3cbfd89e7b1a5b8272e37d6118210a8b1cf7ac4025e0e3803a2bb02036d464ae  ./scripts/task_gate.py
+70929d8b209035dd04f4278290b179433df637f8f46ccdec8691f88e60443146  ./scripts/test_ci_helpers.py
 550a319d25238820ba66ca72fad86645cff3920534f07cb6139b701fedcba164  ./scripts/test_task_gate.py
 db039108890a1e2271d481fa306d68034a47ef132b2c0c50dafa075ce41265ea  ./scripts/validate_all.py
 ac7c9d875236e2e1a77d1c4adc7f86488e05de96d59d88ccdc482cf102018057  ./scripts/validate_commit_message.py

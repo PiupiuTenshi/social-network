@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1036**
+- Tổng tệp không tính `MANIFEST.md`: **1045**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -55,6 +55,8 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `RULES.md`
 - `SECURITY.md`
 - `TwightLight.slnx`
+- `artifacts/security/SHA256SUMS`
+- `artifacts/security/sbom.cdx.json`
 - `checksums.sha256`
 - `deploy/compose/.env`
 - `deploy/compose/.env.example`
@@ -516,6 +518,10 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-review.json`
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-review.md`
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md`
+- `docs/execution/evidence/PH01-BE-CI-01-readiness-report.md`
+- `docs/execution/evidence/PH01-BE-CI-01-readiness.initial.json`
+- `docs/execution/evidence/PH01-BE-CI-01-readiness.json`
+- `docs/execution/evidence/PH01-BE-CI-01-remote-blocker.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md`
@@ -968,6 +974,8 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `scripts/build_context.py`
 - `scripts/build_execution_plan.py`
 - `scripts/check_markdown_links.py`
+- `scripts/ci/generate_sbom.py`
+- `scripts/ci/write_checksums.py`
 - `scripts/generate_prompt_pack.py`
 - `scripts/infra/infrastructure.ps1`
 - `scripts/infra/new-local-secrets.ps1`
@@ -977,6 +985,7 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `scripts/refresh_kit_inventory.py`
 - `scripts/sync_root_design.py`
 - `scripts/task_gate.py`
+- `scripts/test_ci_helpers.py`
 - `scripts/test_task_gate.py`
 - `scripts/validate_all.py`
 - `scripts/validate_commit_message.py`
