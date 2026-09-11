@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1035**
+- Tổng tệp không tính `MANIFEST.md`: **1034**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -56,7 +56,6 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `SECURITY.md`
 - `TwightLight.slnx`
 - `checksums.sha256`
-- `deploy/compose/.env`
 - `deploy/compose/.env.example`
 - `deploy/compose/compose.infrastructure.yml`
 - `deploy/compose/compose.toolchain.yml`
