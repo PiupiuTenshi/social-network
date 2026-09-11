@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH00-DATA-BOUNDARY-01",
+  "task_fingerprint": "d06b41f254c7d16be2131244bd1261597c245cb6fda8624983c928584de93a50",
+  "actor": "Codex under project owner delegation",
+  "recorded_at": "2026-09-11T04:21:50.758632+00:00",
+  "environment": "Windows PowerShell; Python UTF-8; document planning workspace",
+  "baseline": "Accepted current PH00-BE-CONTRACT-01 receipt; ADR-0014 reviewed as no-change to Data Boundary scope.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "Every P0 table has exactly one owner and the validator rejects cross-database foreign keys.",
+      "artifacts": [
+        "docs/data/p0/data-blueprint.json",
+        "scripts/validate_p0_data_blueprint.py",
+        "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "The concrete Chat/Feed schema includes access-pattern indexes, outbox/inbox, checkpoints, export and controlled rebuild policy.",
+      "artifacts": [
+        "docs/data/p0/data-blueprint.json",
+        "docs/adr/0012-p0-data-boundary-and-rebuild.md",
+        "scripts/validate_p0_data_blueprint.py"
+      ]
+    },
+    "AC03": {
+      "passed": true,
+      "detail": "Migration and recovery runbook assigns owners, gives verification templates and P0 RPO/RTO acceptance criteria without claiming runtime execution.",
+      "artifacts": [
+        "docs/data/p0/migration-and-recovery.md",
+        "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/adr/0012-p0-data-boundary-and-rebuild.md",
+      "sha256": "4f553d4be0c0c3bb625ce49f88c117b7677e103a59300aaf3a605ce18fa56b80"
+    },
+    {
+      "path": "docs/data/p0/README.md",
+      "sha256": "cb141d7125c0cd06c909f7155f4cc876911e20f7b210b2a25dfce4c2b4ebccb2"
+    },
+    {
+      "path": "docs/data/p0/data-blueprint.json",
+      "sha256": "10db504e6f89f39c05720bcc6d0b327e7a9f14d2820d616f179cfb33570a7cc6"
+    },
+    {
+      "path": "docs/data/p0/migration-and-recovery.md",
+      "sha256": "5ebff7ffbf863257060e9cb23078573b0159b8aece7352076c2ed36c05594bce"
+    },
+    {
+      "path": "scripts/validate_p0_data_blueprint.py",
+      "sha256": "69f221225e0180977a9e32f699a0fcbbd75b1a074de2310de3cbea1fa1efed8d"
+    },
+    {
+      "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md",
+      "sha256": "b0a02e0531e792c6d27cd7fcc44cbcb66b80cd7498db6d5708e9f85d58f84a21"
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -X utf8 scripts/validate_p0_data_blueprint.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_p0_contracts.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/build_execution_plan.py --check",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/refresh_kit_inventory.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    },
+    {
+      "command": "PYTHONPATH=work/document-audit/python-deps python -X utf8 scripts/validate_vibe_kit.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion-report.md"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": "1.2",
+  "sourceOfTruth": {
+    "ui": "design.md",
+    "backend": [
+      "OpenAPI",
+      "AsyncAPI",
+      "system-design-v3.0"
+    ],
+    "gaps": "sources/18-backend-contract-gaps.md"
+  },
+  "rules": {
+    "unknownContract": "stop-and-clarify",
+    "mockupOnlyFeature": "feature-flag-and-adapter",
+    "productionDefault": "disabled-until-contract-approved"
+  },
+  "blockedExamples": [
+    "per-device-logout-with-otp",
+    "advanced-rich-text-and-repost",
+    "video-scheduling-and-analytics",
+    "advanced-community-membership-approval",
+    "direct-seller-qr-payment",
+    "summary-export-pdf-10000-lines"
+  ]
+}

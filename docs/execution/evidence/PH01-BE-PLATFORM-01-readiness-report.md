@@ -1,0 +1,7 @@
+# PH01-BE-PLATFORM-01 — Definition of Ready
+
+Scope is only P0 BuildingBlocks/Gateway/observability: transactional Outbox/Inbox, idempotency, envelope, boundary auth/error/correlation/rate limit and failure telemetry. Ownership stays with each service database; no cross-DB access or business capability is included. ADR-0013 is accepted: Platform proves framework and harness behavior, while BOLA with resource data, production Kafka ACL/principal checks, production JWT issuer/key integration, hosted consumer runtime, and broker/DB crash end-to-end tests belong to Account/Social/Chat/Feed after their contracts exist.
+
+Inputs are locked by G0-01, ADR/contracts and the accepted PH01-DATA-INFRA-01 local stack. Event rules require aggregate and Outbox in one transaction, Inbox plus side effect in one transaction, same `eventId` replay without duplicate effect, bounded retry and DLQ. API/security rules lock Problem Details, ETag/If-Match, Idempotency-Key, service-side BOLA and no sensitive logs. Observability requires RED, correlation, outbox age, lag, retry and DLQ metrics.
+
+P1/P2 functionality and unresolved blockers BL-07 through BL-18 are out of scope and disabled. Stop if a contract, ACL, JWT issuer/audience or ownership decision must be invented. Verification commands are the existing .NET architecture harness, targeted unit/integration/contract tests, `dotnet build`, and local Docker fault tests against the accepted infrastructure.

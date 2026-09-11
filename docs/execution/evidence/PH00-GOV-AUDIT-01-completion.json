@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH00-GOV-AUDIT-01",
+  "task_fingerprint": "a3c18619aa50837deabc7810754e637559a13e0cd23554a67e724b8b16829b94",
+  "actor": "Codex, theo chỉ đạo chủ dự án ngày 2026-09-07",
+  "recorded_at": "2026-09-07T16:01:19.1429372Z",
+  "environment": "Windows PowerShell; workspace tài liệu trước Git/sản phẩm",
+  "baseline": "Snapshot tài liệu 2026-09-07 trước khởi tạo Git; no-commit/no-remote",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "SOURCE_INVENTORY và baseline DOCX/PDF còn truy vết được; AGENTS.md là file canonical có nội dung và không tự tham chiếu; BL-01 được quyết định trong phạm vi audit.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "ADR-010 chấp thuận P0/P1/P2; audit giữ nguyên priority và default-off/hoãn các gap chưa có contract. Báo cáo không dùng trạng thái UI approved để xác nhận API.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "AC03": {
+      "passed": true,
+      "detail": "Blocker register ánh xạ nhóm unknown tới task owner/đầu ra; report nêu rõ chưa có ứng dụng, SDK lockfile, remote hay kết quả build sản phẩm.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md",
+      "sha256": "849b838e2e6194ca6516cf640de6b41e81ae8c7f91d3df8d42fb169875c2225d"
+    },
+    {
+      "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md",
+      "sha256": "c180cb9697035b6d666e7bea584505ecbc5f6d81cccf690f7be54fe4826901e1"
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -X utf8 scripts/verify_source_baseline.py source-documents/SocialPlatform_ThietKeHeThongChiTiet_BanCuoi_v3_0.docx",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"
+    },
+    {
+      "command": "python -X utf8 scripts/build_execution_plan.py --check",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py validate",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"
+    }
+  ]
+}

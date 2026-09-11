@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "readiness",
+  "task_id": "PH00-BE-TOOLCHAIN-01",
+  "task_fingerprint": "a898bb42d53435ef221286f26f7eeaf70dcee3a6b277bf9b6ef7a838da5cebdc",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T04:22:19.512740+00:00",
+  "environment": "Windows PowerShell; .NET SDK 10.0.204; Node 22.19.0; Docker client 28.4.0 without a reachable daemon",
+  "baseline": "Accepted current PH00-DATA-BOUNDARY-01 receipt; toolchain source and harness scope unchanged.",
+  "checks": {
+    "DOR01": {
+      "passed": true,
+      "detail": "Harness-only scope, exclusions and AC01-AC03 are documented in the readiness report.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR02": {
+      "passed": true,
+      "detail": "Reviewed contract and data-boundary predecessor receipts provide the only required ownership and schema inputs.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR03": {
+      "passed": true,
+      "detail": "No business endpoint or PII is introduced; the only data operation is a disposable local SQLite migration test.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR04": {
+      "passed": true,
+      "detail": "PH00-DATA-BOUNDARY-01 is DONE with valid reviewed evidence on the current filesystem baseline.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR05": {
+      "passed": true,
+      "detail": "The report identifies actual dotnet/npm commands, architecture and SQLite migration harnesses, plus the unavailable Docker daemon.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR06": {
+      "passed": true,
+      "detail": "An intentionally empty migration will be applied only to a disposable local SQLite database; no production rollback applies.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    },
+    "DOR07": {
+      "passed": true,
+      "detail": "Repository-local scaffold authority and all stop conditions are recorded; Git and remote operations remain unauthorized.",
+      "artifacts": [
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-readiness-report.md",
+      "sha256": "ce4d3efd518345f59a849f4b320e5eb9afed59a65ae52bcb4e5787de39dad1a5"
+    }
+  ]
+}

@@ -1,0 +1,721 @@
+{
+  "routes": [
+    {
+      "id": "AUTH-01",
+      "route": "/",
+      "title": "Chào mừng",
+      "group": "Xác thực",
+      "priority": "P0",
+      "roles": [
+        "Khách"
+      ],
+      "functions": [
+        "ACC-01",
+        "ACC-02"
+      ],
+      "file": "screens/auth/auth-01-chao-mung.md"
+    },
+    {
+      "id": "AUTH-02",
+      "route": "/dang-nhap",
+      "title": "Đăng nhập",
+      "group": "Xác thực",
+      "priority": "P0",
+      "roles": [
+        "Khách"
+      ],
+      "functions": [
+        "ACC-02",
+        "ACC-03"
+      ],
+      "file": "screens/auth/auth-02-dang-nhap.md"
+    },
+    {
+      "id": "AUTH-03",
+      "route": "/dang-ky",
+      "title": "Đăng ký",
+      "group": "Xác thực",
+      "priority": "P0",
+      "roles": [
+        "Khách"
+      ],
+      "functions": [
+        "ACC-01",
+        "ACC-10"
+      ],
+      "file": "screens/auth/auth-03-dang-ky.md"
+    },
+    {
+      "id": "AUTH-04",
+      "route": "/quen-mat-khau",
+      "title": "Quên mật khẩu",
+      "group": "Xác thực",
+      "priority": "P1",
+      "roles": [
+        "Khách"
+      ],
+      "functions": [
+        "ACC-08"
+      ],
+      "file": "screens/auth/auth-04-quen-mat-khau.md"
+    },
+    {
+      "id": "AUTH-05",
+      "route": "/dat-lai-mat-khau",
+      "title": "Đặt lại mật khẩu",
+      "group": "Xác thực",
+      "priority": "P1",
+      "roles": [
+        "Khách"
+      ],
+      "functions": [
+        "ACC-09"
+      ],
+      "file": "screens/auth/auth-05-dat-lai-mat-khau.md"
+    },
+    {
+      "id": "FEED-01",
+      "route": "/bang-tin",
+      "title": "Bảng tin",
+      "group": "Bảng tin",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "FED-02",
+        "SOC-03",
+        "SOC-08",
+        "CHT-08"
+      ],
+      "file": "screens/feed/feed-01-bang-tin.md"
+    },
+    {
+      "id": "FEED-02",
+      "route": "/bai-viet/moi",
+      "title": "Tạo bài viết",
+      "group": "Bảng tin",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "SOC-03",
+        "MED-01",
+        "MED-03"
+      ],
+      "file": "screens/feed/feed-02-tao-bai-viet.md"
+    },
+    {
+      "id": "FEED-03",
+      "route": "/bai-viet/:id",
+      "title": "Chi tiết bài viết",
+      "group": "Bảng tin",
+      "priority": "P0",
+      "roles": [
+        "Người xem",
+        "Người dùng"
+      ],
+      "functions": [
+        "SOC-06",
+        "SOC-07",
+        "SOC-08",
+        "SOC-10",
+        "MOD-01",
+        "AI-05"
+      ],
+      "file": "screens/feed/feed-03-chi-tiet-bai-viet.md"
+    },
+    {
+      "id": "FEED-04",
+      "route": "/bai-viet/:id/sua",
+      "title": "Sửa bài viết",
+      "group": "Bảng tin",
+      "priority": "P0",
+      "roles": [
+        "Chủ sở hữu"
+      ],
+      "functions": [
+        "SOC-04"
+      ],
+      "file": "screens/feed/feed-04-sua-bai-viet.md"
+    },
+    {
+      "id": "FEED-05",
+      "route": "/bai-viet/:id/xu-ly",
+      "title": "Bài viết video đang xử lý",
+      "group": "Bảng tin",
+      "priority": "P1",
+      "roles": [
+        "Chủ sở hữu"
+      ],
+      "functions": [
+        "SOC-09",
+        "MED-04"
+      ],
+      "file": "screens/feed/feed-05-bai-viet-video.md"
+    },
+    {
+      "id": "PROF-01",
+      "route": "/toi",
+      "title": "Hồ sơ của tôi",
+      "group": "Hồ sơ",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "ACC-05",
+        "SOC-06"
+      ],
+      "file": "screens/profile/prof-01-ho-so-cua-toi.md"
+    },
+    {
+      "id": "PROF-02",
+      "route": "/nguoi-dung/:id",
+      "title": "Hồ sơ người dùng",
+      "group": "Hồ sơ",
+      "priority": "P0",
+      "roles": [
+        "Người xem"
+      ],
+      "functions": [
+        "ACC-05",
+        "SOC-01",
+        "SOC-02",
+        "SOC-06"
+      ],
+      "file": "screens/profile/prof-02-ho-so-nguoi-khac.md"
+    },
+    {
+      "id": "PROF-03",
+      "route": "/toi/chinh-sua",
+      "title": "Chỉnh sửa hồ sơ",
+      "group": "Hồ sơ",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "ACC-05",
+        "ACC-06",
+        "MED-01"
+      ],
+      "file": "screens/profile/prof-03-chinh-sua-ho-so.md"
+    },
+    {
+      "id": "PROF-04",
+      "route": "/nguoi-dung/:id/ket-noi",
+      "title": "Người theo dõi và đang theo dõi",
+      "group": "Hồ sơ",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "SOC-01",
+        "SOC-02"
+      ],
+      "file": "screens/profile/prof-04-quan-he-xa-hoi.md"
+    },
+    {
+      "id": "SET-01",
+      "route": "/thiet-lap/quyen-rieng-tu",
+      "title": "Quyền riêng tư",
+      "group": "Thiết lập",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "ACC-07"
+      ],
+      "file": "screens/settings/set-01-quyen-rieng-tu.md"
+    },
+    {
+      "id": "SET-02",
+      "route": "/thiet-lap/bao-mat",
+      "title": "Bảo mật tài khoản",
+      "group": "Thiết lập",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "ACC-03",
+        "ACC-04",
+        "ACC-09"
+      ],
+      "file": "screens/settings/set-02-bao-mat-tai-khoan.md"
+    },
+    {
+      "id": "SET-03",
+      "route": "/thiet-lap/da-chan",
+      "title": "Tài khoản đã chặn",
+      "group": "Thiết lập",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "SOC-02"
+      ],
+      "file": "screens/settings/set-03-tai-khoan-bi-chan.md"
+    },
+    {
+      "id": "SET-04",
+      "route": "/thiet-lap/xoa-tai-khoan",
+      "title": "Xóa tài khoản",
+      "group": "Thiết lập",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "ACC-11"
+      ],
+      "file": "screens/settings/set-04-xoa-tai-khoan.md"
+    },
+    {
+      "id": "DISC-01",
+      "route": "/tim-kiem",
+      "title": "Tìm kiếm",
+      "group": "Khám phá",
+      "priority": "P2",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "AI-02",
+        "MKT-02",
+        "SOC-06"
+      ],
+      "file": "screens/discovery/disc-01-tim-kiem.md"
+    },
+    {
+      "id": "NOTI-01",
+      "route": "/thong-bao",
+      "title": "Thông báo",
+      "group": "Thông báo",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "CHT-08"
+      ],
+      "file": "screens/notifications/noti-01-thong-bao.md"
+    },
+    {
+      "id": "COMM-01",
+      "route": "/cong-dong",
+      "title": "Khám phá cộng đồng",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "COM-01",
+        "COM-02"
+      ],
+      "file": "screens/communities/comm-01-kham-pha-cong-dong.md"
+    },
+    {
+      "id": "COMM-02",
+      "route": "/cong-dong/:id",
+      "title": "Tổng quan cộng đồng",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Thành viên",
+        "Khách theo chính sách"
+      ],
+      "functions": [
+        "COM-01",
+        "COM-02",
+        "COM-04"
+      ],
+      "file": "screens/communities/comm-02-tong-quan-cong-dong.md"
+    },
+    {
+      "id": "COMM-03",
+      "route": "/loi-moi/:code",
+      "title": "Mời và tham gia cộng đồng",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "COM-02"
+      ],
+      "file": "screens/communities/comm-03-moi-va-tham-gia.md"
+    },
+    {
+      "id": "COMM-04",
+      "route": "/cong-dong/:id/vai-tro",
+      "title": "Vai trò và quyền",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Chủ sở hữu",
+        "Điều hành viên"
+      ],
+      "functions": [
+        "COM-03"
+      ],
+      "file": "screens/communities/comm-04-vai-tro-va-quyen.md"
+    },
+    {
+      "id": "COMM-05",
+      "route": "/cong-dong/:id/kenh",
+      "title": "Quản lý kênh",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Điều hành viên"
+      ],
+      "functions": [
+        "COM-04"
+      ],
+      "file": "screens/communities/comm-05-quan-ly-kenh.md"
+    },
+    {
+      "id": "COMM-06",
+      "route": "/cong-dong/:id/thanh-vien",
+      "title": "Điều hành thành viên",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Điều hành viên"
+      ],
+      "functions": [
+        "COM-05"
+      ],
+      "file": "screens/communities/comm-06-dieu-hanh-thanh-vien.md"
+    },
+    {
+      "id": "COMM-07",
+      "route": "/cong-dong/:id/kenh/:channelId",
+      "title": "Kênh văn bản",
+      "group": "Cộng đồng",
+      "priority": "P1",
+      "roles": [
+        "Thành viên"
+      ],
+      "functions": [
+        "COM-04",
+        "CHT-02",
+        "CHT-07"
+      ],
+      "file": "screens/communities/comm-07-kenh-van-ban.md"
+    },
+    {
+      "id": "CHAT-01",
+      "route": "/tin-nhan",
+      "title": "Danh sách hội thoại",
+      "group": "Trò chuyện",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "CHT-01",
+        "CHT-08"
+      ],
+      "file": "screens/chat/chat-01-danh-sach-hoi-thoai.md"
+    },
+    {
+      "id": "CHAT-02",
+      "route": "/tin-nhan/:id",
+      "title": "Hội thoại",
+      "group": "Trò chuyện",
+      "priority": "P0",
+      "roles": [
+        "Thành viên hội thoại"
+      ],
+      "functions": [
+        "CHT-02",
+        "CHT-03",
+        "CHT-04",
+        "CHT-05",
+        "CHT-06",
+        "CHT-07",
+        "AI-05"
+      ],
+      "file": "screens/chat/chat-02-hoi-thoai.md"
+    },
+    {
+      "id": "CHAT-03",
+      "route": "/tin-nhan/moi",
+      "title": "Tạo hội thoại",
+      "group": "Trò chuyện",
+      "priority": "P0",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "CHT-01"
+      ],
+      "file": "screens/chat/chat-03-tao-hoi-thoai.md"
+    },
+    {
+      "id": "CHAT-04",
+      "route": "/tin-nhan/:id/thiet-lap",
+      "title": "Thiết lập hội thoại",
+      "group": "Trò chuyện",
+      "priority": "P0",
+      "roles": [
+        "Thành viên",
+        "Quản trị nhóm"
+      ],
+      "functions": [
+        "CHT-01",
+        "CHT-03"
+      ],
+      "file": "screens/chat/chat-04-thiet-lap-hoi-thoai.md"
+    },
+    {
+      "id": "RTC-01",
+      "route": "/cuoc-goi/:id",
+      "title": "Lời mời cuộc gọi",
+      "group": "RTC",
+      "priority": "P1",
+      "roles": [
+        "Người dùng",
+        "Thành viên"
+      ],
+      "functions": [
+        "CHT-09",
+        "RTC-01"
+      ],
+      "file": "screens/rtc/rtc-01-loi-moi-cuoc-goi.md"
+    },
+    {
+      "id": "RTC-02",
+      "route": "/cong-dong/:id/phong/:roomId",
+      "title": "Phòng thoại và video",
+      "group": "RTC",
+      "priority": "P1",
+      "roles": [
+        "Thành viên"
+      ],
+      "functions": [
+        "RTC-01",
+        "RTC-02"
+      ],
+      "file": "screens/rtc/rtc-02-phong-thoai-video.md"
+    },
+    {
+      "id": "RTC-03",
+      "route": "/cong-dong/:id/phong/:roomId/chia-se",
+      "title": "Chia sẻ màn hình",
+      "group": "RTC",
+      "priority": "P1",
+      "roles": [
+        "Thành viên có quyền"
+      ],
+      "functions": [
+        "RTC-03"
+      ],
+      "file": "screens/rtc/rtc-03-chia-se-man-hinh.md"
+    },
+    {
+      "id": "MEDIA-01",
+      "route": "/phuong-tien/tai-len",
+      "title": "Tải phương tiện",
+      "group": "Phương tiện",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "MED-01",
+        "MED-02",
+        "MED-03",
+        "MED-04"
+      ],
+      "file": "screens/media/media-01-tai-phuong-tien.md"
+    },
+    {
+      "id": "MKT-01",
+      "route": "/cho",
+      "title": "Chợ",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Khách theo chính sách",
+        "Người dùng"
+      ],
+      "functions": [
+        "MKT-02"
+      ],
+      "file": "screens/marketplace/mkt-01-cho.md"
+    },
+    {
+      "id": "MKT-02",
+      "route": "/cho/tin/:id",
+      "title": "Chi tiết tin đăng",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Người mua",
+        "Khách theo chính sách"
+      ],
+      "functions": [
+        "MKT-02",
+        "MKT-07"
+      ],
+      "file": "screens/marketplace/mkt-02-chi-tiet-tin-dang.md"
+    },
+    {
+      "id": "MKT-03",
+      "route": "/cho/tin/moi",
+      "title": "Tạo hoặc sửa tin đăng",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Người bán"
+      ],
+      "functions": [
+        "MKT-01",
+        "MKT-03",
+        "MKT-07"
+      ],
+      "file": "screens/marketplace/mkt-03-tao-sua-tin-dang.md"
+    },
+    {
+      "id": "MKT-04",
+      "route": "/cho/thanh-toan",
+      "title": "Xác nhận đơn hàng",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Người mua"
+      ],
+      "functions": [
+        "MKT-03",
+        "MKT-04"
+      ],
+      "file": "screens/marketplace/mkt-04-thanh-toan.md"
+    },
+    {
+      "id": "MKT-05",
+      "route": "/cho/don/:id/thanh-toan",
+      "title": "Thanh toán trực tiếp với người bán",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Người mua"
+      ],
+      "functions": [
+        "MKT-05"
+      ],
+      "file": "screens/marketplace/mkt-05-thanh-toan-truc-tiep.md"
+    },
+    {
+      "id": "MKT-06",
+      "route": "/cho/don-hang",
+      "title": "Đơn hàng",
+      "group": "Thương mại",
+      "priority": "P2",
+      "roles": [
+        "Người mua",
+        "Người bán"
+      ],
+      "functions": [
+        "MKT-06"
+      ],
+      "file": "screens/marketplace/mkt-06-don-hang.md"
+    },
+    {
+      "id": "AI-01",
+      "route": "/tro-ly",
+      "title": "Trợ lý AI",
+      "group": "AI",
+      "priority": "P2",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "AI-03"
+      ],
+      "file": "screens/ai/ai-01-tro-ly-ai.md"
+    },
+    {
+      "id": "AI-02",
+      "route": "/tro-ly/tom-tat",
+      "title": "Tóm tắt hội thoại hoặc kênh",
+      "group": "AI",
+      "priority": "P2",
+      "roles": [
+        "Thành viên có quyền"
+      ],
+      "functions": [
+        "AI-04"
+      ],
+      "file": "screens/ai/ai-02-tom-tat.md"
+    },
+    {
+      "id": "MOD-01",
+      "route": "hộp thoại",
+      "title": "Báo cáo nội dung",
+      "group": "Điều hành",
+      "priority": "P1",
+      "roles": [
+        "Người dùng"
+      ],
+      "functions": [
+        "MOD-01"
+      ],
+      "file": "screens/moderation/mod-01-bao-cao-noi-dung.md"
+    },
+    {
+      "id": "MOD-02",
+      "route": "/dieu-hanh/bao-cao",
+      "title": "Hàng đợi điều hành",
+      "group": "Điều hành",
+      "priority": "P1",
+      "roles": [
+        "Điều hành viên",
+        "Quản trị viên"
+      ],
+      "functions": [
+        "MOD-02"
+      ],
+      "file": "screens/moderation/mod-02-hang-doi-dieu-hanh.md"
+    },
+    {
+      "id": "MOD-03",
+      "route": "/dieu-hanh/bao-cao/:id",
+      "title": "Chi tiết điều hành",
+      "group": "Điều hành",
+      "priority": "P1",
+      "roles": [
+        "Điều hành viên",
+        "Quản trị viên"
+      ],
+      "functions": [
+        "MOD-03",
+        "MOD-04"
+      ],
+      "file": "screens/moderation/mod-03-chi-tiet-dieu-hanh.md"
+    },
+    {
+      "id": "SYS-01",
+      "route": "toàn ứng dụng",
+      "title": "Trạng thái tải, rỗng, lỗi và ngoại tuyến",
+      "group": "Hệ thống",
+      "priority": "P0",
+      "roles": [
+        "Mọi vai trò"
+      ],
+      "functions": [
+        "NFR",
+        "FAILURE"
+      ],
+      "file": "screens/system/sys-01-trang-thai-he-thong.md"
+    }
+  ]
+}

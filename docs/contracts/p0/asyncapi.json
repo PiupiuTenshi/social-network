@@ -1,0 +1,32 @@
+{
+  "asyncapi": "2.6.0",
+  "info": {"title": "TwightLight P0 durable events", "version": "1.0.0-p0"},
+  "defaultContentType": "application/json",
+  "channels": {
+    "account.user.v1": {"description": "Partition key: userId", "publish": {"message": {"oneOf": [{"$ref": "#/components/messages/UserPrivacySettingsChanged"}, {"$ref": "#/components/messages/UserBlocked"}, {"$ref": "#/components/messages/UserUnblocked"}]}}},
+    "feed.post.v1": {"description": "Partition key: postId", "publish": {"message": {"$ref": "#/components/messages/PostCreated"}}},
+    "chat.message.v1": {"description": "Partition key: conversationId", "publish": {"message": {"$ref": "#/components/messages/MessageEdited"}}},
+    "community.lifecycle.v1": {"description": "Partition key: communityId; channelId remains event data", "publish": {"message": {"$ref": "#/components/messages/ChannelCreated"}}},
+    "social.moderation.v1": {"description": "P1 reference only, disabled by default. Partition key: reportId; targetId is data.", "publish": {"message": {"$ref": "#/components/messages/ModerationReportOpened"}}}
+  },
+  "components": {
+    "messages": {
+      "UserPrivacySettingsChanged": {"name": "UserPrivacySettingsChanged", "x-partition-key": "userId", "payload": {"$ref": "#/components/schemas/PrivacyEvent"}},
+      "UserBlocked": {"name": "UserBlocked", "x-partition-key": "userId", "payload": {"$ref": "#/components/schemas/BlockEvent"}},
+      "UserUnblocked": {"name": "UserUnblocked", "x-partition-key": "userId", "payload": {"$ref": "#/components/schemas/BlockEvent"}},
+      "PostCreated": {"name": "PostCreated", "x-partition-key": "postId", "payload": {"$ref": "#/components/schemas/PostEvent"}},
+      "MessageEdited": {"name": "MessageEdited", "x-partition-key": "conversationId", "x-signalr-projection": "MessageUpdated", "payload": {"$ref": "#/components/schemas/MessageEvent"}},
+      "ChannelCreated": {"name": "ChannelCreated", "x-partition-key": "communityId", "payload": {"$ref": "#/components/schemas/ChannelEvent"}},
+      "ModerationReportOpened": {"name": "ModerationReportOpened", "x-partition-key": "reportId", "x-tier": "P1-reference-disabled", "payload": {"$ref": "#/components/schemas/ModerationEvent"}}
+    },
+    "schemas": {
+      "EventEnvelope": {"type": "object", "required": ["eventId", "eventType", "eventVersion", "occurredAt", "producer", "correlationId", "aggregateId", "aggregateVersion", "scope", "data"], "properties": {"eventId": {"type": "string"}, "eventType": {"type": "string"}, "eventVersion": {"type": "integer", "minimum": 1}, "occurredAt": {"type": "string", "format": "date-time"}, "producer": {"type": "string"}, "correlationId": {"type": "string"}, "causationId": {"type": "string"}, "aggregateId": {"type": "string"}, "aggregateVersion": {"type": "integer", "minimum": 1}, "actor": {"type": "object", "required": ["subjectId", "kind"], "properties": {"subjectId": {"type": "string"}, "kind": {"enum": ["user", "service", "federated-peer"]}}}, "scope": {"type": "object", "required": ["visibility", "policyVersion"], "properties": {"visibility": {"enum": ["public", "followers", "private", "participant"]}, "policyVersion": {"type": "integer", "minimum": 1}}}, "replay": {"type": "object", "required": ["runId", "requestedBy", "originalOccurredAt"], "properties": {"runId": {"type": "string"}, "requestedBy": {"type": "string"}, "originalOccurredAt": {"type": "string", "format": "date-time"}}}, "data": {"type": "object"}}},
+      "PrivacyEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["userId", "policyVersion"], "properties": {"userId": {"type": "string"}, "policyVersion": {"type": "integer"}}}}}]},
+      "BlockEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["userId", "blockedUserId"], "properties": {"userId": {"type": "string"}, "blockedUserId": {"type": "string"}}}}}]},
+      "PostEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["postId", "authorId", "content"], "properties": {"postId": {"type": "string"}, "authorId": {"type": "string"}, "content": {"type": "string"}}}}}]},
+      "MessageEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["messageId", "conversationId", "content"], "properties": {"messageId": {"type": "string"}, "conversationId": {"type": "string"}, "content": {"type": "string"}}}}}]},
+      "ChannelEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["communityId", "channelId", "name"], "properties": {"communityId": {"type": "string"}, "channelId": {"type": "string"}, "name": {"type": "string"}}}}}]},
+      "ModerationEvent": {"allOf": [{"$ref": "#/components/schemas/EventEnvelope"}, {"type": "object", "properties": {"data": {"type": "object", "required": ["reportId", "targetId"], "properties": {"reportId": {"type": "string"}, "targetId": {"type": "string"}}}}}]}
+    }
+  }
+}

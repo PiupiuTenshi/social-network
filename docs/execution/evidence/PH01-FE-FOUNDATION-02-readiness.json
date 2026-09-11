@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "kind": "readiness",
+  "task_id": "PH01-FE-FOUNDATION-02",
+  "task_fingerprint": "b7e988d3faebeec27ee85607f8bfd5df1ee6504c0deffead4b3409789feeb275",
+  "actor": "Codex under project owner delegation",
+  "recorded_at": "2026-09-11T04:43:03.125774+00:00",
+  "environment": "Windows PowerShell; Node v22.19.0; npm 11.6.0; Angular 21 locked workspace",
+  "baseline": "PH01-FE-FOUNDATION-01 DONE; ADR-0014 accepted; P0 OpenAPI refresh contract validated.",
+  "checks": {
+    "DOR01": {
+      "passed": true,
+      "detail": "Scope and AC01/AC02 are concrete: client adapters only, with no backend authorization implementation.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md"
+      ]
+    },
+    "DOR02": {
+      "passed": true,
+      "detail": "Foundation receipt, ADR-0014, P0 OpenAPI/fixtures and realtime catalog provide the locked inputs.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+        "docs/adr/0014-browser-refresh-cookie-policy.md",
+        "docs/contracts/p0/openapi.json",
+        "docs/contracts/p0/fixtures.json",
+        "docs/reference/SIGNALR_CATALOG.md"
+      ]
+    },
+    "DOR03": {
+      "passed": true,
+      "detail": "Memory-only token storage, cookie refresh, terminal reuse, idempotency, cancellation and transport separation are explicit.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md"
+      ]
+    },
+    "DOR04": {
+      "passed": true,
+      "detail": "PH01-FE-FOUNDATION-01 is DONE and current evidence is present.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+        "docs/adr/0014-browser-refresh-cookie-policy.md",
+        "docs/contracts/p0/openapi.json",
+        "docs/contracts/p0/fixtures.json",
+        "docs/reference/SIGNALR_CATALOG.md"
+      ]
+    },
+    "DOR05": {
+      "passed": true,
+      "detail": "Actual generator, adapter harness, typecheck, formatting and build commands are identified.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md"
+      ]
+    },
+    "DOR06": {
+      "passed": true,
+      "detail": "No migration applies; client changes have no persistent schema or destructive operation.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md"
+      ]
+    },
+    "DOR07": {
+      "passed": true,
+      "detail": "Project owner authorized implementation; stop if contract, dependency, verification or scope changes.",
+      "artifacts": [
+        "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md",
+      "sha256": "f85c1497799bab4ad9991be65cc597ced16965b82b0c68f9c77d10fdb239cf7d"
+    },
+    {
+      "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+      "sha256": "f09c6c84b575178b2f577898330b07ee5cedd8e6de80eded025edf5f6f5f878a"
+    },
+    {
+      "path": "docs/adr/0014-browser-refresh-cookie-policy.md",
+      "sha256": "713a0017bacee27f7e8b8829ee6661ae7a4df16666b178585177f7c4820cd85c"
+    },
+    {
+      "path": "docs/contracts/p0/openapi.json",
+      "sha256": "82e5863cf2d487049bef361402b8c57f4fba50865828084ad9ea929a4c5337e5"
+    },
+    {
+      "path": "docs/contracts/p0/fixtures.json",
+      "sha256": "e3c3a3d61c7b5c5f2295766f6b9bc909905b20b8f2ea47becdf2b63d524c41cf"
+    },
+    {
+      "path": "docs/reference/SIGNALR_CATALOG.md",
+      "sha256": "727cd4e5ae85d63e08df87415885ccd03373f9870e2326716c7690b2c73047ff"
+    }
+  ]
+}

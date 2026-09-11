@@ -1,0 +1,49 @@
+@import '../../design/tokens/tokens.generated.css';
+
+:root {
+  --color-background: var(--sp-theme-background);
+  --color-surface: var(--sp-theme-surface);
+  --color-surface-subtle: var(--sp-theme-surface-subtle);
+  --color-text: var(--sp-theme-text);
+  --color-text-muted: var(--sp-theme-text-muted);
+  --color-border: var(--sp-theme-border);
+  --color-brand: var(--sp-color-brand-500);
+  --color-focus: var(--sp-theme-focus);
+  --color-success: var(--sp-color-semantic-success);
+  --color-danger: var(--sp-color-semantic-danger);
+  --radius-sm: var(--sp-radius-sm);
+  --radius-md: var(--sp-radius-md);
+  color-scheme: light;
+  font-family: var(--sp-font-family-sans);
+}
+
+app-shell[data-theme='dark'] {
+  --color-background: var(--sp-theme-background);
+  --color-surface: var(--sp-theme-surface);
+  --color-surface-subtle: var(--sp-theme-surface-subtle);
+  --color-text: var(--sp-theme-text);
+  --color-text-muted: var(--sp-theme-text-muted);
+  --color-border: var(--sp-theme-border);
+  --color-brand: var(--sp-color-brand-500);
+  --color-focus: var(--sp-theme-focus);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  min-inline-size: 20rem;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  color: var(--color-brand);
+}

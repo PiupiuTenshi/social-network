@@ -1,0 +1,67 @@
+{
+    "version":  1,
+    "kind":  "readiness",
+    "task_id":  "PH01-FE-FOUNDATION-01",
+    "task_fingerprint":  "97f0a3cfe2dc4e37608f0b603b45a07bef7d22a2958eab38538ce6ca0538cd28",
+    "actor":  "Codex",
+    "recorded_at":  "2026-09-09T00:00:00+07:00",
+    "environment":  "Windows PowerShell; Node v22.19.0; npm 11.6.0 via npm.cmd",
+    "baseline":  "working-tree snapshot before Git initialization; no remote or branch",
+    "checks":  {
+                   "DOR01":  {
+                                 "passed":  true,
+                                 "detail":  "Má»¥c tiÃªu, trong/ngoÃ i pháº¡m vi vÃ  acceptance Ä‘Ã£ rÃµ",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR02":  {
+                                 "passed":  true,
+                                 "detail":  "Nguá»“n, ownership, há»£p Ä‘á»“ng vÃ  quyáº¿t Ä‘á»‹nh cháº·n Ä‘Ã£ khÃ³a cho pháº¡m vi",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR03":  {
+                                 "passed":  true,
+                                 "detail":  "PhÃ¢n quyá»n, PII, concurrency/idempotency vÃ  failure modes Ä‘Ã£ xÃ©t",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR04":  {
+                                 "passed":  true,
+                                 "detail":  "Phá»¥ thuá»™c vÃ  Ä‘áº§u vÃ o bÃ n giao Ä‘Ã£ cÃ³ trÃªn baseline lÃ m viá»‡c",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR05":  {
+                                 "passed":  true,
+                                 "detail":  "Lá»‡nh kiá»ƒm chá»©ng vÃ  mÃ´i trÆ°á»ng tháº­t Ä‘Ã£ xÃ¡c Ä‘á»‹nh",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR06":  {
+                                 "passed":  true,
+                                 "detail":  "Migration/rollback hoáº·c lÃ½ do khÃ´ng Ã¡p dá»¥ng Ä‘Æ°á»£c review",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR07":  {
+                                 "passed":  true,
+                                 "detail":  "NgÆ°á»i thá»±c hiá»‡n, pháº¡m vi quyá»n vÃ  Ä‘iá»u kiá»‡n dá»«ng Ä‘Ã£ xÃ¡c Ä‘á»‹nh",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md"
+                                               ]
+                             }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md",
+                          "sha256":  "9576791a0f97466cfe4b23e75efaa026987efe5ec0e9b7fd06a4f8a67d0e2dfa"
+                      }
+                  ]
+}

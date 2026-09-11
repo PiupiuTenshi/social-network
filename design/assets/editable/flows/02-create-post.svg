@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id='title'>Luồng tạo bài viết</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="900" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="110" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="56" y="54" font-size="30" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Luồng tạo bài viết</text>
+<text x="56" y="84" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.92">Media, Idempotency-Key, Outbox/Kafka và bản chiếu bảng tin</text>
+<rect x="60" y="210" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="165.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Composer</text>
+<text x="78" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Nội dung + quyền + media</text>
+<rect x="340" y="210" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="445.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Tải media</text>
+<text x="358" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">URL ký trước, xác minh</text>
+<rect x="620" y="210" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="725.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">POST bài viết</text>
+<text x="638" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Idempotency-Key</text>
+<rect x="900" y="210" width="210" height="120" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1005.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Giao dịch DB</text>
+<text x="918" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Post + MediaRef + Outbox</text>
+<rect x="1180" y="210" width="210" height="120" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1285.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Feed projection</text>
+<text x="1198" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Consumer xử lý lặp</text>
+<rect x="620" y="470" width="210" height="120" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" rx="16" opacity="1"/>
+<text x="725.0" y="504" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Video processing</text>
+<text x="638" y="530" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">visibility=processing</text>
+<rect x="900" y="470" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1005.0" y="504" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">MediaReady</text>
+<text x="918" y="530" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Hoặc MediaFailed</text>
+<rect x="1180" y="470" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="1285.0" y="504" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Xuất bản</text>
+<text x="1198" y="530" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">PostUpdated -&gt; Feed</text>
+<line x1="270" y1="270" x2="340" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="340,270 331.5567207449798,275.35826794979 331.5567207449798,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="550" y1="270" x2="620" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="620,270 611.5567207449799,275.35826794979 611.5567207449799,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="830" y1="270" x2="900" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="900,270 891.5567207449799,275.35826794979 891.5567207449799,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1110" y1="270" x2="1180" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1180,270 1171.5567207449799,275.35826794979 1171.5567207449799,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="725" y1="330" x2="725" y2="470" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="725,470 719.6417320502101,461.5567207449798 730.3582679497899,461.5567207449798" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="830" y1="530" x2="900" y2="530" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="900,530 891.5567207449799,535.3582679497899 891.5567207449799,524.6417320502101" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1110" y1="530" x2="1180" y2="530" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1180,530 1171.5567207449799,535.3582679497899 1171.5567207449799,524.6417320502101" fill="#64748B" stroke="none" stroke-width="1"/>
+<text x="60" y="730" font-size="16" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Lỗi cần thể hiện</text>
+<text x="60" y="762" font-size="13" font-weight="600" fill="#64748B" text-anchor="start" opacity="1">422 dữ liệu/media sai · 409 cùng khóa khác nội dung · 503 tạm thời · Kafka down không làm mất Post đã ghi</text>
+</svg>

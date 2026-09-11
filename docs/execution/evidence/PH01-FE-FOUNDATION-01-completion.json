@@ -1,0 +1,137 @@
+{
+    "version":  1,
+    "kind":  "completion",
+    "task_id":  "PH01-FE-FOUNDATION-01",
+    "task_fingerprint":  "97f0a3cfe2dc4e37608f0b603b45a07bef7d22a2958eab38538ce6ca0538cd28",
+    "actor":  "Codex",
+    "recorded_at":  "2026-09-11T02:32:33.8983913+07:00",
+    "environment":  "Windows PowerShell; Node v22.19.0; npm 11.6.0; Angular workspace from package-lock.json.",
+    "baseline":  "Local working tree after G0-01 reacceptance; no Git, remote, production, or deployment operation.",
+    "checks":  {
+                   "AC01":  {
+                                "passed":  true,
+                                "detail":  "Locked Angular workspace builds with a standalone responsive shell, safe route fallback, client-only feature flags and P2 Marketplace disabled.",
+                                "artifacts":  [
+                                                  "frontend/package.json",
+                                                  "frontend/package-lock.json",
+                                                  "frontend/src/styles.scss",
+                                                  "design/tokens/tokens.generated.css",
+                                                  "frontend/src/app/app.routes.ts",
+                                                  "frontend/src/app/core/feature-flags.ts",
+                                                  "frontend/src/app/core/feature-enabled.guard.ts",
+                                                  "frontend/src/app/shell/shell.component.ts",
+                                                  "frontend/src/app/shell/shell.component.html",
+                                                  "frontend/src/app/shell/shell.component.scss",
+                                                  "frontend/src/app/shell/welcome-page.component.ts",
+                                                  "frontend/scripts/verify-foundation.mjs",
+                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                                              ]
+                            },
+                   "AC02":  {
+                                "passed":  true,
+                                "detail":  "Foundation harness verifies skip navigation, focus, token-based 44px targets, desktop/mobile CSS, reduced motion, safe routes, feature flags and light/dark contrast.",
+                                "artifacts":  [
+                                                  "design/tokens/tokens.generated.css",
+                                                  "design/sources/11-state-matrix.md",
+                                                  "frontend/src/styles.scss",
+                                                  "frontend/src/app/shell/shell.component.html",
+                                                  "frontend/src/app/shell/shell.component.scss",
+                                                  "frontend/scripts/verify-foundation.mjs",
+                                                  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                                              ]
+                            }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md",
+                          "sha256":  "2daf49dc42f909ed46b5d8ab08e0aa21463ed8c2fbe26293b4e6add1044e7c96"
+                      },
+                      {
+                          "path":  "frontend/package.json",
+                          "sha256":  "dbf8209daf72778bfb4cb198893bd0f848517655fe29b386b7be47dcd094a616"
+                      },
+                      {
+                          "path":  "frontend/package-lock.json",
+                          "sha256":  "494f0ee4b5c93c9cc15e84efc89c4af26af418429d961913cc96108e030c746d"
+                      },
+                      {
+                          "path":  "frontend/src/styles.scss",
+                          "sha256":  "8aed361f38624fb17014d388d2bb4d20ed208b62e18253535112fe86c403ca2a"
+                      },
+                      {
+                          "path":  "design/tokens/tokens.generated.css",
+                          "sha256":  "c75fc5ccf11c53d37d838f097a0ccff604a6a668b642885e541438f42de69496"
+                      },
+                      {
+                          "path":  "design/sources/11-state-matrix.md",
+                          "sha256":  "8a2bd8246bba6975ffde35e299d83c826d0bce8e562c0b169341793b4721c29c"
+                      },
+                      {
+                          "path":  "frontend/src/app/app.config.ts",
+                          "sha256":  "68ebf281ebcbc5cb59c85c72ab518be493fefa22c875995b40568f08a54358b8"
+                      },
+                      {
+                          "path":  "frontend/src/app/app.routes.ts",
+                          "sha256":  "df0f3f74a395240d5decb57cc8dc23d70e7a84893a8cce9910f28a714038de42"
+                      },
+                      {
+                          "path":  "frontend/src/app/core/feature-flags.ts",
+                          "sha256":  "7d71d3c573ea7dde2d5949bba9b43d1b82ced12ff0a67e7f0714497cfd6843f1"
+                      },
+                      {
+                          "path":  "frontend/src/app/core/feature-enabled.guard.ts",
+                          "sha256":  "a793073f23c5d6cee2a526e37e1f5b8b77f2dd00bbfd19bfdc3161fe8c2b0c5d"
+                      },
+                      {
+                          "path":  "frontend/src/app/core/shell-state.service.ts",
+                          "sha256":  "b9d0d24c515b4882a110d77b7d2cfbafc936365afa7338c7bb1d46e087fb1e80"
+                      },
+                      {
+                          "path":  "frontend/src/app/shell/shell.component.ts",
+                          "sha256":  "d9234b35eca1e1441c31b69e5c8ef05faed4e5650f522fb91b3dc0f4d1665b98"
+                      },
+                      {
+                          "path":  "frontend/src/app/shell/shell.component.html",
+                          "sha256":  "e2a7a58072d1281121dded6bc5e6c029b13a8f4e129a6ecc281cd7e987cc043d"
+                      },
+                      {
+                          "path":  "frontend/src/app/shell/shell.component.scss",
+                          "sha256":  "3a3dab80a77258d65730de3abd4cdecf8001892d21a2f59e5ff77cac5ad2ad98"
+                      },
+                      {
+                          "path":  "frontend/src/app/shell/welcome-page.component.ts",
+                          "sha256":  "f71545e97aaffb627174fefd2ab1bf8c61f011585dfb073e5653c813d3718d4b"
+                      },
+                      {
+                          "path":  "frontend/scripts/verify-foundation.mjs",
+                          "sha256":  "f51cc65c24b75fff696b7b2ad2d1dc8a37fbb767aede1cae1af9381bb233b5ff"
+                      }
+                  ],
+    "commands":  [
+                     {
+                         "command":  "npm.cmd --prefix frontend ci",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                     },
+                     {
+                         "command":  "npm.cmd --prefix frontend run typecheck",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                     },
+                     {
+                         "command":  "npm.cmd --prefix frontend run lint",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                     },
+                     {
+                         "command":  "npm.cmd --prefix frontend run test:foundation",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                     },
+                     {
+                         "command":  "npm.cmd --prefix frontend run build",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion-report.md"
+                     }
+                 ]
+}

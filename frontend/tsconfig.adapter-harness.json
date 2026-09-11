@@ -1,0 +1,18 @@
+﻿{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "types": [],
+    "outDir": ".adapter-harness"
+  },
+  "include": [
+    "tests/adapter-harness.ts",
+    "src/app/core/api/p0-contract.types.ts",
+    "src/app/core/auth/**/*.ts",
+    "src/app/core/http/**/*.ts",
+    "src/app/core/realtime/**/*.ts"
+  ]
+}

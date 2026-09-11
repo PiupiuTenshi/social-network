@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "kind": "readiness",
+  "task_id": "G0-01",
+  "task_fingerprint": "85e4e8247d271ef9ddd972ac126d982edf1d9da17b079703bc1d6fbcf3590387",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T04:24:29.439006+00:00",
+  "environment": "Windows PowerShell; Python UTF-8; .NET SDK 10.0.204/runtime 10.0.8; Node 22.19.0/npm 11.6.0; Docker client without a reachable daemon",
+  "baseline": "Current accepted PH00 receipts, including ADR-0014 browser refresh policy and revalidated Toolchain receipt.",
+  "checks": {
+    "DOR01": {
+      "passed": true,
+      "detail": "The G0 decision, exclusions, AC01/AC02 and stop conditions are explicit in the readiness report.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR02": {
+      "passed": true,
+      "detail": "ADR-0011 and ADR-0012, accepted contracts and the P0 blueprint lock the G0 inputs.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR03": {
+      "passed": true,
+      "detail": "P0 error, ETag, idempotency, actor/scope and fail-closed privacy rules are accepted in the reviewed contracts.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR04": {
+      "passed": true,
+      "detail": "All four PH00 predecessor tasks are DONE and their reviewed reports are present on this baseline.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR05": {
+      "passed": true,
+      "detail": "Contract/data validators, task gate validation, document validation and actual toolchain build/harness commands are known and executed.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR06": {
+      "passed": true,
+      "detail": "The only migration is InitialEmpty, applied to a disposable SQLite database; no destructive or production migration is in scope.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    },
+    "DOR07": {
+      "passed": true,
+      "detail": "The executor may write G0 evidence only; Git, remote, production and product-feature operations remain excluded.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-readiness-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/G0-01-readiness-report.md",
+      "sha256": "90d13847bdae24398e5aa7ba1ed4709a2382828a02b9a4774926e9376f9ab988"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+version: 3
+updatedAt: '2026-09-07T08:30:00Z'
+status: approved_for_frontend
+screens:
+  AUTH-01:
+    status: approved
+    required: true
+    note: ''
+  AUTH-02:
+    status: approved
+    required: true
+    note: ''
+  AUTH-03:
+    status: approved
+    required: true
+    note: ''
+  AUTH-04:
+    status: approved
+    required: true
+    note: ''
+  AUTH-05:
+    status: approved
+    required: true
+    note: ''
+  FEED-01:
+    status: approved
+    required: true
+    note: ''
+  FEED-02:
+    status: approved
+    required: true
+    note: ''
+  FEED-03:
+    status: approved
+    required: true
+    note: ''
+  FEED-04:
+    status: approved
+    required: true
+    note: ''
+  FEED-05:
+    status: approved
+    required: true
+    note: ''
+  PROF-01:
+    status: approved
+    required: true
+    note: ''
+  PROF-02:
+    status: approved
+    required: true
+    note: ''
+  PROF-03:
+    status: approved
+    required: true
+    note: ''
+  PROF-04:
+    status: approved
+    required: true
+    note: ''
+  SET-01:
+    status: approved
+    required: true
+    note: ''
+  SET-02:
+    status: approved
+    required: true
+    note: ''
+  SET-03:
+    status: approved
+    required: true
+    note: ''
+  SET-04:
+    status: approved
+    required: true
+    note: ''
+  DISC-01:
+    status: approved
+    required: false
+    note: ''
+  NOTI-01:
+    status: approved
+    required: true
+    note: ''
+  COMM-01:
+    status: approved
+    required: true
+    note: ''
+  COMM-02:
+    status: approved
+    required: true
+    note: ''
+  COMM-03:
+    status: approved
+    required: true
+    note: ''
+  COMM-04:
+    status: approved
+    required: true
+    note: ''
+  COMM-05:
+    status: approved
+    required: true
+    note: ''
+  COMM-06:
+    status: approved
+    required: true
+    note: ''
+  COMM-07:
+    status: approved
+    required: true
+    note: ''
+  CHAT-01:
+    status: approved
+    required: true
+    note: ''
+  CHAT-02:
+    status: approved
+    required: true
+    note: ''
+  CHAT-03:
+    status: approved
+    required: true
+    note: ''
+  CHAT-04:
+    status: approved
+    required: true
+    note: ''
+  RTC-01:
+    status: approved
+    required: true
+    note: ''
+  RTC-02:
+    status: approved
+    required: true
+    note: ''
+  RTC-03:
+    status: approved
+    required: true
+    note: ''
+  MEDIA-01:
+    status: approved
+    required: true
+    note: ''
+  MKT-01:
+    status: approved
+    required: false
+    note: ''
+  MKT-02:
+    status: approved
+    required: false
+    note: ''
+  MKT-03:
+    status: approved
+    required: false
+    note: ''
+  MKT-04:
+    status: approved
+    required: false
+    note: ''
+  MKT-05:
+    status: approved
+    required: false
+    note: ''
+  MKT-06:
+    status: approved
+    required: false
+    note: ''
+  AI-01:
+    status: approved
+    required: false
+    note: ''
+  AI-02:
+    status: approved
+    required: false
+    note: ''
+  MOD-01:
+    status: approved
+    required: true
+    note: ''
+  MOD-02:
+    status: approved
+    required: true
+    note: ''
+  MOD-03:
+    status: approved
+    required: true
+    note: ''
+  SYS-01:
+    status: approved
+    required: true
+    note: ''
+shared:
+  sources: approved
+  tokens: approved
+  flows: approved
+  boards: approved

@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id='title'>Ma trận trạng thái</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="1100" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="120" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="64" y="62" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Ma trận trạng thái</text>
+<text x="64" y="94" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.9">Loading, empty, error, offline, forbidden, rate limit và stale version</text>
+<rect x="64" y="170" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="118" cy="224" r="24" fill="#F1F5F9" stroke="none" stroke-width="1" opacity="1"/>
+<rect x="158" y="208" width="220" height="12" fill="#F1F5F9" stroke="none" stroke-width="0" rx="6.0" opacity="1"/>
+<rect x="158" y="232" width="140" height="10" fill="#F1F5F9" stroke="none" stroke-width="0" rx="5.0" opacity="1"/>
+<rect x="94" y="276" width="360" height="12" fill="#F1F5F9" stroke="none" stroke-width="0" rx="6.0" opacity="1"/>
+<rect x="94" y="304" width="330" height="12" fill="#F1F5F9" stroke="none" stroke-width="0" rx="6.0" opacity="1"/>
+<rect x="94" y="332" width="300" height="12" fill="#F1F5F9" stroke="none" stroke-width="0" rx="6.0" opacity="1"/>
+<rect x="94" y="360" width="270" height="12" fill="#F1F5F9" stroke="none" stroke-width="0" rx="6.0" opacity="1"/>
+<rect x="564" y="170" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="789" cy="236" r="34" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="789" y="248" font-size="28" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">○</text>
+<text x="789" y="298" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Rỗng</text>
+<text x="620" y="332" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Giải thích và CTA phù hợp.</text>
+<rect x="709" y="374" width="160" height="34" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="10" opacity="1"/>
+<text x="789.0" y="396.0" font-size="14" font-weight="600" fill="#0F172A" text-anchor="middle" opacity="1">Quay lại</text>
+<rect x="1064" y="170" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="1289" cy="236" r="34" fill="#FFF7ED" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1289" y="248" font-size="28" font-weight="700" fill="#B91C1C" text-anchor="middle" opacity="1">!</text>
+<text x="1289" y="298" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Lỗi có thể thử lại</text>
+<text x="1120" y="332" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Giữ dữ liệu nhập.</text>
+<rect x="1209" y="374" width="160" height="34" fill="#5B4AD1" stroke="#5B4AD1" stroke-width="1" rx="10" opacity="1"/>
+<text x="1289.0" y="396.0" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="1">Thử lại</text>
+<rect x="64" y="460" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="289" cy="526" r="34" fill="#FFF7ED" stroke="none" stroke-width="1" opacity="1"/>
+<text x="289" y="538" font-size="28" font-weight="700" fill="#B45309" text-anchor="middle" opacity="1">⌁</text>
+<text x="289" y="588" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Ngoại tuyến</text>
+<text x="120" y="622" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Nêu chức năng còn dùng được.</text>
+<rect x="209" y="664" width="160" height="34" fill="#5B4AD1" stroke="#5B4AD1" stroke-width="1" rx="10" opacity="1"/>
+<text x="289.0" y="686.0" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="1">Thử lại</text>
+<rect x="564" y="460" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="789" cy="526" r="34" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="789" y="538" font-size="28" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">⊘</text>
+<text x="789" y="588" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Không có quyền</text>
+<text x="620" y="622" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Không tiết lộ tài nguyên.</text>
+<rect x="709" y="664" width="160" height="34" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="10" opacity="1"/>
+<text x="789.0" y="686.0" font-size="14" font-weight="600" fill="#0F172A" text-anchor="middle" opacity="1">Quay lại</text>
+<rect x="1064" y="460" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="1289" cy="526" r="34" fill="#FFF7ED" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1289" y="538" font-size="28" font-weight="700" fill="#B45309" text-anchor="middle" opacity="1">◷</text>
+<text x="1289" y="588" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Giới hạn tần suất</text>
+<text x="1120" y="622" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Đọc Retry-After.</text>
+<rect x="1209" y="664" width="160" height="34" fill="#5B4AD1" stroke="#5B4AD1" stroke-width="1" rx="10" opacity="1"/>
+<text x="1289.0" y="686.0" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="1">Thử lại</text>
+<rect x="64" y="750" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="289" cy="816" r="34" fill="#FFF7ED" stroke="none" stroke-width="1" opacity="1"/>
+<text x="289" y="828" font-size="28" font-weight="700" fill="#B45309" text-anchor="middle" opacity="1">⚠</text>
+<text x="289" y="878" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Dịch vụ tạm lỗi</text>
+<text x="120" y="912" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Chỉ ảnh hưởng mô-đun.</text>
+<rect x="209" y="954" width="160" height="34" fill="#5B4AD1" stroke="#5B4AD1" stroke-width="1" rx="10" opacity="1"/>
+<text x="289.0" y="976.0" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="1">Thử lại</text>
+<rect x="564" y="750" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="789" cy="816" r="34" fill="#FFF7ED" stroke="none" stroke-width="1" opacity="1"/>
+<text x="789" y="828" font-size="28" font-weight="700" fill="#B45309" text-anchor="middle" opacity="1">↻</text>
+<text x="789" y="878" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Xung đột phiên bản</text>
+<text x="620" y="912" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">So sánh/tải bản mới.</text>
+<rect x="709" y="954" width="160" height="34" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="10" opacity="1"/>
+<text x="789.0" y="976.0" font-size="14" font-weight="600" fill="#0F172A" text-anchor="middle" opacity="1">Thử lại</text>
+<rect x="1064" y="750" width="450" height="250" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="1289" cy="816" r="34" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1289" y="828" font-size="28" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">⟳</text>
+<text x="1289" y="878" font-size="18" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Đang kết nối lại</text>
+<text x="1120" y="912" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Không nhân đôi dữ liệu.</text>
+<rect x="1209" y="954" width="160" height="34" fill="#5B4AD1" stroke="#5B4AD1" stroke-width="1" rx="10" opacity="1"/>
+<text x="1289.0" y="976.0" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle" opacity="1">Thử lại</text>
+</svg>

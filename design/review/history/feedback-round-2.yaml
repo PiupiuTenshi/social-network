@@ -1,0 +1,196 @@
+version: 2
+updatedAt: 2026-09-07T07:48:08.680Z
+screens:
+  AUTH-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  AUTH-02:
+    status: needs_changes
+    required: true
+    note: "Thông báo xuát hiện ở góc trên phải ko để dưới "
+  AUTH-03:
+    status: needs_changes
+    required: true
+    note: "Dưới khung mật khẩu cần thông báo x hoặc tích nếu password đủ thành phần xác thực "
+  AUTH-04:
+    status: needs_changes
+    required: true
+    note: "Thông báo xuát hiện ở góc trên phải ko để dưới "
+  AUTH-05:
+    status: needs_changes
+    required: true
+    note: "Thông báo xuát hiện ở góc trên phải ko để dưới, mã xác minh hợp lệ là 1 thông báo sẽ hiện ở giữa màn hình ấn oke để nhập mật khẩu mới"
+  FEED-01:
+    status: needs_changes
+    required: true
+    note: "Like, cmt, đăng lại ở dưới video thay vì ở bên để  kích thước video to nhất có thể"
+  FEED-02:
+    status: needs_changes
+    required: true
+    note: "In đậm các thứ, những thứ điều chỉnh chữ cần làm đẹp hơn"
+  FEED-03:
+    status: needs_changes
+    required: true
+    note: "Like, cmt, đăng lại ở dưới video thay vì ở bên để  kích thước video to nhất có thể"
+  FEED-04:
+    status: needs_changes
+    required: true
+    note: "In đậm các thứ, những thứ điều chỉnh chữ cần làm đẹp hơn"
+  FEED-05:
+    status: needs_changes
+    required: true
+    note: "Thông báo xuát hiện ở góc trên phải ko để dướI"
+  PROF-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  PROF-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  PROF-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  PROF-04:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  SET-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  SET-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  SET-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  SET-04:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  DISC-01:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  NOTI-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-04:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-05:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-06:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  COMM-07:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  CHAT-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  CHAT-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  CHAT-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  CHAT-04:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  RTC-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  RTC-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  RTC-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MEDIA-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-01:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-02:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-03:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-04:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-05:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MKT-06:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  AI-01:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  AI-02:
+    status: approved
+    required: false
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MOD-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MOD-02:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  MOD-03:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+  SYS-01:
+    status: approved
+    required: true
+    note: "Đã áp dụng phản hồi vòng 1; chờ duyệt desktop và mobile vòng 2."
+shared:
+  sources: draft
+  tokens: draft
+  flows: draft
+  boards: draft

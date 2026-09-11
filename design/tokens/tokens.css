@@ -1,0 +1,45 @@
+:root {
+  --sp-brand-50: #eef2ff;
+  --sp-brand-100: #e0e7ff;
+  --sp-brand-500: #6366f1;
+  --sp-brand-600: #4f46e5;
+  --sp-brand-700: #4338ca;
+  --sp-accent-500: #06b6d4;
+  --sp-bg: #f8fafc;
+  --sp-surface: #ffffff;
+  --sp-surface-subtle: #f1f5f9;
+  --sp-text: #0f172a;
+  --sp-text-muted: #475569;
+  --sp-border: #e2e8f0;
+  --sp-success: #15803d;
+  --sp-warning: #b45309;
+  --sp-danger: #b91c1c;
+  --sp-focus: #4f46e5;
+  --sp-radius-sm: 8px;
+  --sp-radius-md: 12px;
+  --sp-radius-lg: 16px;
+  --sp-radius-xl: 20px;
+  --sp-radius-pill: 999px;
+  --sp-shadow-sm: 0 1px 2px rgba(15, 23, 42, .08);
+  --sp-shadow-md: 0 8px 24px rgba(15, 23, 42, .12);
+  --sp-touch-target: 44px;
+  --sp-sidebar: 240px;
+  --sp-content-max: 760px;
+  --sp-right-rail: 320px;
+  --sp-font-sans: Inter, "Be Vietnam Pro", system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="dark"] {
+  --sp-bg: #020617;
+  --sp-surface: #0f172a;
+  --sp-surface-subtle: #1e293b;
+  --sp-text: #f8fafc;
+  --sp-text-muted: #cbd5e1;
+  --sp-border: #334155;
+  --sp-focus: #818cf8;
+}
+
+:focus-visible {
+  outline: 3px solid var(--sp-focus);
+  outline-offset: 2px;
+}

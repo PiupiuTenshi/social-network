@@ -1,0 +1,21 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.IdentityModel.Tokens;
+using System.Threading.RateLimiting;
+
+var builder = WebApplication.CreateBuilder(args);
+var jwt = builder.Configuration.GetSection("Gateway:Jwt");
+var issuer = jwt["Issuer"] ?? throw new InvalidOperationException("Gateway:Jwt:Issuer is required.");
+var audience = jwt["Audience"] ?? throw new InvalidOperationException("Gateway:Jwt:Audience is required.");
+var authority = jwt["Authority"] ?? throw new InvalidOperationException("Gateway:Jwt:Authority is required.");
+builder.Services.AddProblemDetails();
+builder.Services.AddCors(options => options.AddPolicy("trusted", policy => policy.WithOrigins(builder.Configuration.GetSection("Gateway:Cors:Origins").Get<string[]>() ?? throw new InvalidOperationException("Gateway:Cors:Origins is required.")).AllowAnyHeader().AllowAnyMethod()));
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => { options.Authority = authority; options.Audience = audience; options.TokenValidationParameters = new TokenValidationParameters { ValidIssuer = issuer, ValidAudience = audience, ValidateIssuerSigningKey = true }; });
+builder.Services.AddAuthorization();
+builder.Services.AddRateLimiter(options => options.AddFixedWindowLimiter("edge", limiter => { limiter.PermitLimit = 100; limiter.Window = TimeSpan.FromMinutes(1); limiter.QueueLimit = 0; }));
+builder.Services.AddReverseProxy().LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
+var app = builder.Build();
+app.UseExceptionHandler(); app.UseCors("trusted"); app.UseRateLimiter(); app.UseAuthentication(); app.UseAuthorization();
+app.MapGet("/healthz", () => Results.Ok(new { status = "ok" })).RequireRateLimiting("edge");
+app.MapReverseProxy().RequireAuthorization().RequireRateLimiting("edge");
+app.Run();

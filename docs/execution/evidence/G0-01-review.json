@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "kind": "review",
+  "task_id": "G0-01",
+  "task_fingerprint": "85e4e8247d271ef9ddd972ac126d982edf1d9da17b079703bc1d6fbcf3590387",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T04:31:49.934327+00:00",
+  "environment": "Windows PowerShell review; current P0 validators, solution build, architecture and migration harness outputs.",
+  "baseline": "Current G0 completion, including reviewed impact metadata under ADR-0015.",
+  "checks": {
+    "REVIEW01": {
+      "passed": true,
+      "detail": "Both ACs, their hashes, validator/harness outputs, scope boundaries and Docker/CI risks were reviewed; no G0 blocking defect remains.",
+      "artifacts": [
+        "docs/execution/evidence/G0-01-review-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/G0-01-review-report.md",
+      "sha256": "8ae9378867a9c7fb7d7792f2f9704d43b7b41dd3e929ffcf8ec14c6b4d24eefe"
+    }
+  ],
+  "decision": "approved",
+  "completion_sha256": "7366422434ced80487928df1b47dcbd8d30a80ed3c95ed75ba7bdd231f193aa2"
+}

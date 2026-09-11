@@ -1,0 +1,147 @@
+version: 1
+updatedAt: 2026-09-05T18:16:47.332Z
+screens:
+  AUTH-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nthay social platform là Multi Social Comunity\nThay slogan: \"One human, boring!!! One million humans, Nice, very nice\"\nNút đăng nhập dài ra bằng với chiều dài cuối cùng của bên phải khung dưới\nCần có các hình ảnh con người chạy liên tục từ trái phải, chéo... thay cho khung xanh bên trái\nCác từ bên phải cần chỉnh sửa cho maketing hơn\n"
+  AUTH-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCần có các hình ảnh con người chạy liên tục từ trái phải, chéo... thay cho khung xanh bên trái\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nCần góc thông báo bên phải khi đăng nhập thành công or thất bại"
+  AUTH-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCần có các hình ảnh con người chạy liên tục từ trái phải, chéo... thay cho khung xanh bên trái\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nCần góc thông báo bên phải khi đăng kí thành công or thất bại, bên phải các trường cần có dấu tích để xác nhận thông tin hợp lí và dấu X khi thông tin sai yêu cầu"
+  AUTH-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCần có các hình ảnh con người chạy liên tục từ trái phải, chéo... thay cho khung xanh bên trái\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nXóa bỏ cái bảo vệ quyền riêng tư đi bạn, khung chat đó ko cần thiết\nCần góc thông báo bên phải khi mã thành công or thất bại"
+  AUTH-05:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCần có các hình ảnh con người chạy liên tục từ trái phải, chéo... thay cho khung xanh bên trái\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nNhập xong mã thì tắt mã đi chỉ hiện mỗi mật khẩu mới và xác nhận mật khẩu "
+  FEED-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh trái có thể add thêm add on như nhóm, bạn bè, ghim trên đó. Các trường có thể thay đổi dựa trên lựa chọn bản thân. Cái bạn đang nghĩ gì luôn hiện trên đầu dù kéo xuống vẫn hiện. Nó thể hiện cho việc đăng bài \nthích, cmt, đăng lại nằm bên phải, bên trái có nút lưu với chia \ntrong video có nút xem toàn màn hình\nDấu 3 chấm hiển thị về báo cáo bài viết"
+  FEED-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh trái có thể add thêm add on như nhóm, bạn bè, ghim trên đó. Các trường có thể thay đổi dựa trên lựa chọn bản thân. \nXóa chữ bạn bè dưới Minh Sáng đi bạn\nPhạm vi hiện thị cần thêm tùy chỉnh nx\nCó các lựa chọn như font chữ, kích thước, in đậm nhạt..."
+  FEED-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh trái có thể add thêm add on như nhóm, bạn bè, ghim trên đó. Các trường có thể thay đổi dựa trên lựa chọn bản thân. Cái bạn đang nghĩ gì luôn hiện trên đầu dù kéo xuống vẫn hiện. Nó thể hiện cho việc đăng bài \nthích, cmt, đăng lại nằm bên phải, bên trái có nút lưu với chia \ntrong video có nút xem toàn màn hình\nBình luận có thể lọc theo mới nhất, tất cả, cũ nhất. Bình luận có thể thích và bình luận thêm. Hiển thị dựa trên phân trang và nút thu gọn - hiện thị thêm các bình luận. có thể báo cáo bình luận\nDấu 3 chấm hiển thị về báo cáo bài viết\nKhi chi tiết bài viết, bài viết được nổi so với trang web như nằm ở layer trên"
+  FEED-04:
+    status: needs_changes
+    note: "Y chang bên FEED-02 · Tạo bài viết nhưng ở dưới là Huy và Lưu thay đổi"
+  FEED-05:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh trái có thể add thêm add on như nhóm, bạn bè, ghim trên đó. Các trường có thể thay đổi dựa trên lựa chọn bản thân.\nNếu bị xử lí thất bại sẽ in ra góc phải lí do bị từ chối.\nCó thể chỉnh sửa thumnail của video bằng Hình ảnh or 1 frame trong video.\nCó thể out trong khi video xử lí ở dưới nền"
+  PROF-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCó nút gán 1 bản nhạc spotify chạy ở góc phải hồ sơ, ở dưới hồ sơ cần hiện chi tiết thông tin cá nhân \nỞ hình ảnh đại diện có hình ô nói chuyện dùng để thể hiện tâm trạng...\nBên cạnh tên cần thêm ngoặc () dùng thể hiện tên biệt danh \nThêm cửa hàng ở góc phải nếu tài khoản có đăng kí bán hàng "
+  PROF-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"
+  PROF-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nthêm chỉnh sửa ảnh bìa nữa \nThêm biệt danh \nHồ sơ cần chỉnh sửa chi tiết các thông tin như cccd nhưng ko cần xác thực và số căn cước. Chỉnh sửa thông tin bắt buộc cần email và số điện thoại\nCác trường chọn là các ô text xổ xuống để dễ chọn, thiết lập từ cao xuống thấp và xuất hiện lần lượt \nCần tham khảo Discord để chỉnh sửa các hiệu ứng giống bên đó \n"
+  PROF-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm hủy theo dõi, chặn và cần phân trang thay vì dài thoằng lằng\nHiện thị cả trạng thái hoạt động nx"
+  SET-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nHiện thị hồ sơ cần là bạn bè, tùy chọn, tất cả, ko cho phép\ntrạng thái hiện diện sửa là trạng thái hoạt động chỉ có nút là bật và tắt\nAi có thể nhắn tin và xem hồ sơ (cho phép nhắn tin và xem hồ sơ, nếu ngla nhắn và xem sẽ thông báo về cho người dùng)\nCho phép tìm thông qua thông tin cá nhân, giúp có thể tìm thông qua email, số điện thoại, tên người dùng..."
+  SET-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCập nhật sửa  thành đổi mật khẩu\nĐăng xuất chỉ có đăng xuất và đăng xuất khỏi tất cả thiết bị (có thể tùy chọn thiết bị đăng xuất nhưng sẽ cần mã otp từ mail)"
+  SET-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nTài khoản chặn sẽ ko bao h thấy đc thông tin của người chặn, 2 bên ko thể nhắn tin, khi tham gia các cộng đồng chung sẽ hiện thị thông báo người này bạn đã chặn có muốn tham gia cộng đồng hay ko. Có cả thông tin lí do chặn"
+  SET-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCần nhập mật khẩu kèm mã otp về mail, khi xóa có thể dùng mail để tạo tài khoản mới. Tài khoản sẽ đc lưu trong database, nếu tài khoản đc tạo lại, kể từ 30 ngày đc tạo mới nếu ko có phản hồi lấy lại tài khoản thì tài khoản cũ sẽ bị xóa khỏi database"
+  DISC-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh tìm kiếm sẽ hiện thị trước các friend đã theo dõi nếu trùng với thông tin search, search theo like thay vì giống chính xác\ncần thay đổi màu về người dùng, bài viết để cho kết quả tìm kiểm dễ phân biệt và hình dung \n"
+  NOTI-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThông báo hiện thị ngắn, khi ấn vô sẽ thể hiện chi tiết thông báo và dẫn đến bài post nếu mà liên quan đến bài post\nThêm nút xem  tất cả thông báo \nPhân thêm 1 trang là đề cập, khi các nhóm hay tin nhắn có đề cập đến bản thân mik \nBên cạnh dấu chấm có hình cái chuông để tắt/bật nhanh thông báo"
+  COMM-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm các tường Thời sự\nThế giới\nKinh doanh\nKhoa học công nghệ\nGóc nhìn\nSpotlight\nBất động sản\nSức khỏe\nGiải trí\nThể thao\nPháp luật\nGiáo dục\nĐời sống\nXe\nDu lịch\nẢnh\nInfographic\nÝ kiến\nTâm sự\nThư giãn\nBên cạnh nút tham gia là ko quan tâm để hạn chế thấy"
+  COMM-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCần mời, chia sẻ cộng đồng \nCài đặt thông báo cộng đồng như yêu thích, hạn chế... \nHiện thị số thành viên \nKhi tham gia thì quản trị viên tạo nhóm có thể hiện thị form thông báo điều kiện và rules cần chấp thuận giúp thành viên tuân thủ or bị ban vĩnh viễn khỏi nhóm"
+  COMM-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"
+  COMM-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nChỉ có chủ sở hữu mới thấy cái này, với mỗi vai trò sẽ đc chỉnh quyền thành viên riêng\nKhách và thành viên sẽ hiện thị danh sách các thành viên để có thể lựa chọn ban hoặc vấn đề cảnh báo (chủ sỡ hữu or Điều phối viên có quyền, thành viên với khách ko đc có quyền này )"
+  COMM-05:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm duyệt thành viên và ban account nếu đc owner ban quyền"
+  COMM-06:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nthay trực tuyến, ngoại tuyến bằng dấu chấm xanh or xám"
+  COMM-07:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nkhi chat chưa gửi thì hiện dấu ... lên xuống\nCần có like và reply tin nhắn, báo cáo người khác \ntin nhắn của bản thân sẽ có màu khác để dễ phân biệt với các thành viên khác. Khung chat nằm ở dưới cùng\nCó dấu + để thêm tệp trên máy\nNhấn shift enter để xuống dòng, còn enter = gửi\nKhi tin nhắn ko gửi đc, sẽ ghi gửi lỗi và có nút load lại để gửi lại tin nhắn"
+  CHAT-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nBên cạnh tin nhắn cuối cùng, bên cạnh số tin nhắn chưa đọc có dấu chuông gạch chéo nếu mà bị chặn thông báo"
+  CHAT-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCall gồm call video và call tiếng\nBên phải thì thêm các thông tin như các file, media có trong chat, thông tin friend"
+  CHAT-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"
+  CHAT-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCó rời trong im lặng, xóa cái vùng nguy hiểm, có thay đổi danh hiệu trong nhóm nhưng bên ngoài vẫn bth\nĐổi chủ đề, liên quan đến chat\nHiện thị ghim"
+  RTC-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nmở một tab/app khác thay vì để trong trang web"
+  RTC-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nNếu phòng chống thì có chữ tham gia thoại \nCó thể thay đổi các bố cục\nmic, camera có dấu xổ xuống để chọn loại mic, loại cam\nThêm nút mời thành viên và mã phòng\nBên phải có khung chat cho riêng và cho tất cả"
+  RTC-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCần chỉnh sửa thêm cả có video bản thân hay ko, chỉnh mic loa, có cho phép record ko"
+  MEDIA-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCó thay đổi thumnail \nUser có thể dashboard số lượt xem, thích, share. \nThời gian đăng\nBản nháp nữa"
+  MKT-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nlọc cần nhỏ lại trong cái phễu \nTìm tin cần to cho cái nút tìm kiếm ngang với sản phẩm cuối cùng\nCần mô tả sản phẩm, nút mua và liên hệ với người bán"
+  MKT-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCần thêm phân loại sản phẩm nữa, vì có thể cho nh sản phẩm vô"
+  MKT-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm phân loại"
+  MKT-04:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm phân loại"
+  MKT-05:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThanh toán 2 bên với nhau ko liên quan tới app nên ko cần thanh toán, ở đây chỉ hiện thị số tiền or Qr của người bán"
+  MKT-06:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nThêm phân trang\nthêm trường sản phẩm hủy (ko có trả lại vì chỉ có người dùng vs người mua lhe với nhau)"
+  AI-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nTrợ lí đc thu nhỏ ở góc dưới\nKhi hỏi thiếu yêu cầu, chatbot sẽ hỏi lại user và cung cấp thêm thông tin\nChat nên ở dưới cùng "
+  AI-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nTóm tắt tối đa 10000 dòng chat thôi\nexport ra pdf nx\n"
+  AI-03:
+    status: rejected
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nPhiên âm nên sửa và chuyển sang dưới cái bài post và khi nhắn tin"
+  MOD-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"
+  MOD-02:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết\nCần phân trang "
+  MOD-03:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"
+  SYS-01:
+    status: needs_changes
+    note: "Đổi tên ứng dụng là Twight Light\nCác từ bên phải cần chỉnh sửa cho maketing hơn\nLogo cá nhân sẽ đc chỉnh ở góc bên phải trên, chỉ có logo, khi ấn vô thì xổ các chức năng xuống như về trang cá nhân, cài đặt, ngôn ngữ, chỉnh sáng tối...\nbảng tin thì chia thêm các trường như trang chủ, video, buôn bán... nằm ở góc trên thay vì bên trái\nxóa thanh tạo bài viết"

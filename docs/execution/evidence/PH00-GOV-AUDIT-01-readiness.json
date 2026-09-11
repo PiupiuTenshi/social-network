@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "kind": "readiness",
+  "task_id": "PH00-GOV-AUDIT-01",
+  "task_fingerprint": "a3c18619aa50837deabc7810754e637559a13e0cd23554a67e724b8b16829b94",
+  "actor": "Codex, theo chỉ đạo chủ dự án ngày 2026-09-07",
+  "recorded_at": "2026-09-07T16:00:24.5261318Z",
+  "environment": "Windows PowerShell; workspace tài liệu trước Git/sản phẩm",
+  "baseline": "Snapshot tài liệu 2026-09-07 trước khởi tạo Git; no-commit/no-remote",
+  "checks": {
+    "DOR01": {
+      "passed": true,
+      "detail": "Audit chỉ xác nhận nguồn, quy tắc và phạm vi; không tạo code, migration, Git remote hoặc thay đổi sản phẩm. AC01-AC03 đã được ánh xạ trong audit report.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "DOR02": {
+      "passed": true,
+      "detail": "ADR-010 là nguồn priority đã chấp thuận; AGENTS canonical và default-off cho contract-gap được chốt cho audit. Contract/schema cụ thể vẫn do các task owner sau xử lý.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "DOR03": {
+      "passed": true,
+      "detail": "Audit không xử lý dữ liệu người dùng hay side effect; report yêu cầu default-off capability chưa có contract và giao quyền/privacy/concurrency cho các owner task tương ứng.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "DOR04": {
+      "passed": true,
+      "detail": "Task đầu tiên không có tiền nhiệm; source inventory, blocker register và ADR-010 đã tồn tại trên snapshot tài liệu đang dùng.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "DOR05": {
+      "passed": true,
+      "detail": "Validator source, generator, gate, unit tests và kit validator được ghi bằng lệnh/exit code thật; không dùng lệnh build sản phẩm chưa tồn tại.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md"]
+    },
+    "DOR06": {
+      "passed": true,
+      "detail": "Planning audit không tạo hay chạy migration và không thay deployment; schema/migration/rollback được giao PH00-DATA-BOUNDARY-01 và PH00-BE-TOOLCHAIN-01.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    },
+    "DOR07": {
+      "passed": true,
+      "detail": "Codex thực hiện planning theo chỉ đạo chủ dự án; AGENTS canonical và READY_GATE nêu rõ dừng khi contract/ownership chưa khóa và cấm Git/production tự động.",
+      "artifacts": ["docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md"]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-audit-report.md",
+      "sha256": "849b838e2e6194ca6516cf640de6b41e81ae8c7f91d3df8d42fb169875c2225d"
+    },
+    {
+      "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md",
+      "sha256": "c180cb9697035b6d666e7bea584505ecbc5f6d81cccf690f7be54fe4826901e1"
+    }
+  ]
+}

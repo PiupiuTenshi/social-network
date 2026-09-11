@@ -1,0 +1,48 @@
+id,title,route,group,priority,roles,functions,file
+AUTH-01,Chào mừng,/,Xác thực,P0,Khách,ACC-01; ACC-02,screens/auth/auth-01-chao-mung.md
+AUTH-02,Đăng nhập,/dang-nhap,Xác thực,P0,Khách,ACC-02; ACC-03,screens/auth/auth-02-dang-nhap.md
+AUTH-03,Đăng ký,/dang-ky,Xác thực,P0,Khách,ACC-01; ACC-10,screens/auth/auth-03-dang-ky.md
+AUTH-04,Quên mật khẩu,/quen-mat-khau,Xác thực,P1,Khách,ACC-08,screens/auth/auth-04-quen-mat-khau.md
+AUTH-05,Đặt lại mật khẩu,/dat-lai-mat-khau,Xác thực,P1,Khách,ACC-09,screens/auth/auth-05-dat-lai-mat-khau.md
+FEED-01,Bảng tin,/bang-tin,Bảng tin,P0,Người dùng,FED-02; SOC-03; SOC-08; CHT-08,screens/feed/feed-01-bang-tin.md
+FEED-02,Tạo bài viết,/bai-viet/moi,Bảng tin,P0,Người dùng,SOC-03; MED-01; MED-03,screens/feed/feed-02-tao-bai-viet.md
+FEED-03,Chi tiết bài viết,/bai-viet/:id,Bảng tin,P0,Người xem; Người dùng,SOC-06; SOC-07; SOC-08; SOC-10; MOD-01; AI-05,screens/feed/feed-03-chi-tiet-bai-viet.md
+FEED-04,Sửa bài viết,/bai-viet/:id/sua,Bảng tin,P0,Chủ sở hữu,SOC-04,screens/feed/feed-04-sua-bai-viet.md
+FEED-05,Bài viết video đang xử lý,/bai-viet/:id/xu-ly,Bảng tin,P1,Chủ sở hữu,SOC-09; MED-04,screens/feed/feed-05-bai-viet-video.md
+PROF-01,Hồ sơ của tôi,/toi,Hồ sơ,P0,Người dùng,ACC-05; SOC-06,screens/profile/prof-01-ho-so-cua-toi.md
+PROF-02,Hồ sơ người dùng,/nguoi-dung/:id,Hồ sơ,P0,Người xem,ACC-05; SOC-01; SOC-02; SOC-06,screens/profile/prof-02-ho-so-nguoi-khac.md
+PROF-03,Chỉnh sửa hồ sơ,/toi/chinh-sua,Hồ sơ,P1,Người dùng,ACC-05; ACC-06; MED-01,screens/profile/prof-03-chinh-sua-ho-so.md
+PROF-04,Người theo dõi và đang theo dõi,/nguoi-dung/:id/ket-noi,Hồ sơ,P0,Người dùng,SOC-01; SOC-02,screens/profile/prof-04-quan-he-xa-hoi.md
+SET-01,Quyền riêng tư,/thiet-lap/quyen-rieng-tu,Thiết lập,P0,Người dùng,ACC-07,screens/settings/set-01-quyen-rieng-tu.md
+SET-02,Bảo mật tài khoản,/thiet-lap/bao-mat,Thiết lập,P0,Người dùng,ACC-03; ACC-04; ACC-09,screens/settings/set-02-bao-mat-tai-khoan.md
+SET-03,Tài khoản đã chặn,/thiet-lap/da-chan,Thiết lập,P0,Người dùng,SOC-02,screens/settings/set-03-tai-khoan-bi-chan.md
+SET-04,Xóa tài khoản,/thiet-lap/xoa-tai-khoan,Thiết lập,P1,Người dùng,ACC-11,screens/settings/set-04-xoa-tai-khoan.md
+DISC-01,Tìm kiếm,/tim-kiem,Khám phá,P2,Người dùng,AI-02; MKT-02; SOC-06,screens/discovery/disc-01-tim-kiem.md
+NOTI-01,Thông báo,/thong-bao,Thông báo,P0,Người dùng,CHT-08,screens/notifications/noti-01-thong-bao.md
+COMM-01,Khám phá cộng đồng,/cong-dong,Cộng đồng,P1,Người dùng,COM-01; COM-02,screens/communities/comm-01-kham-pha-cong-dong.md
+COMM-02,Tổng quan cộng đồng,/cong-dong/:id,Cộng đồng,P1,Thành viên; Khách theo chính sách,COM-01; COM-02; COM-04,screens/communities/comm-02-tong-quan-cong-dong.md
+COMM-03,Mời và tham gia cộng đồng,/loi-moi/:code,Cộng đồng,P1,Người dùng,COM-02,screens/communities/comm-03-moi-va-tham-gia.md
+COMM-04,Vai trò và quyền,/cong-dong/:id/vai-tro,Cộng đồng,P1,Chủ sở hữu; Điều hành viên,COM-03,screens/communities/comm-04-vai-tro-va-quyen.md
+COMM-05,Quản lý kênh,/cong-dong/:id/kenh,Cộng đồng,P1,Điều hành viên,COM-04,screens/communities/comm-05-quan-ly-kenh.md
+COMM-06,Điều hành thành viên,/cong-dong/:id/thanh-vien,Cộng đồng,P1,Điều hành viên,COM-05,screens/communities/comm-06-dieu-hanh-thanh-vien.md
+COMM-07,Kênh văn bản,/cong-dong/:id/kenh/:channelId,Cộng đồng,P1,Thành viên,COM-04; CHT-02; CHT-07,screens/communities/comm-07-kenh-van-ban.md
+CHAT-01,Danh sách hội thoại,/tin-nhan,Trò chuyện,P0,Người dùng,CHT-01; CHT-08,screens/chat/chat-01-danh-sach-hoi-thoai.md
+CHAT-02,Hội thoại,/tin-nhan/:id,Trò chuyện,P0,Thành viên hội thoại,CHT-02; CHT-03; CHT-04; CHT-05; CHT-06; CHT-07; AI-05,screens/chat/chat-02-hoi-thoai.md
+CHAT-03,Tạo hội thoại,/tin-nhan/moi,Trò chuyện,P0,Người dùng,CHT-01,screens/chat/chat-03-tao-hoi-thoai.md
+CHAT-04,Thiết lập hội thoại,/tin-nhan/:id/thiet-lap,Trò chuyện,P0,Thành viên; Quản trị nhóm,CHT-01; CHT-03,screens/chat/chat-04-thiet-lap-hoi-thoai.md
+RTC-01,Lời mời cuộc gọi,/cuoc-goi/:id,RTC,P1,Người dùng; Thành viên,CHT-09; RTC-01,screens/rtc/rtc-01-loi-moi-cuoc-goi.md
+RTC-02,Phòng thoại và video,/cong-dong/:id/phong/:roomId,RTC,P1,Thành viên,RTC-01; RTC-02,screens/rtc/rtc-02-phong-thoai-video.md
+RTC-03,Chia sẻ màn hình,/cong-dong/:id/phong/:roomId/chia-se,RTC,P1,Thành viên có quyền,RTC-03,screens/rtc/rtc-03-chia-se-man-hinh.md
+MEDIA-01,Tải phương tiện,/phuong-tien/tai-len,Phương tiện,P1,Người dùng,MED-01; MED-02; MED-03; MED-04,screens/media/media-01-tai-phuong-tien.md
+MKT-01,Chợ,/cho,Thương mại,P2,Khách theo chính sách; Người dùng,MKT-02,screens/marketplace/mkt-01-cho.md
+MKT-02,Chi tiết tin đăng,/cho/tin/:id,Thương mại,P2,Người mua; Khách theo chính sách,MKT-02; MKT-07,screens/marketplace/mkt-02-chi-tiet-tin-dang.md
+MKT-03,Tạo hoặc sửa tin đăng,/cho/tin/moi,Thương mại,P2,Người bán,MKT-01; MKT-03; MKT-07,screens/marketplace/mkt-03-tao-sua-tin-dang.md
+MKT-04,Xác nhận đơn hàng,/cho/thanh-toan,Thương mại,P2,Người mua,MKT-03; MKT-04,screens/marketplace/mkt-04-thanh-toan.md
+MKT-05,Thanh toán trực tiếp với người bán,/cho/don/:id/thanh-toan,Thương mại,P2,Người mua,MKT-05,screens/marketplace/mkt-05-thanh-toan-truc-tiep.md
+MKT-06,Đơn hàng,/cho/don-hang,Thương mại,P2,Người mua; Người bán,MKT-06,screens/marketplace/mkt-06-don-hang.md
+AI-01,Trợ lý AI,/tro-ly,AI,P2,Người dùng,AI-03,screens/ai/ai-01-tro-ly-ai.md
+AI-02,Tóm tắt hội thoại hoặc kênh,/tro-ly/tom-tat,AI,P2,Thành viên có quyền,AI-04,screens/ai/ai-02-tom-tat.md
+MOD-01,Báo cáo nội dung,hộp thoại,Điều hành,P1,Người dùng,MOD-01,screens/moderation/mod-01-bao-cao-noi-dung.md
+MOD-02,Hàng đợi điều hành,/dieu-hanh/bao-cao,Điều hành,P1,Điều hành viên; Quản trị viên,MOD-02,screens/moderation/mod-02-hang-doi-dieu-hanh.md
+MOD-03,Chi tiết điều hành,/dieu-hanh/bao-cao/:id,Điều hành,P1,Điều hành viên; Quản trị viên,MOD-03; MOD-04,screens/moderation/mod-03-chi-tiet-dieu-hanh.md
+SYS-01,"Trạng thái tải, rỗng, lỗi và ngoại tuyến",toàn ứng dụng,Hệ thống,P0,Mọi vai trò,NFR; FAILURE,screens/system/sys-01-trang-thai-he-thong.md

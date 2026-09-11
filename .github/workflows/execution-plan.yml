@@ -1,0 +1,30 @@
+name: Execution plan
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: execution-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  execution-plan:
+    # AGENTS.md là tên canonical, kiểm trên Windows để phù hợp môi trường kit hiện tại.
+    runs-on: windows-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Kiểm đồng bộ roadmap và prompt
+        run: python -X utf8 scripts/build_execution_plan.py --check
+      - name: Kiểm DAG và bằng chứng đang lưu
+        run: python -X utf8 scripts/task_gate.py validate
+      - name: Kiểm hành vi chặn và coverage kế hoạch
+        run: python -X utf8 scripts/test_task_gate.py

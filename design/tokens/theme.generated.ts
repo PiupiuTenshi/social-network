@@ -1,0 +1,377 @@
+// Sinh từ design-tokens.json. Không sửa trực tiếp.
+export const designTokens = {
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "meta": {
+    "name": "Twight Light Design Tokens",
+    "version": "1.1-review2",
+    "mode": [
+      "light",
+      "dark"
+    ],
+    "note": "Token dùng cho vòng duyệt 2; chỉ khóa sau khi tạo design.md."
+  },
+  "color": {
+    "brand": {
+      "50": {
+        "$value": "#F3F0FF",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#EAE5FF",
+        "$type": "color"
+      },
+      "500": {
+        "$value": "#6C5CE7",
+        "$type": "color"
+      },
+      "600": {
+        "$value": "#5B4AD1",
+        "$type": "color"
+      },
+      "700": {
+        "$value": "#4937B8",
+        "$type": "color"
+      }
+    },
+    "accent": {
+      "500": {
+        "$value": "#496DFF",
+        "$type": "color"
+      },
+      "600": {
+        "$value": "#3157E8",
+        "$type": "color"
+      }
+    },
+    "neutral": {
+      "0": {
+        "$value": "#FFFFFF",
+        "$type": "color"
+      },
+      "50": {
+        "$value": "#F8FAFC",
+        "$type": "color"
+      },
+      "100": {
+        "$value": "#F1F5F9",
+        "$type": "color"
+      },
+      "200": {
+        "$value": "#E2E8F0",
+        "$type": "color"
+      },
+      "300": {
+        "$value": "#CBD5E1",
+        "$type": "color"
+      },
+      "500": {
+        "$value": "#64748B",
+        "$type": "color"
+      },
+      "600": {
+        "$value": "#475569",
+        "$type": "color"
+      },
+      "700": {
+        "$value": "#334155",
+        "$type": "color"
+      },
+      "800": {
+        "$value": "#1E293B",
+        "$type": "color"
+      },
+      "900": {
+        "$value": "#0F172A",
+        "$type": "color"
+      },
+      "950": {
+        "$value": "#020617",
+        "$type": "color"
+      }
+    },
+    "semantic": {
+      "success": {
+        "$value": "#10B981",
+        "$type": "color"
+      },
+      "warning": {
+        "$value": "#F59E0B",
+        "$type": "color"
+      },
+      "danger": {
+        "$value": "#EF4444",
+        "$type": "color"
+      },
+      "info": {
+        "$value": "#0369A1",
+        "$type": "color"
+      }
+    },
+    "light": {
+      "background": {
+        "$value": "#F6F8FC",
+        "$type": "color"
+      },
+      "surface": {
+        "$value": "#FFFFFF",
+        "$type": "color"
+      },
+      "surfaceSubtle": {
+        "$value": "#F1F5F9",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "#0B1020",
+        "$type": "color"
+      },
+      "textMuted": {
+        "$value": "#475569",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "#E2E8F0",
+        "$type": "color"
+      },
+      "focus": {
+        "$value": "#6C5CE7",
+        "$type": "color"
+      }
+    },
+    "dark": {
+      "background": {
+        "$value": "#07162B",
+        "$type": "color"
+      },
+      "surface": {
+        "$value": "#11182A",
+        "$type": "color"
+      },
+      "surfaceSubtle": {
+        "$value": "#1E293B",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "#F8FAFC",
+        "$type": "color"
+      },
+      "textMuted": {
+        "$value": "#CBD5E1",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "#334155",
+        "$type": "color"
+      },
+      "focus": {
+        "$value": "#9B8EF5",
+        "$type": "color"
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "sans": {
+        "$value": "Inter, Be Vietnam Pro, system-ui, -apple-system, sans-serif",
+        "$type": "fontFamily"
+      },
+      "mono": {
+        "$value": "JetBrains Mono, Consolas, monospace",
+        "$type": "fontFamily"
+      }
+    },
+    "size": {
+      "caption": {
+        "$value": "12px",
+        "$type": "dimension"
+      },
+      "sm": {
+        "$value": "14px",
+        "$type": "dimension"
+      },
+      "body": {
+        "$value": "16px",
+        "$type": "dimension"
+      },
+      "lg": {
+        "$value": "18px",
+        "$type": "dimension"
+      },
+      "h3": {
+        "$value": "20px",
+        "$type": "dimension"
+      },
+      "h2": {
+        "$value": "24px",
+        "$type": "dimension"
+      },
+      "h1": {
+        "$value": "32px",
+        "$type": "dimension"
+      },
+      "display": {
+        "$value": "40px",
+        "$type": "dimension"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$value": 1.2,
+        "$type": "number"
+      },
+      "normal": {
+        "$value": 1.5,
+        "$type": "number"
+      },
+      "relaxed": {
+        "$value": 1.6,
+        "$type": "number"
+      }
+    },
+    "weight": {
+      "regular": {
+        "$value": 400,
+        "$type": "number"
+      },
+      "medium": {
+        "$value": 500,
+        "$type": "number"
+      },
+      "semibold": {
+        "$value": 600,
+        "$type": "number"
+      },
+      "bold": {
+        "$value": 700,
+        "$type": "number"
+      }
+    }
+  },
+  "space": {
+    "0": {
+      "$value": "0px",
+      "$type": "dimension"
+    },
+    "4": {
+      "$value": "4px",
+      "$type": "dimension"
+    },
+    "8": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "12": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "16": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "20": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "24": {
+      "$value": "24px",
+      "$type": "dimension"
+    },
+    "32": {
+      "$value": "32px",
+      "$type": "dimension"
+    },
+    "40": {
+      "$value": "40px",
+      "$type": "dimension"
+    },
+    "48": {
+      "$value": "48px",
+      "$type": "dimension"
+    },
+    "64": {
+      "$value": "64px",
+      "$type": "dimension"
+    }
+  },
+  "radius": {
+    "sm": {
+      "$value": "8px",
+      "$type": "dimension"
+    },
+    "md": {
+      "$value": "12px",
+      "$type": "dimension"
+    },
+    "lg": {
+      "$value": "16px",
+      "$type": "dimension"
+    },
+    "xl": {
+      "$value": "20px",
+      "$type": "dimension"
+    },
+    "pill": {
+      "$value": "999px",
+      "$type": "dimension"
+    }
+  },
+  "shadow": {
+    "sm": {
+      "$value": "0 1px 2px rgba(15,23,42,.08)",
+      "$type": "shadow"
+    },
+    "md": {
+      "$value": "0 8px 24px rgba(15,23,42,.12)",
+      "$type": "shadow"
+    },
+    "lg": {
+      "$value": "0 24px 64px rgba(15,23,42,.16)",
+      "$type": "shadow"
+    }
+  },
+  "size": {
+    "touchTarget": {
+      "$value": "44px",
+      "$type": "dimension"
+    },
+    "sidebar": {
+      "$value": "240px",
+      "$type": "dimension"
+    },
+    "contentMax": {
+      "$value": "760px",
+      "$type": "dimension"
+    },
+    "rightRail": {
+      "$value": "320px",
+      "$type": "dimension"
+    }
+  },
+  "motion": {
+    "fast": {
+      "$value": "140ms",
+      "$type": "duration"
+    },
+    "normal": {
+      "$value": "200ms",
+      "$type": "duration"
+    },
+    "slow": {
+      "$value": "280ms",
+      "$type": "duration"
+    }
+  },
+  "breakpoint": {
+    "mobile": {
+      "$value": "640px",
+      "$type": "dimension"
+    },
+    "tablet": {
+      "$value": "1024px",
+      "$type": "dimension"
+    },
+    "wide": {
+      "$value": "1200px",
+      "$type": "dimension"
+    }
+  }
+} as const;

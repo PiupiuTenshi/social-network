@@ -1,0 +1,141 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  governance:
+    name: governance
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Require declared project inputs
+        shell: bash
+        run: |
+          test -f TwightLight.slnx
+          test -f global.json
+          test -f frontend/package.json
+          test -f frontend/package-lock.json
+          test -f .nvmrc
+      - name: Validate roadmap, evidence and contracts
+        run: |
+          python -X utf8 scripts/validate_vibe_kit.py
+          python -X utf8 scripts/task_gate.py validate
+          python -X utf8 scripts/test_task_gate.py
+          python -X utf8 scripts/test_ci_helpers.py
+          python -X utf8 scripts/validate_p0_contracts.py
+
+  backend:
+    name: backend (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - name: Restore, build and run required backend harnesses
+        shell: pwsh
+        run: |
+          dotnet restore TwightLight.slnx
+          dotnet build TwightLight.slnx --configuration Release --no-restore
+          dotnet run --project tests/Architecture/Architecture.Harness/Architecture.Harness.csproj --configuration Release --no-build
+          dotnet run --project tests/Integration/Migration.Harness/Migration.Harness.csproj --configuration Release --no-build
+      - name: Write restored NuGet inventory and checksums
+        shell: pwsh
+        run: |
+          $artifact = 'artifacts/backend-${{ matrix.os }}'
+          New-Item -ItemType Directory -Force -Path $artifact | Out-Null
+          dotnet list TwightLight.slnx package --include-transitive --format json | Set-Content -Encoding utf8 "$artifact/nuget-dependencies.json"
+          python scripts/ci/write_checksums.py --root $artifact --output "$artifact/SHA256SUMS"
+          python scripts/ci/write_checksums.py --root $artifact --output "$artifact/SHA256SUMS" --verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backend-${{ matrix.os }}-evidence
+          path: artifacts/backend-${{ matrix.os }}
+          if-no-files-found: error
+
+  frontend:
+    name: frontend
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install and run every required frontend check
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run generate:p0-types
+          npm run lint
+          npm run test:foundation
+          npm run test:adapters
+          npm run typecheck
+          npm run build
+
+  security:
+    name: security
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Restore locked dependency graphs
+        run: |
+          dotnet restore TwightLight.slnx
+          npm --prefix frontend ci
+      - name: Scan npm production dependencies and tracked content
+        shell: bash
+        run: |
+          npm --prefix frontend audit --omit=dev --audit-level=high
+          if git grep -nE '(ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16})' -- .; then
+            echo 'Potential secret found in tracked content.' >&2
+            exit 1
+          fi
+      - name: Generate SBOM and checksum manifest
+        shell: bash
+        run: |
+          mkdir -p artifacts/security
+          mapfile -t assets < <(find src tests -path '*/obj/project.assets.json' -type f | sort)
+          test "${#assets[@]}" -gt 0
+          python scripts/ci/generate_sbom.py --assets "${assets[@]}" --package-lock frontend/package-lock.json --output artifacts/security/sbom.cdx.json
+          dotnet list TwightLight.slnx package --vulnerable --include-transitive --format json > artifacts/security/nuget-vulnerability-report.json
+          npm --prefix frontend ls --all --json > artifacts/security/npm-dependencies.json
+          python scripts/ci/write_checksums.py --root artifacts/security --output artifacts/security/SHA256SUMS
+          python scripts/ci/write_checksums.py --root artifacts/security --output artifacts/security/SHA256SUMS --verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: security-evidence
+          path: artifacts/security
+          if-no-files-found: error

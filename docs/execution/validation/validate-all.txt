@@ -1,0 +1,52 @@
+Markdown links: OK
+Bộ tài liệu Vibe Coding hợp lệ: 849 tệp
+Execution plan: 9 phases, 158 tasks, 318 subtasks, 66 functions, 47 screens
+Plan/state hợp lệ: 318 subtasks, DAG không chu kỳ. Hợp lệ không có nghĩa các task đã READY/DONE.
+Màn hình: 47
+SVG: 110
+PNG: 110
+ĐẠT: cấu trúc, metadata, liên kết, SVG, PNG và token hợp lệ.
++ $PYTHON -X utf8 $REPO\scripts\validate_vibe_kit.py
++ $PYTHON -X utf8 $REPO\scripts\build_execution_plan.py --check
++ $PYTHON -X utf8 $REPO\scripts\task_gate.py validate
++ $PYTHON -X utf8 $REPO\scripts\test_task_gate.py
++ $PYTHON -X utf8 $REPO\design\scripts\validate_design.py --require-final
+ĐẠT: Vibe Coding kit và UI/UX final đều hợp lệ.
+test_artifact_hash_mismatch_rejected (__main__.GateTests.test_artifact_hash_mismatch_rejected) ... ok
+test_artifact_outside_repository_rejected (__main__.GateTests.test_artifact_outside_repository_rejected) ... ok
+test_cannot_replace_done_without_reopen (__main__.GateTests.test_cannot_replace_done_without_reopen) ... ok
+test_cannot_skip_states (__main__.GateTests.test_cannot_skip_states) ... ok
+test_concurrent_state_mutation_is_rejected (__main__.GateTests.test_concurrent_state_mutation_is_rejected) ... ok
+test_dependency_blocks_prepare_even_if_checkboxes_pass (__main__.GateTests.test_dependency_blocks_prepare_even_if_checkboxes_pass) ... ok
+test_dor_missing_or_failed_or_string_true_rejected (__main__.GateTests.test_dor_missing_or_failed_or_string_true_rejected) ... ok
+test_duplicate_json_keys_rejected (__main__.GateTests.test_duplicate_json_keys_rejected) ... ok
+test_duplicate_unknown_and_cycle_graph_rejected (__main__.GateTests.test_duplicate_unknown_and_cycle_graph_rejected) ... ok
+test_empty_or_missing_artifact_rejected (__main__.GateTests.test_empty_or_missing_artifact_rejected) ... ok
+test_forged_done_string_is_not_accepted (__main__.GateTests.test_forged_done_string_is_not_accepted) ... ok
+test_happy_path_requires_separate_review (__main__.GateTests.test_happy_path_requires_separate_review) ... ok
+test_line_ending_only_does_not_invalidate_sources (__main__.GateTests.test_line_ending_only_does_not_invalidate_sources) ... ok
+test_missing_or_failed_ac_cannot_submit (__main__.GateTests.test_missing_or_failed_ac_cannot_submit) ... ok
+test_no_commands_or_nonzero_result_cannot_submit (__main__.GateTests.test_no_commands_or_nonzero_result_cannot_submit) ... ok
+test_no_evidence_is_not_ready (__main__.GateTests.test_no_evidence_is_not_ready) ... ok
+test_no_timezone_or_future_timestamp_rejected (__main__.GateTests.test_no_timezone_or_future_timestamp_rejected) ... ok
+test_only_one_active_task_including_review (__main__.GateTests.test_only_one_active_task_including_review) ... ok
+test_reopen_preserves_history_and_blocks_successor (__main__.GateTests.test_reopen_preserves_history_and_blocks_successor) ... ok
+test_review_must_approve_exact_completion (__main__.GateTests.test_review_must_approve_exact_completion) ... ok
+test_source_change_invalidates_ready_and_done (__main__.GateTests.test_source_change_invalidates_ready_and_done) ... ok
+test_tampered_receipt_invalidates_transitive_done (__main__.GateTests.test_tampered_receipt_invalidates_transitive_done) ... ok
+test_tampered_report_invalidates_even_unchanged_manifest (__main__.GateTests.test_tampered_report_invalidates_even_unchanged_manifest) ... ok
+test_template_is_fail_closed (__main__.GateTests.test_template_is_fail_closed) ... ok
+test_unknown_id_and_state_rejected (__main__.GateTests.test_unknown_id_and_state_rejected) ... ok
+test_wrong_task_or_fingerprint_rejected (__main__.GateTests.test_wrong_task_or_fingerprint_rejected) ... ok
+test_all_functions_and_screens_covered (__main__.RealPlanTests.test_all_functions_and_screens_covered) ... ok
+test_each_subtask_has_prompt_goal_and_exact_preflight (__main__.RealPlanTests.test_each_subtask_has_prompt_goal_and_exact_preflight) ... ok
+test_every_p1_implementation_is_behind_g1 (__main__.RealPlanTests.test_every_p1_implementation_is_behind_g1) ... ok
+test_every_p2_is_behind_g2 (__main__.RealPlanTests.test_every_p2_is_behind_g2) ... ok
+test_g1_does_not_depend_on_p1_or_p2 (__main__.RealPlanTests.test_g1_does_not_depend_on_p1_or_p2) ... ok
+test_g2_does_not_depend_on_p2 (__main__.RealPlanTests.test_g2_does_not_depend_on_p2) ... ok
+test_parent_child_integrity (__main__.RealPlanTests.test_parent_child_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 1.134s
+
+OK

@@ -1,0 +1,239 @@
+{
+  "base": [
+    "AGENTS.md",
+    "RULES.md",
+    "docs/PROJECT_CONTEXT.md",
+    "docs/ARCHITECTURE.md",
+    "docs/SERVICE_BOUNDARIES.md"
+  ],
+  "domains": {
+    "account": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/DATA_MODEL.md",
+      "docs/SECURITY_RULES.md"
+    ],
+    "social": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/reference/DATA_MODEL.md"
+    ],
+    "community": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/REALTIME_RULES.md"
+    ],
+    "chat": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/reference/SIGNALR_CATALOG.md",
+      "docs/REALTIME_RULES.md"
+    ],
+    "feed": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/DATABASE_RULES.md",
+      "docs/OBSERVABILITY.md"
+    ],
+    "media": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/SECURITY_RULES.md"
+    ],
+    "commerce": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/DATABASE_RULES.md"
+    ],
+    "ai": [
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/reference/API_CATALOG.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/SECURITY_RULES.md"
+    ],
+    "gateway": [
+      "docs/API_RULES.md",
+      "docs/SECURITY_RULES.md",
+      "docs/OBSERVABILITY.md"
+    ],
+    "building-blocks": [
+      "docs/API_RULES.md",
+      "docs/EVENT_RULES.md",
+      "docs/FAILURE_HANDLING.md",
+      "docs/OBSERVABILITY.md"
+    ],
+    "deploy": [
+      "docs/reference/OPERATIONS_BASELINE.md",
+      "docs/RELEASE_CHECKLIST.md",
+      "docs/INCIDENT_RUNBOOK.md"
+    ],
+    "cross-cutting": [
+      "docs/CODING_CONVENTIONS.md",
+      "docs/SECURITY_RULES.md",
+      "docs/TESTING_STRATEGY.md",
+      "docs/OBSERVABILITY.md",
+      "docs/FAILURE_HANDLING.md"
+    ],
+    "design": [
+      "docs/UIUX_WORKFLOW.md",
+      "design/AGENTS.md",
+      "design/DESIGN_RULES.md",
+      "design/design.md",
+      "design/tokens/design-tokens.json",
+      "design/sources/18-backend-contract-gaps.md",
+      "design/sources/19-frontend-contract-readiness.md"
+    ]
+  },
+  "task_types": {
+    "backend-feature": [
+      "docs/CODING_CONVENTIONS.md",
+      "docs/TESTING_STRATEGY.md",
+      "docs/DEFINITION_OF_DONE.md"
+    ],
+    "frontend-feature": [
+      "docs/CODING_CONVENTIONS.md",
+      "docs/API_RULES.md",
+      "docs/TESTING_STRATEGY.md",
+      "docs/UIUX_WORKFLOW.md",
+      "design/design.md",
+      "design/data/screen-inventory.json"
+    ],
+    "api": [
+      "docs/API_RULES.md",
+      "docs/reference/API_CATALOG.md",
+      "templates/API_CONTRACT.md"
+    ],
+    "database": [
+      "docs/DATABASE_RULES.md",
+      "docs/reference/DATA_MODEL.md",
+      "templates/ADR.md"
+    ],
+    "kafka": [
+      "docs/EVENT_RULES.md",
+      "docs/reference/EVENT_CATALOG.md",
+      "docs/reference/TOPIC_CATALOG.md",
+      "templates/EVENT_CONTRACT.md"
+    ],
+    "signalr": [
+      "docs/REALTIME_RULES.md",
+      "docs/reference/SIGNALR_CATALOG.md"
+    ],
+    "livekit": [
+      "docs/REALTIME_RULES.md",
+      "docs/SECURITY_RULES.md"
+    ],
+    "tests": [
+      "docs/TESTING_STRATEGY.md",
+      "templates/TEST_EVIDENCE.md"
+    ],
+    "bug-fix": [
+      "docs/FAILURE_HANDLING.md",
+      "docs/TESTING_STRATEGY.md",
+      "templates/BUG_REPORT.md"
+    ],
+    "refactor": [
+      "docs/CODING_CONVENTIONS.md",
+      "docs/CODE_REVIEW_CHECKLIST.md"
+    ],
+    "code-review": [
+      "docs/CODE_REVIEW_CHECKLIST.md",
+      "docs/DEFINITION_OF_DONE.md"
+    ],
+    "security-review": [
+      "docs/SECURITY_RULES.md",
+      "docs/reference/SECURITY_THREAT_MODEL.md"
+    ],
+    "performance": [
+      "docs/reference/NFR.md",
+      "docs/OBSERVABILITY.md",
+      "docs/TESTING_STRATEGY.md"
+    ],
+    "migration": [
+      "docs/DATABASE_RULES.md",
+      "docs/reference/OPERATIONS_BASELINE.md",
+      "docs/RELEASE_CHECKLIST.md"
+    ],
+    "release": [
+      "docs/RELEASE_CHECKLIST.md",
+      "docs/reference/QUALITY_GATES.md",
+      "docs/reference/OPERATIONS_BASELINE.md",
+      "docs/GIT_FLOW.md",
+      "docs/GIT_COMMANDS.md",
+      "docs/execution/GIT_PLAYBOOK.md",
+      "docs/execution/QUALITY_GATES.md"
+    ],
+    "docs-sync": [
+      "docs/DOCUMENTATION_SYNC.md",
+      "docs/DEFINITION_OF_DONE.md"
+    ],
+    "incident": [
+      "docs/INCIDENT_RUNBOOK.md",
+      "docs/FAILURE_HANDLING.md",
+      "docs/OBSERVABILITY.md"
+    ],
+    "contract-change": [
+      "docs/API_RULES.md",
+      "docs/EVENT_RULES.md",
+      "docs/DATABASE_RULES.md",
+      "templates/ADR.md"
+    ],
+    "pr-review": [
+      "docs/CODE_REVIEW_CHECKLIST.md",
+      "docs/DEFINITION_OF_DONE.md",
+      "docs/reference/QUALITY_GATES.md"
+    ],
+    "project-bootstrap": [
+      "docs/SOURCE_STRUCTURE.md",
+      "docs/LOCAL_DEVELOPMENT.md",
+      "docs/GIT_FLOW.md",
+      "templates/SERVICE_AGENTS.md",
+      "docs/AI_CODING_WORKFLOW.md",
+      "docs/GIT_COMMANDS.md",
+      "docs/PROMPT_USAGE_EXAMPLES.md",
+      "docs/PARALLEL_AGENT_WORKFLOW.md",
+      "docs/execution/README.md",
+      "docs/execution/BLOCKERS.md",
+      "docs/execution/GIT_PLAYBOOK.md"
+    ],
+    "service-scaffold": [
+      "docs/SOURCE_STRUCTURE.md",
+      "docs/SERVICE_BOUNDARIES.md",
+      "docs/CODING_CONVENTIONS.md",
+      "docs/TESTING_STRATEGY.md",
+      "templates/SERVICE_AGENTS.md"
+    ],
+    "feature-plan": [
+      "docs/PRIORITIES_AND_ROADMAP.md",
+      "docs/DEFINITION_OF_READY.md",
+      "docs/reference/TRACEABILITY_MATRIX.md",
+      "docs/reference/FUNCTION_SPECIFICATIONS.md",
+      "docs/PROMPT_USAGE_EXAMPLES.md",
+      "docs/PARALLEL_AGENT_WORKFLOW.md",
+      "docs/execution/README.md",
+      "docs/execution/ROADMAP.md",
+      "docs/execution/BLOCKERS.md",
+      "docs/execution/READY_GATE.md"
+    ],
+    "uiux-review": [
+      "docs/UIUX_WORKFLOW.md",
+      "design/AGENTS.md",
+      "design/DESIGN_RULES.md",
+      "design/design.md",
+      "design/REVIEW_CHECKLIST.md"
+    ],
+    "uiux-to-frontend": [
+      "docs/UIUX_WORKFLOW.md",
+      "design/AGENTS.md",
+      "design/DESIGN_RULES.md",
+      "design/design.md",
+      "design/FRONTEND_IMPLEMENTATION_PLAN.md",
+      "design/DESIGN_TO_CODE_CHECKLIST.md",
+      "design/sources/19-frontend-contract-readiness.md"
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH00-BE-CONTRACT-01",
+  "task_fingerprint": "761fb941bb134ef51d8bde50995413b1afb32acfb64b6eaf8627c0f6907ccb6b",
+  "actor": "Codex under project owner delegation",
+  "recorded_at": "2026-09-11T04:20:49.243053+00:00",
+  "environment": "Windows PowerShell; Python UTF-8; document planning workspace",
+  "baseline": "Accepted PH00-GOV-AUDIT-01 receipt plus approved ADR-0014 refresh-session decision.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "OpenAPI locks the P0 operation set, DTOs, permissions and errors, including cookie-bound refresh and memory-only Session delivery.",
+      "artifacts": [
+        "docs/contracts/p0/openapi.json",
+        "docs/adr/0014-browser-refresh-cookie-policy.md",
+        "scripts/validate_p0_contracts.py",
+        "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "ADR-0011, ADR-0014 and AsyncAPI lock baseline event, concurrency, privacy, replay and refresh-credential decisions.",
+      "artifacts": [
+        "docs/adr/0011-p0-contract-baseline.md",
+        "docs/adr/0014-browser-refresh-cookie-policy.md",
+        "docs/contracts/p0/asyncapi.json",
+        "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+      ]
+    },
+    "AC03": {
+      "passed": true,
+      "detail": "Fixtures and validator cover P0 success and negative paths, including refresh reuse; P1/P2 remain disabled or reference-only.",
+      "artifacts": [
+        "docs/contracts/p0/fixtures.json",
+        "scripts/validate_p0_contracts.py",
+        "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/adr/0011-p0-contract-baseline.md",
+      "sha256": "032f3bd582387fe87a722f82d02b346060a2ff5bb46440f575746853707e1349"
+    },
+    {
+      "path": "docs/adr/0014-browser-refresh-cookie-policy.md",
+      "sha256": "713a0017bacee27f7e8b8829ee6661ae7a4df16666b178585177f7c4820cd85c"
+    },
+    {
+      "path": "docs/contracts/p0/README.md",
+      "sha256": "bb5f7c3e1047ab521222eddeb99ab688caa39898030e1d931deb383beb570645"
+    },
+    {
+      "path": "docs/contracts/p0/openapi.json",
+      "sha256": "82e5863cf2d487049bef361402b8c57f4fba50865828084ad9ea929a4c5337e5"
+    },
+    {
+      "path": "docs/contracts/p0/asyncapi.json",
+      "sha256": "730bc839bbe6f20d26477dcae2690f7df3e183fb6f603c5fd1e9136a5ea75e9f"
+    },
+    {
+      "path": "docs/contracts/p0/fixtures.json",
+      "sha256": "e3c3a3d61c7b5c5f2295766f6b9bc909905b20b8f2ea47becdf2b63d524c41cf"
+    },
+    {
+      "path": "scripts/validate_p0_contracts.py",
+      "sha256": "074a70c92f573bd8c7d3135883840192f7be50c79543bac9d8dfb95892a75cc1"
+    },
+    {
+      "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md",
+      "sha256": "61fbd96ada14eb592af95bd3775350f485d91d40c7528ef9b2f938ed5f74a810"
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -X utf8 scripts/validate_p0_contracts.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/build_execution_plan.py --check",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/refresh_kit_inventory.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+    },
+    {
+      "command": "PYTHONPATH=work/document-audit/python-deps python -X utf8 scripts/validate_vibe_kit.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion-report.md"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id='title'>Hệ thống thiết kế</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="1100" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="120" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="64" y="62" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Hệ thống thiết kế</text>
+<text x="64" y="94" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.9">Màu sắc, chữ, khoảng cách, bán kính và độ cao bề mặt</text>
+<text x="64" y="174" font-size="22" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Màu thương hiệu</text>
+<rect x="64" y="198" width="162" height="96" fill="#EEF2FF" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="64" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Brand 50</text>
+<text x="64" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#EEF2FF</text>
+<rect x="254" y="198" width="162" height="96" fill="#E0E7FF" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="254" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Brand 100</text>
+<text x="254" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#E0E7FF</text>
+<rect x="444" y="198" width="162" height="96" fill="#6C5CE7" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="444" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Brand 500</text>
+<text x="444" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#6C5CE7</text>
+<rect x="634" y="198" width="162" height="96" fill="#5B4AD1" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="634" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Brand 600</text>
+<text x="634" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#5B4AD1</text>
+<rect x="824" y="198" width="162" height="96" fill="#4937B8" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="824" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Brand 700</text>
+<text x="824" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#4937B8</text>
+<rect x="1014" y="198" width="162" height="96" fill="#496DFF" stroke="none" stroke-width="0" rx="16" opacity="1"/>
+<text x="1014" y="322" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Accent</text>
+<text x="1014" y="344" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">#496DFF</text>
+<text x="64" y="404" font-size="22" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Màu ngữ nghĩa</text>
+<rect x="64" y="428" width="162" height="70" fill="#15803D" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="64" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Thành công</text>
+<rect x="254" y="428" width="162" height="70" fill="#B45309" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="254" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Cảnh báo</text>
+<rect x="444" y="428" width="162" height="70" fill="#B91C1C" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="444" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Lỗi/nguy hiểm</text>
+<rect x="634" y="428" width="162" height="70" fill="#0369A1" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="634" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Thông tin</text>
+<rect x="824" y="428" width="162" height="70" fill="#0F172A" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="824" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Văn bản</text>
+<rect x="1014" y="428" width="162" height="70" fill="#64748B" stroke="none" stroke-width="0" rx="14" opacity="1"/>
+<text x="1014" y="526" font-size="13" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">Văn bản phụ</text>
+<text x="64" y="594" font-size="22" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Typography</text>
+<text x="64" y="640" font-size="40" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Display 40/48</text>
+<text x="64" y="712" font-size="32" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">H1 32/40</text>
+<text x="64" y="784" font-size="24" font-weight="700" fill="#0F172A" text-anchor="start" opacity="1">H2 24/32</text>
+<text x="64" y="836" font-size="16" font-weight="400" fill="#0F172A" text-anchor="start" opacity="1">Body 16/24</text>
+<text x="64" y="888" font-size="12" font-weight="500" fill="#0F172A" text-anchor="start" opacity="1">Caption 12/16</text>
+<text x="900" y="594" font-size="22" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Khoảng cách</text>
+<rect x="900" y="636" width="8" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="651" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">4px</text>
+<rect x="900" y="680" width="16" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="695" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">8px</text>
+<rect x="900" y="724" width="24" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="739" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">12px</text>
+<rect x="900" y="768" width="32" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="783" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">16px</text>
+<rect x="900" y="812" width="48" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="827" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">24px</text>
+<rect x="900" y="856" width="64" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="871" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">32px</text>
+<rect x="900" y="900" width="96" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="915" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">48px</text>
+<rect x="900" y="944" width="128" height="20" fill="#5B4AD1" stroke="none" stroke-width="0" rx="4" opacity="1"/>
+<text x="1040" y="959" font-size="12" font-weight="600" fill="#0F172A" text-anchor="start" opacity="1">64px</text>
+<text x="1240" y="594" font-size="22" font-weight="800" fill="#0F172A" text-anchor="start" opacity="1">Bán kính</text>
+<rect x="1240" y="636" width="220" height="54" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8" opacity="1"/>
+<text x="1350" y="670" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle" opacity="1">sm · 8px</text>
+<rect x="1240" y="716" width="220" height="54" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="12" opacity="1"/>
+<text x="1350" y="750" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle" opacity="1">md · 12px</text>
+<rect x="1240" y="796" width="220" height="54" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1350" y="830" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle" opacity="1">lg · 16px</text>
+<rect x="1240" y="876" width="220" height="54" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="20" opacity="1" filter="url(#shadow)"/>
+<text x="1350" y="910" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle" opacity="1">xl · 20px</text>
+<rect x="1240" y="956" width="220" height="54" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="40" opacity="1"/>
+<text x="1350" y="990" font-size="13" font-weight="700" fill="#0F172A" text-anchor="middle" opacity="1">pill · 40px</text>
+</svg>

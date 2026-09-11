@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+python scripts/validate_vibe_kit.py

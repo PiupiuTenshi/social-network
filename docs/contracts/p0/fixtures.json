@@ -1,0 +1,212 @@
+{
+    "api":  [
+                {
+                    "id":  "read-current-user",
+                    "operationId":  "getCurrentUser",
+                    "status":  200,
+                    "body":  {
+                                 "id":  "u-1",
+                                 "handle":  "mai",
+                                 "policyVersion":  3
+                             }
+                },
+                {
+                    "id":  "read-settings",
+                    "operationId":  "getCurrentSettings",
+                    "status":  200,
+                    "body":  {
+                                 "profileVisibility":  "followers",
+                                 "allowMessages":  true,
+                                 "policyVersion":  3
+                             }
+                },
+                {
+                    "id":  "read-block-list",
+                    "operationId":  "listBlocks",
+                    "status":  200,
+                    "body":  {
+                                 "items":  [
+                                               {
+                                                   "id":  "u-2"
+                                               }
+                                           ],
+                                 "nextCursor":  null
+                             }
+                },
+                {
+                    "id":  "read-post-comments",
+                    "operationId":  "listPostComments",
+                    "status":  200,
+                    "body":  {
+                                 "items":  [
+
+                                           ],
+                                 "nextCursor":  null
+                             }
+                },
+                {
+                    "id":  "read-conversations",
+                    "operationId":  "listConversations",
+                    "status":  200,
+                    "body":  {
+                                 "items":  [
+                                               {
+                                                   "id":  "c-1"
+                                               }
+                                           ],
+                                 "nextCursor":  null
+                             }
+                },
+                {
+                    "id":  "stale-edit",
+                    "operationId":  "editMessage",
+                    "status":  412,
+                    "error":  "precondition_failed"
+                },
+                {
+                    "id":  "duplicate-idempotency-different-payload",
+                    "operationId":  "createPost",
+                    "status":  409,
+                    "error":  "idempotency_key_conflict"
+                },
+                {
+                    "id":  "media-is-not-p0",
+                    "operationId":  "createPost",
+                    "status":  422,
+                    "error":  "media_not_available_in_p0"
+                },
+                {
+                    "id":  "blocked-viewer-withheld",
+                    "operationId":  "getPost",
+                    "status":  403,
+                    "error":  "privacy_policy_denied"
+                },
+                {
+                    "id":  "refresh-session-cookie",
+                    "operationId":  "refreshSession",
+                    "status":  200,
+                    "body":  {
+                                 "accessToken":  "redacted-memory-only",
+                                 "expiresAt":  "2026-09-11T02:00:00Z"
+                             },
+                    "cookie":  "HttpOnly refresh cookie is rotated and not visible to JavaScript"
+                },
+                {
+                    "id":  "refresh-reuse-terminal",
+                    "operationId":  "refreshSession",
+                    "status":  401,
+                    "error":  "refresh_reused"
+                }
+            ],
+    "events":  [
+                   {
+                       "id":  "message-edited",
+                       "message":  "MessageEdited",
+                       "partitionKey":  "c-1",
+                       "signalr":  "MessageUpdated",
+                       "envelope":  {
+                                        "eventId":  "e-1",
+                                        "eventType":  "MessageEdited",
+                                        "eventVersion":  1,
+                                        "occurredAt":  "2026-09-07T16:10:00Z",
+                                        "producer":  "chat",
+                                        "correlationId":  "corr-1",
+                                        "aggregateId":  "c-1",
+                                        "aggregateVersion":  7,
+                                        "actor":  {
+                                                      "subjectId":  "u-1",
+                                                      "kind":  "user"
+                                                  },
+                                        "scope":  {
+                                                      "visibility":  "participant",
+                                                      "policyVersion":  3
+                                                  },
+                                        "data":  {
+                                                     "messageId":  "m-1",
+                                                     "conversationId":  "c-1",
+                                                     "content":  "edited"
+                                                 }
+                                    }
+                   },
+                   {
+                       "id":  "privacy-propagation",
+                       "message":  "UserPrivacySettingsChanged",
+                       "partitionKey":  "u-1",
+                       "envelope":  {
+                                        "eventId":  "e-2",
+                                        "eventType":  "UserPrivacySettingsChanged",
+                                        "eventVersion":  1,
+                                        "occurredAt":  "2026-09-07T16:10:01Z",
+                                        "producer":  "account",
+                                        "correlationId":  "corr-2",
+                                        "aggregateId":  "u-1",
+                                        "aggregateVersion":  4,
+                                        "actor":  {
+                                                      "subjectId":  "u-1",
+                                                      "kind":  "user"
+                                                  },
+                                        "scope":  {
+                                                      "visibility":  "followers",
+                                                      "policyVersion":  4
+                                                  },
+                                        "data":  {
+                                                     "userId":  "u-1",
+                                                     "policyVersion":  4
+                                                 }
+                                    }
+                   },
+                   {
+                       "id":  "channel-community-partition",
+                       "message":  "ChannelCreated",
+                       "partitionKey":  "community-1",
+                       "envelope":  {
+                                        "eventId":  "e-3",
+                                        "eventType":  "ChannelCreated",
+                                        "eventVersion":  1,
+                                        "occurredAt":  "2026-09-07T16:10:02Z",
+                                        "producer":  "community",
+                                        "correlationId":  "corr-3",
+                                        "aggregateId":  "community-1",
+                                        "aggregateVersion":  2,
+                                        "scope":  {
+                                                      "visibility":  "participant",
+                                                      "policyVersion":  1
+                                                  },
+                                        "data":  {
+                                                     "communityId":  "community-1",
+                                                     "channelId":  "channel-1",
+                                                     "name":  "general"
+                                                 }
+                                    }
+                   },
+                   {
+                       "id":  "replay-preserves-correlation",
+                       "message":  "PostCreated",
+                       "partitionKey":  "post-1",
+                       "envelope":  {
+                                        "eventId":  "e-original",
+                                        "eventType":  "PostCreated",
+                                        "eventVersion":  1,
+                                        "occurredAt":  "2026-09-07T16:10:03Z",
+                                        "producer":  "feed",
+                                        "correlationId":  "corr-original",
+                                        "aggregateId":  "post-1",
+                                        "aggregateVersion":  1,
+                                        "scope":  {
+                                                      "visibility":  "public",
+                                                      "policyVersion":  1
+                                                  },
+                                        "replay":  {
+                                                       "runId":  "replay-1",
+                                                       "requestedBy":  "ops-1",
+                                                       "originalOccurredAt":  "2026-09-07T16:10:03Z"
+                                                   },
+                                        "data":  {
+                                                     "postId":  "post-1",
+                                                     "authorId":  "u-1",
+                                                     "content":  "hello"
+                                                 }
+                                    }
+                   }
+               ]
+}

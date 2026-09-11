@@ -1,0 +1,1631 @@
+{
+  "version": 1,
+  "tasks": {
+    "PH00-GOV-AUDIT-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-readiness.json",
+        "sha256": "959fd055171ab231c03e1f2fc02b6f28bd157550b71f419d7d6af65ebd8db61f"
+      },
+      "dependencies": {},
+      "updated_at": "2026-09-07T16:02:08.196208+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-completion.json",
+        "sha256": "35e05beabbb3c43a8eae52fa6c53c5ad0556d4d2b70f4f6114e064e6b4ba8436"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-review.json",
+        "sha256": "e9206ea4e5056abdaeefc8c338003a8b5f4cb3b83e322d18cafb4d2661641f67"
+      }
+    },
+    "PH00-BE-CONTRACT-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+        "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+      },
+      "dependencies": {
+        "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+      },
+      "updated_at": "2026-09-11T04:20:56.770655+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion.json",
+        "sha256": "e552886687d7b58b90bf651ecb55a8abfe8f4197e15e553b136082a559838de6"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-review.json",
+        "sha256": "c053285aef4b8218e60d08c38fc2431aeee4732bf0ee01ea11b24fb255795bdd"
+      }
+    },
+    "PH00-DATA-BOUNDARY-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+        "sha256": "b4a6cacaf7e38d2e33c5dee04c8494f27d33909ea7badae1dccc73cac32a3966"
+      },
+      "dependencies": {
+        "PH00-BE-CONTRACT-01": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+      },
+      "updated_at": "2026-09-11T04:21:58.458760+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion.json",
+        "sha256": "f406f119cc295ccee279c3f61dbe5aed27377d7e7f4c6490bbaf2ff025578c3b"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-review.json",
+        "sha256": "b5954d0313878d2d126b353a65276ca14dfc7332744feba0ca93827b43a2fc29"
+      }
+    },
+    "PH00-BE-TOOLCHAIN-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+        "sha256": "e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a"
+      },
+      "dependencies": {
+        "PH00-DATA-BOUNDARY-01": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+      },
+      "updated_at": "2026-09-11T04:24:10.232699+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+        "sha256": "52a764087f3b636e9e1bc9aaab43e8b7cb2c347471526e2ec39e670cf2b36b83"
+      },
+      "review": {
+        "path": "docs/execution/evidence/ph00-be-toolchain-01-review.json",
+        "sha256": "6d8582f733b67848d44f7c09018dff860cb4c657db3df0704678f6090f119460"
+      }
+    },
+    "G0-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/G0-01-readiness.json",
+        "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+      },
+      "dependencies": {
+        "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+      },
+      "updated_at": "2026-09-11T04:31:50.273153+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/G0-01-completion.json",
+        "sha256": "7366422434ced80487928df1b47dcbd8d30a80ed3c95ed75ba7bdd231f193aa2"
+      },
+      "review": {
+        "path": "docs/execution/evidence/G0-01-review.json",
+        "sha256": "85e4de173c2ae49cde4414d4f5e3a15788ce44927de6ecda4c86625f4239ae04"
+      }
+    },
+    "PH01-DATA-INFRA-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+        "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+      },
+      "dependencies": {
+        "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+      },
+      "updated_at": "2026-09-10T18:58:56.750587+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion.json",
+        "sha256": "a470b24ee920acdf0248f3efa0177baaaaa2f690733dd86797a6e3b2b726c001"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH01-DATA-INFRA-01-review.json",
+        "sha256": "9f5dc3fde95e1e96dfc3c9691fc8ddac6cf375d637d46d7d73c05e56a22f27fa"
+      }
+    },
+    "PH01-FE-FOUNDATION-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+        "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+      },
+      "dependencies": {
+        "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+      },
+      "updated_at": "2026-09-10T19:33:35.831125+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+        "sha256": "f09c6c84b575178b2f577898330b07ee5cedd8e6de80eded025edf5f6f5f878a"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-review.json",
+        "sha256": "7d144dcc8a396713d5fe0d3a6dbba061ae74d5e0733bb262fe357ed431c9af64"
+      }
+    },
+    "PH01-BE-PLATFORM-01": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+        "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+      },
+      "dependencies": {
+        "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+      },
+      "updated_at": "2026-09-11T02:05:30.244567+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+        "sha256": "7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-review.json",
+        "sha256": "0cd79bd672e819dc83f78e14fea2c41f59550def6a8262822d6617a51085c466"
+      }
+    },
+    "PH01-FE-FOUNDATION-02": {
+      "status": "DONE",
+      "readiness": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
+        "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+      },
+      "dependencies": {
+        "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+      },
+      "updated_at": "2026-09-11T04:55:54.912833+00:00",
+      "completion": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-completion.json",
+        "sha256": "0c744cf7d4fcd654d6e8f1f456cf19f305ce561dd5f9786fd131ba024418d965"
+      },
+      "review": {
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-review.json",
+        "sha256": "d50c058a66dec5a7e90ba382fed0f69e433d7eab794e355bcc8b414abf0c3c66"
+      }
+    },
+    "PH01-BE-CI-01": {
+      "status": "BLOCKED",
+      "reason": "Remote is empty; initial commit/push to git@github.com:PiupiuTenshi/social-network.git was rejected by automatic approval review. See PH01-BE-CI-01-remote-blocker.md.",
+      "updated_at": "2026-09-11T05:10:38.497909+00:00"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-09-07T16:01:10.649758+00:00",
+      "action": "prepare",
+      "task_id": "PH00-GOV-AUDIT-01",
+      "previous": {},
+      "record_hash": "f3fc3d06cb5784f4288f4e627d5aca3c6788244e141e4f4d84e35481565c7db9"
+    },
+    {
+      "at": "2026-09-07T16:01:19.019088+00:00",
+      "action": "start",
+      "task_id": "PH00-GOV-AUDIT-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-readiness.json",
+          "sha256": "959fd055171ab231c03e1f2fc02b6f28bd157550b71f419d7d6af65ebd8db61f"
+        },
+        "dependencies": {},
+        "updated_at": "2026-09-07T16:01:10.649758+00:00"
+      },
+      "record_hash": "511bdb4f8e4e0968e2e2f34e5daf96c351ade1fc74553f0389d2861f5544aae2"
+    },
+    {
+      "at": "2026-09-07T16:01:50.553672+00:00",
+      "action": "submit",
+      "task_id": "PH00-GOV-AUDIT-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-readiness.json",
+          "sha256": "959fd055171ab231c03e1f2fc02b6f28bd157550b71f419d7d6af65ebd8db61f"
+        },
+        "dependencies": {},
+        "updated_at": "2026-09-07T16:01:19.019088+00:00"
+      },
+      "record_hash": "0d7074fe49aced0150c018ae5cde69bc8aaa5c1a4eb12974ebde761a1ac75706"
+    },
+    {
+      "at": "2026-09-07T16:02:08.196208+00:00",
+      "action": "accept",
+      "task_id": "PH00-GOV-AUDIT-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-readiness.json",
+          "sha256": "959fd055171ab231c03e1f2fc02b6f28bd157550b71f419d7d6af65ebd8db61f"
+        },
+        "dependencies": {},
+        "updated_at": "2026-09-07T16:01:50.553672+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-GOV-AUDIT-01-completion.json",
+          "sha256": "35e05beabbb3c43a8eae52fa6c53c5ad0556d4d2b70f4f6114e064e6b4ba8436"
+        }
+      },
+      "record_hash": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+    },
+    {
+      "at": "2026-09-07T16:10:59.847716+00:00",
+      "action": "prepare",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {},
+      "record_hash": "87dcde43178fe1486f6b8aab55d57f67422ac59cc557b1b411e5000d611319bc"
+    },
+    {
+      "at": "2026-09-07T16:11:00.094860+00:00",
+      "action": "start",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-07T16:10:59.847716+00:00"
+      },
+      "record_hash": "3ee5c2ab426c8b34bdb39c2cd995a6de70dad80f3fe02b716b84c0b7f4b4f1c8"
+    },
+    {
+      "at": "2026-09-07T16:16:34.143096+00:00",
+      "action": "submit",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-07T16:11:00.094860+00:00"
+      },
+      "record_hash": "a76796ea261eab22c37dd9b5713bfdfa66de4776755c03fa2d1164345d0105b4"
+    },
+    {
+      "at": "2026-09-07T16:17:27.850028+00:00",
+      "action": "accept",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-07T16:16:34.143096+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion.json",
+          "sha256": "6484a9ab346833a585e86c17daf394722ea36704a9ac0ef962f6f4f6fa3b8f5b"
+        }
+      },
+      "record_hash": "33deac13f04c34ece5953f38761c358ecf780203729f710ec1bd026145bb321e"
+    },
+    {
+      "at": "2026-09-07T16:41:19.600415+00:00",
+      "action": "prepare",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {},
+      "record_hash": "ce363b2b7fe385aa95a049374c103f93b4f2c4b83c9199ea6dc745fee592976f"
+    },
+    {
+      "at": "2026-09-07T16:41:19.884927+00:00",
+      "action": "start",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "c900320f4a162eddb9a5c5a3db60fb6c2cc0e0abab302873fe906420c7ccd903"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "33deac13f04c34ece5953f38761c358ecf780203729f710ec1bd026145bb321e"
+        },
+        "updated_at": "2026-09-07T16:41:19.600415+00:00"
+      },
+      "record_hash": "a3a9d95bd1f2c57d72d2be32791d19c9910b0b4e3fcace1aee7a79834f7ea903"
+    },
+    {
+      "at": "2026-09-07T16:46:12.459503+00:00",
+      "action": "submit",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "c900320f4a162eddb9a5c5a3db60fb6c2cc0e0abab302873fe906420c7ccd903"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "33deac13f04c34ece5953f38761c358ecf780203729f710ec1bd026145bb321e"
+        },
+        "updated_at": "2026-09-07T16:41:19.884927+00:00"
+      },
+      "record_hash": "fb8d1bd6a5b4eb6f69a707b9e832031afa167c756f3ac7c2f8757b12ee3bb688"
+    },
+    {
+      "at": "2026-09-07T16:47:18.715776+00:00",
+      "action": "accept",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "c900320f4a162eddb9a5c5a3db60fb6c2cc0e0abab302873fe906420c7ccd903"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "33deac13f04c34ece5953f38761c358ecf780203729f710ec1bd026145bb321e"
+        },
+        "updated_at": "2026-09-07T16:46:12.459503+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion.json",
+          "sha256": "209ba712f5042e2fa346b9ec6159055c2b0019c506a58bd1cfd647d448a0fb96"
+        }
+      },
+      "record_hash": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+    },
+    {
+      "at": "2026-09-07T22:28:38.894023+00:00",
+      "action": "prepare",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {},
+      "record_hash": "99ace00e77db153abed522e511fe2556e7126b1a7cc026df0fd84d82c2206b8e"
+    },
+    {
+      "at": "2026-09-07T22:28:39.178606+00:00",
+      "action": "start",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-07T22:28:38.894023+00:00"
+      },
+      "record_hash": "e23821cd6b09ac97d54fb216a807d570824c6432f6efe5e5099fc564417026e2"
+    },
+    {
+      "at": "2026-09-07T22:42:01.082862+00:00",
+      "action": "submit",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-07T22:28:39.178606+00:00"
+      },
+      "record_hash": "cd6eca3dc64a81ddc386b1107416a8d71a299ee29d440e83864aff60cc39330b"
+    },
+    {
+      "at": "2026-09-07T22:42:47.275781+00:00",
+      "action": "accept",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-07T22:42:01.082862+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+          "sha256": "1257cab719f621a048d18a09c2911b0004656715bf063fec1b01dcd8eadd2377"
+        }
+      },
+      "record_hash": "8ce2dad0f70f9034427377f64aef75477901e49e6a2d945ab2c375f37b7d6361"
+    },
+    {
+      "at": "2026-09-08T16:17:21.981264+00:00",
+      "action": "prepare",
+      "task_id": "G0-01",
+      "previous": {},
+      "record_hash": "8f8f422cbfe3783278879566e23f79b5779b339a155100550ef750131636909e"
+    },
+    {
+      "at": "2026-09-08T16:17:22.572363+00:00",
+      "action": "start",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "8ce2dad0f70f9034427377f64aef75477901e49e6a2d945ab2c375f37b7d6361"
+        },
+        "updated_at": "2026-09-08T16:17:21.981264+00:00"
+      },
+      "record_hash": "0f963aa4cc21b059f11a5f59e5a322df7c649df1544d9f129c4233e91992c929"
+    },
+    {
+      "at": "2026-09-08T16:22:00.906777+00:00",
+      "action": "submit",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "8ce2dad0f70f9034427377f64aef75477901e49e6a2d945ab2c375f37b7d6361"
+        },
+        "updated_at": "2026-09-08T16:17:22.572363+00:00"
+      },
+      "record_hash": "1389074abc2edc94ba387a115d4f5e427def673bf8542ddfe8c5bd77fa856716"
+    },
+    {
+      "at": "2026-09-08T16:23:09.828212+00:00",
+      "action": "accept",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "8ce2dad0f70f9034427377f64aef75477901e49e6a2d945ab2c375f37b7d6361"
+        },
+        "updated_at": "2026-09-08T16:22:00.906777+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "59c55cb06476b19fbf7878f0ec7cd2ef9b1d746e7291062690145af322eb9faf"
+        }
+      },
+      "record_hash": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+    },
+    {
+      "at": "2026-09-08T17:53:49.742833+00:00",
+      "action": "prepare",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {},
+      "record_hash": "b5fc1717b368dd6c227ca482c1bf604e33b53f39afea3d5878630ea11a20c4d6"
+    },
+    {
+      "at": "2026-09-08T17:53:50.250656+00:00",
+      "action": "start",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+        },
+        "updated_at": "2026-09-08T17:53:49.742833+00:00"
+      },
+      "record_hash": "70ae93cf0bbf081a387d922614d73be15763d05e97b7efdd1063e6352f544a50"
+    },
+    {
+      "at": "2026-09-09T00:27:37.864736+00:00",
+      "action": "prepare",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {},
+      "record_hash": "4e1a48b411fe411ab7f5fd8b30e659799294c21a8d86d55c98f80f9997f28873"
+    },
+    {
+      "at": "2026-09-09T05:46:25.935308+00:00",
+      "action": "submit",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+        },
+        "updated_at": "2026-09-08T17:53:50.250656+00:00"
+      },
+      "record_hash": "bf999e3e98479997d0616fccee8691892588f9314c01ffd44e058fb1f952db65"
+    },
+    {
+      "at": "2026-09-09T05:47:12.360341+00:00",
+      "action": "accept",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+        },
+        "updated_at": "2026-09-09T05:46:25.935308+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion.json",
+          "sha256": "a2f1da4cd1c82f64843668cbf467f61f58919081e4eaad387a3f9d8e7f3c54b5"
+        }
+      },
+      "record_hash": "60db4b4114f9debe82a540b8eef088ace28ae75f48f5abe2a5867b34b6454344"
+    },
+    {
+      "at": "2026-09-09T05:48:44.475508+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {},
+      "record_hash": "fce3cd6881ce1ba444f09034a05208d22e6fd636054d40c9085176189eb86de4"
+    },
+    {
+      "at": "2026-09-09T05:48:56.950225+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "b1f1862f3dfe45699ec57b49fa5788e73190e928c25480e2c325d235bf011b56"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "60db4b4114f9debe82a540b8eef088ace28ae75f48f5abe2a5867b34b6454344"
+        },
+        "updated_at": "2026-09-09T05:48:44.475508+00:00"
+      },
+      "record_hash": "8a4b3945d6699f9634e51fa6e99c474147028ffc4397045957003cb79d97ce30"
+    },
+    {
+      "at": "2026-09-10T18:34:04.632460+00:00",
+      "action": "reopen",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "b1f1862f3dfe45699ec57b49fa5788e73190e928c25480e2c325d235bf011b56"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "60db4b4114f9debe82a540b8eef088ace28ae75f48f5abe2a5867b34b6454344"
+        },
+        "updated_at": "2026-09-09T05:48:56.950225+00:00"
+      },
+      "record_hash": "17d52ffb31e96150e98ffcea7fd57fca5032aae958ee9a5356371d77d9b159a7"
+    },
+    {
+      "at": "2026-09-10T18:35:23.897979+00:00",
+      "action": "reopen",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+        },
+        "updated_at": "2026-09-09T05:47:12.360341+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion.json",
+          "sha256": "a2f1da4cd1c82f64843668cbf467f61f58919081e4eaad387a3f9d8e7f3c54b5"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-review.json",
+          "sha256": "90a00d85d17d4ebf850dbf5dcf5703f02beff071790b039d1c6d4cf030cc648d"
+        }
+      },
+      "record_hash": "f11571c16ef302a1ec26f22ce75b883ac315412e38ff88cb023bd3aa265f70aa"
+    },
+    {
+      "at": "2026-09-10T18:36:41.004313+00:00",
+      "action": "reopen",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "8ce2dad0f70f9034427377f64aef75477901e49e6a2d945ab2c375f37b7d6361"
+        },
+        "updated_at": "2026-09-08T16:23:09.828212+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "59c55cb06476b19fbf7878f0ec7cd2ef9b1d746e7291062690145af322eb9faf"
+        },
+        "review": {
+          "path": "docs/execution/evidence/G0-01-review.json",
+          "sha256": "2b60bae8bb3b71bb7670fecc10c5cbb68c3d2fe1d6fcdd1fdea217e14bdd1b9b"
+        }
+      },
+      "record_hash": "48eb1b03d65ab17799e05d872dfbf961a0436088b04bc2539317d083775afba5"
+    },
+    {
+      "at": "2026-09-10T18:37:32.378110+00:00",
+      "action": "reopen",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-07T22:42:47.275781+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+          "sha256": "1257cab719f621a048d18a09c2911b0004656715bf063fec1b01dcd8eadd2377"
+        },
+        "review": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-review.json",
+          "sha256": "07f11e2963ff20d70f9770a88c915faebb99029a66318c38192692be689994c9"
+        }
+      },
+      "record_hash": "edfa1f9cd5a25eed6552649461b8ad010c40c4922e031a15af07be8a698191c5"
+    },
+    {
+      "at": "2026-09-10T18:38:16.966711+00:00",
+      "action": "prepare",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate after approved platform package pins",
+        "updated_at": "2026-09-10T18:37:32.378110+00:00"
+      },
+      "record_hash": "ba0672a9e884f50ea334be4f35921a812deb5d50adf91de745d576586dccd322"
+    },
+    {
+      "at": "2026-09-10T18:38:29.175124+00:00",
+      "action": "start",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-10T18:38:16.966711+00:00"
+      },
+      "record_hash": "687ae2ad6e764049dfd06c334975964e313c3a28da337633e2aba812d6a37074"
+    },
+    {
+      "at": "2026-09-10T18:39:00.539838+00:00",
+      "action": "submit",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-10T18:38:29.175124+00:00"
+      },
+      "record_hash": "92cff4e286d8a2e9fdacc16c79cc36bd2cdb85e159bcf5289509c1e3a3726dff"
+    },
+    {
+      "at": "2026-09-10T18:39:10.940951+00:00",
+      "action": "accept",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-10T18:39:00.539838+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+          "sha256": "20225eeb8a18d23d2af256f766d34368c2d430452f4b8c91061a5a2efc91348a"
+        }
+      },
+      "record_hash": "5e4f18a223db8e66ec8f2af8dbabb59ae40702068c6e33418189ae49d3a09914"
+    },
+    {
+      "at": "2026-09-10T18:39:42.323601+00:00",
+      "action": "prepare",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate architecture baseline after Platform solution and lockfile changes",
+        "updated_at": "2026-09-10T18:36:41.004313+00:00"
+      },
+      "record_hash": "0414def9c23d2fa08b7f6a1e369a88c41745d3e26e7e2a9f6ec910b51dce0921"
+    },
+    {
+      "at": "2026-09-10T18:40:54.167377+00:00",
+      "action": "start",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "5e4f18a223db8e66ec8f2af8dbabb59ae40702068c6e33418189ae49d3a09914"
+        },
+        "updated_at": "2026-09-10T18:39:42.323601+00:00"
+      },
+      "record_hash": "1701e6181aace41624d1889e0ad142ee31069fe0d7b9bf853f2f9e2891131ad6"
+    },
+    {
+      "at": "2026-09-10T18:43:38.801817+00:00",
+      "action": "submit",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "5e4f18a223db8e66ec8f2af8dbabb59ae40702068c6e33418189ae49d3a09914"
+        },
+        "updated_at": "2026-09-10T18:40:54.167377+00:00"
+      },
+      "record_hash": "773693979f6cc6870454a24c1f5f7acb9c89fada6536c386d446a0d1e8bd95f3"
+    },
+    {
+      "at": "2026-09-10T18:43:52.589417+00:00",
+      "action": "accept",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "5e4f18a223db8e66ec8f2af8dbabb59ae40702068c6e33418189ae49d3a09914"
+        },
+        "updated_at": "2026-09-10T18:43:38.801817+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "a19fb9fcaea86050aab0812374be10accd354bb5cf80063a91b37b87b88bfbd3"
+        }
+      },
+      "record_hash": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+    },
+    {
+      "at": "2026-09-10T18:55:14.076316+00:00",
+      "action": "prepare",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate after Platform dependency/lockfile update",
+        "updated_at": "2026-09-10T18:35:23.897979+00:00"
+      },
+      "record_hash": "a36f5b33e3969bf7625095de89e9e1a11cdc917e0f69762b1dbf635ac0767af7"
+    },
+    {
+      "at": "2026-09-10T18:55:22.046231+00:00",
+      "action": "start",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T18:55:14.076316+00:00"
+      },
+      "record_hash": "79cbd7cfa10a7cd594c80322fce1c28000afc37c4ffa82c6c8045effb2128791"
+    },
+    {
+      "at": "2026-09-10T18:58:42.602577+00:00",
+      "action": "submit",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T18:55:22.046231+00:00"
+      },
+      "record_hash": "d06a5eb33fc2d02689a4f349318b0c52d42476fc55f8e1bc94ddc7d640d92237"
+    },
+    {
+      "at": "2026-09-10T18:58:56.750587+00:00",
+      "action": "accept",
+      "task_id": "PH01-DATA-INFRA-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-readiness.json",
+          "sha256": "998d8272c1d98afa8c20ef447879494911a23a7eb128f81b0a4483dbaed9bff0"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T18:58:42.602577+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-DATA-INFRA-01-completion.json",
+          "sha256": "a470b24ee920acdf0248f3efa0177baaaaa2f690733dd86797a6e3b2b726c001"
+        }
+      },
+      "record_hash": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+    },
+    {
+      "at": "2026-09-10T19:23:17.955913+00:00",
+      "action": "prepare",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+          "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        },
+        "dependencies": {
+          "G0-01": "1ff488cbf0cbf7dbc448c0091d880144f3b64e517713ef36e7f9a6fb95b6b765"
+        },
+        "updated_at": "2026-09-09T00:27:37.864736+00:00"
+      },
+      "record_hash": "ed1e01c0102ee11a8d42051c9d54d62ef8bc3b4ed04ffc78979fbc235eb3a01d"
+    },
+    {
+      "at": "2026-09-10T19:23:23.435352+00:00",
+      "action": "start",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+          "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T19:23:17.955913+00:00"
+      },
+      "record_hash": "7ad48434fa6fb54720850b4f31c99ce867567159cebb9a38552e62c7f5ddd868"
+    },
+    {
+      "at": "2026-09-10T19:32:50.555410+00:00",
+      "action": "submit",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+          "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T19:23:23.435352+00:00"
+      },
+      "record_hash": "5d1d570c2e16535a59d72ec285a1807aede857b5c793de92674db6077f511231"
+    },
+    {
+      "at": "2026-09-10T19:33:35.831125+00:00",
+      "action": "accept",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+          "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T19:32:50.555410+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+          "sha256": "f09c6c84b575178b2f577898330b07ee5cedd8e6de80eded025edf5f6f5f878a"
+        }
+      },
+      "record_hash": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+    },
+    {
+      "at": "2026-09-11T02:02:44.406511+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "ADR-0013 điều chỉnh phạm vi nghiệm thu theo quyết định chủ dự án",
+        "updated_at": "2026-09-10T18:34:04.632460+00:00"
+      },
+      "record_hash": "65eb1abc141dfc72a6756abc939391a215025f26e4a33947a5363243d49216c6"
+    },
+    {
+      "at": "2026-09-11T02:02:51.690076+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T02:02:44.406511+00:00"
+      },
+      "record_hash": "cbfbf982efcb6be2abfc041a1f84b3f6057328ee1e2ea3ef0f1befcf9725d5e5"
+    },
+    {
+      "at": "2026-09-11T02:04:41.666360+00:00",
+      "action": "submit",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T02:02:51.690076+00:00"
+      },
+      "record_hash": "55eabec87c0ab98c42f05e86d9047a0e7c498c557f8cfb782bde84f1d46f5c1c"
+    },
+    {
+      "at": "2026-09-11T02:05:30.244567+00:00",
+      "action": "accept",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T02:04:41.666360+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+          "sha256": "7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858"
+        }
+      },
+      "record_hash": "2865b4a17564e3ae3da68d09c9e192d441ace539954909d7ce3b4b151c84ff2b"
+    },
+    {
+      "at": "2026-09-11T03:53:45.471070+00:00",
+      "action": "block",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {},
+      "record_hash": "9c7ff587dfd9a5b775cff23acd087a21ca936ce6442c9518e2fb516c7f797d9a"
+    },
+    {
+      "at": "2026-09-11T03:59:09.209529+00:00",
+      "action": "reopen",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-07T16:17:27.850028+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion.json",
+          "sha256": "6484a9ab346833a585e86c17daf394722ea36704a9ac0ef962f6f4f6fa3b8f5b"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-review.json",
+          "sha256": "afc1fa0f98856ac501f074a5c4d1bbb84fc310e15fd5eb4b068d95a2f8effe6e"
+        }
+      },
+      "record_hash": "0a7c8fa83fd2fd25b93a183178b36568dfbe450f81fd6bca643fe7f689c9024d"
+    },
+    {
+      "at": "2026-09-11T04:17:30.585338+00:00",
+      "action": "prepare",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "ADR-0014 and P0 refresh contract/fixtures approved by project owner",
+        "updated_at": "2026-09-11T03:59:09.209529+00:00"
+      },
+      "record_hash": "7bfc1beb5d8c7cd0ec67c58f5afbf066169c16512eef64a5bdbf9ab6e423be6d"
+    },
+    {
+      "at": "2026-09-11T04:17:39.148286+00:00",
+      "action": "start",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-11T04:17:30.584338+00:00"
+      },
+      "record_hash": "7b4f03115ea38b98dd6d0d08530274df7c61561d0ad06da406d4c57c8b729266"
+    },
+    {
+      "at": "2026-09-11T04:20:56.628842+00:00",
+      "action": "submit",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-11T04:17:39.148286+00:00"
+      },
+      "record_hash": "eea942244fe20bf4af677cdbf56cd72bb74ea813800fda52beffc6bc96cb402d"
+    },
+    {
+      "at": "2026-09-11T04:20:56.770655+00:00",
+      "action": "accept",
+      "task_id": "PH00-BE-CONTRACT-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-readiness.json",
+          "sha256": "916d2757439d13a30795e21b6178f6b0df73927aa4ac7836d676bc47a03bb04f"
+        },
+        "dependencies": {
+          "PH00-GOV-AUDIT-01": "82006e29ea56fb201f5c0688cfb727d935771fd1535c7fee4eb64c50cbdd7c38"
+        },
+        "updated_at": "2026-09-11T04:20:56.628842+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-BE-CONTRACT-01-completion.json",
+          "sha256": "e552886687d7b58b90bf651ecb55a8abfe8f4197e15e553b136082a559838de6"
+        }
+      },
+      "record_hash": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+    },
+    {
+      "at": "2026-09-11T04:21:25.322809+00:00",
+      "action": "reopen",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "c900320f4a162eddb9a5c5a3db60fb6c2cc0e0abab302873fe906420c7ccd903"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "33deac13f04c34ece5953f38761c358ecf780203729f710ec1bd026145bb321e"
+        },
+        "updated_at": "2026-09-07T16:47:18.715776+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion.json",
+          "sha256": "209ba712f5042e2fa346b9ec6159055c2b0019c506a58bd1cfd647d448a0fb96"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-review.json",
+          "sha256": "c03a28d16a012d20a1b104f5b88ba98b29833be0a5c35ee34b3a23dae2f5d377"
+        }
+      },
+      "record_hash": "01a81801231d0ac3cc186e354026b193e987dce73a1b536d0cd11d557b4a369c"
+    },
+    {
+      "at": "2026-09-11T04:21:25.499922+00:00",
+      "action": "prepare",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate successor receipt after accepted PH00-BE-CONTRACT-01 browser refresh-contract update",
+        "updated_at": "2026-09-11T04:21:25.322809+00:00"
+      },
+      "record_hash": "16b12d0bd41801b0939538db833fbbfee0bd25e2bfb3234e6caf5284f8c78f84"
+    },
+    {
+      "at": "2026-09-11T04:21:25.778178+00:00",
+      "action": "start",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "b4a6cacaf7e38d2e33c5dee04c8494f27d33909ea7badae1dccc73cac32a3966"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+        },
+        "updated_at": "2026-09-11T04:21:25.499922+00:00"
+      },
+      "record_hash": "8c6b2db9a8e86bea696f0e41fcb7600765fa3037f40d85477f56f9fd10ce226d"
+    },
+    {
+      "at": "2026-09-11T04:21:58.282483+00:00",
+      "action": "submit",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "b4a6cacaf7e38d2e33c5dee04c8494f27d33909ea7badae1dccc73cac32a3966"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+        },
+        "updated_at": "2026-09-11T04:21:25.778178+00:00"
+      },
+      "record_hash": "7b99799c1c293a1b591dc5bcd8089876acba11075ed10c7e44539b69869a9fa5"
+    },
+    {
+      "at": "2026-09-11T04:21:58.458760+00:00",
+      "action": "accept",
+      "task_id": "PH00-DATA-BOUNDARY-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-readiness.json",
+          "sha256": "b4a6cacaf7e38d2e33c5dee04c8494f27d33909ea7badae1dccc73cac32a3966"
+        },
+        "dependencies": {
+          "PH00-BE-CONTRACT-01": "d32912f9cb6d3ab4e621c41491a89c843c07c32583e0c6dd93bb4421895eade0"
+        },
+        "updated_at": "2026-09-11T04:21:58.282483+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH00-DATA-BOUNDARY-01-completion.json",
+          "sha256": "f406f119cc295ccee279c3f61dbe5aed27377d7e7f4c6490bbaf2ff025578c3b"
+        }
+      },
+      "record_hash": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+    },
+    {
+      "at": "2026-09-11T04:22:19.663753+00:00",
+      "action": "reopen",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "c2dd11239c49f643a6f497748c9850f6012a7bca5b4dd472b07ffe90efae4ffe"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "b9b0727e138b0018ebeafcbfe8a5c6372883b1e2ef809daec2f410630ed4099b"
+        },
+        "updated_at": "2026-09-10T18:39:10.940951+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+          "sha256": "20225eeb8a18d23d2af256f766d34368c2d430452f4b8c91061a5a2efc91348a"
+        },
+        "review": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-review.json",
+          "sha256": "efa725240bb2aca7034ecc168a57e5e194912eb78e6ec7c1163afb1202b83031"
+        }
+      },
+      "record_hash": "c19c1e4e8bfef499cb91130e7fffb2431aa0b95d3cc86f0a37f71ccdbb27cdaa"
+    },
+    {
+      "at": "2026-09-11T04:22:19.876557+00:00",
+      "action": "prepare",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate successor receipt after accepted PH00-DATA-BOUNDARY-01 revalidation",
+        "updated_at": "2026-09-11T04:22:19.663753+00:00"
+      },
+      "record_hash": "f763643807c9155b20fb69f9f3e1b32f2f3473fcb1213e7c64bf6ea17a407928"
+    },
+    {
+      "at": "2026-09-11T04:22:20.180301+00:00",
+      "action": "start",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+        },
+        "updated_at": "2026-09-11T04:22:19.876557+00:00"
+      },
+      "record_hash": "c1bb7c0d1c48cfe19d6e2b5bffd88d4877f9262203bbf086ba05d91e7fc9bdb9"
+    },
+    {
+      "at": "2026-09-11T04:24:10.031178+00:00",
+      "action": "submit",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+        },
+        "updated_at": "2026-09-11T04:22:20.180301+00:00"
+      },
+      "record_hash": "98c70c3e9e55cebe30e536ca93b4bf00fc7b5fa57ba28f1493d2dde1a38f0e4e"
+    },
+    {
+      "at": "2026-09-11T04:24:10.232699+00:00",
+      "action": "accept",
+      "task_id": "PH00-BE-TOOLCHAIN-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-readiness.json",
+          "sha256": "e4e2b189fa7db1ece228f29830ac80ab7aacfca6e6e0a7b4d19c6965a93e946a"
+        },
+        "dependencies": {
+          "PH00-DATA-BOUNDARY-01": "372772f20c51c8bf4a32029905d54149fb6a3133717a3e021fcfcdb1e3e3ee68"
+        },
+        "updated_at": "2026-09-11T04:24:10.031178+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/ph00-be-toolchain-01-completion.json",
+          "sha256": "52a764087f3b636e9e1bc9aaab43e8b7cb2c347471526e2ec39e670cf2b36b83"
+        }
+      },
+      "record_hash": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+    },
+    {
+      "at": "2026-09-11T04:24:29.577646+00:00",
+      "action": "reopen",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "7952475f8f47b29d9715110b19f5e4ebac59d92a2c4aa58297feebe2c39906c2"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "5e4f18a223db8e66ec8f2af8dbabb59ae40702068c6e33418189ae49d3a09914"
+        },
+        "updated_at": "2026-09-10T18:43:52.589417+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "a19fb9fcaea86050aab0812374be10accd354bb5cf80063a91b37b87b88bfbd3"
+        },
+        "review": {
+          "path": "docs/execution/evidence/G0-01-review.json",
+          "sha256": "90c1d08d84fd2213bd3a735acc932a84e296eae875ac064169d1a4c021127a46"
+        }
+      },
+      "record_hash": "cb2ee814c5bda38175d46b74e4f2622471ccb8d0ae61329f70cffdbbd45f4e45"
+    },
+    {
+      "at": "2026-09-11T04:24:29.776302+00:00",
+      "action": "prepare",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate G0 after accepted PH00 contract, data-boundary and toolchain receipts",
+        "updated_at": "2026-09-11T04:24:29.577646+00:00"
+      },
+      "record_hash": "dbec65a30be062cc33cfdd9e80d93b862840cde6592461a2f797723277129af6"
+    },
+    {
+      "at": "2026-09-11T04:24:30.106679+00:00",
+      "action": "start",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:24:29.776302+00:00"
+      },
+      "record_hash": "88c837dd74e87ebfd31c4e2bfe4cd220cb469961135f9f950badecafa10ecd54"
+    },
+    {
+      "at": "2026-09-11T04:25:21.047509+00:00",
+      "action": "submit",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:24:30.106679+00:00"
+      },
+      "record_hash": "3b665bd80ccdd26d1a599a7930888986fa72563ed947f17a9ff406c2e71d1d2c"
+    },
+    {
+      "at": "2026-09-11T04:25:21.237986+00:00",
+      "action": "accept",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:25:21.047509+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "584c90d6675e41be9c9a4df6ffba24506f515001d1cd52988fcb48727cbd68bb"
+        }
+      },
+      "record_hash": "92dae7a80474e1b1da0dc527757b9d6a07480c157a96aa4bd8b15895f2920126"
+    },
+    {
+      "at": "2026-09-11T04:30:53.783745+00:00",
+      "action": "reopen",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:25:21.237986+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "584c90d6675e41be9c9a4df6ffba24506f515001d1cd52988fcb48727cbd68bb"
+        },
+        "review": {
+          "path": "docs/execution/evidence/G0-01-review.json",
+          "sha256": "e567540ac65ee82702d8f5bacce64da206f74170b3dc503615f41f7bebaba2eb"
+        }
+      },
+      "record_hash": "9db92f9b8f1cf54dcbb3292e366fb8587ecd1b0eb60298f85c51869d2f9118a7"
+    },
+    {
+      "at": "2026-09-11T04:30:53.977480+00:00",
+      "action": "prepare",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Add reviewed impact metadata for the accepted browser refresh-contract change",
+        "updated_at": "2026-09-11T04:30:53.783745+00:00"
+      },
+      "record_hash": "2832eaca7a997a9c3e5f0189560ddcb986a0cf43fdda44c843d04e1f3b9fbc74"
+    },
+    {
+      "at": "2026-09-11T04:30:54.297139+00:00",
+      "action": "start",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:30:53.977480+00:00"
+      },
+      "record_hash": "2bcd814cf304f44d5ebb97622cb97d13815c3b41fb4645c51271641a1780a260"
+    },
+    {
+      "at": "2026-09-11T04:31:50.069233+00:00",
+      "action": "submit",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:30:54.297139+00:00"
+      },
+      "record_hash": "25a5eba9f5e05bf896c6267382759f7ff55a1a8289f04988ebb33148b86a3937"
+    },
+    {
+      "at": "2026-09-11T04:31:50.273153+00:00",
+      "action": "accept",
+      "task_id": "G0-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/G0-01-readiness.json",
+          "sha256": "113ac9f6e3ad769332ff9657937c0caf409f775bb1f780bee1b4000f5ad04fc0"
+        },
+        "dependencies": {
+          "PH00-BE-TOOLCHAIN-01": "c30990b61faf1b222f7bf344040fe23b0b51ba486a35466c0402b7a6083d0995"
+        },
+        "updated_at": "2026-09-11T04:31:50.069233+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/G0-01-completion.json",
+          "sha256": "7366422434ced80487928df1b47dcbd8d30a80ed3c95ed75ba7bdd231f193aa2"
+        }
+      },
+      "record_hash": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
+    },
+    {
+      "at": "2026-09-11T04:43:03.373425+00:00",
+      "action": "reopen",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "BL-FE-FOUNDATION-02: P0 OpenAPI lacks refresh endpoint, DTO, browser token-transport policy and error semantics; see docs/execution/evidence/PH01-FE-FOUNDATION-02-blocker.md",
+        "updated_at": "2026-09-11T03:53:45.471070+00:00"
+      },
+      "record_hash": "2214559ee424d7266dd35ed3e6f65d3b07644b86ae5748477024165a77347621"
+    },
+    {
+      "at": "2026-09-11T04:43:04.110077+00:00",
+      "action": "prepare",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "ADR-0014 and P0 refresh contract resolve BL-FE-FOUNDATION-02; prepare current DoR",
+        "updated_at": "2026-09-11T04:43:03.373425+00:00"
+      },
+      "record_hash": "689e69a014f8b5c0b089305cdd6bba9bf197026f30f467302aa5c91307cba68d"
+    },
+    {
+      "at": "2026-09-11T04:43:04.737155+00:00",
+      "action": "start",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
+          "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+        },
+        "updated_at": "2026-09-11T04:43:04.110077+00:00"
+      },
+      "record_hash": "952611679d89ce1c820d1189d448565b838598a4e9a06a117f7ef3c7bfd0d367"
+    },
+    {
+      "at": "2026-09-11T04:54:57.391572+00:00",
+      "action": "submit",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
+          "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+        },
+        "updated_at": "2026-09-11T04:43:04.737155+00:00"
+      },
+      "record_hash": "0ead8e7759f6697bad7d016ba6b0f91ee4c9ba552c9b418d39a46afdb7666e90"
+    },
+    {
+      "at": "2026-09-11T04:55:54.912833+00:00",
+      "action": "accept",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
+          "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+        },
+        "updated_at": "2026-09-11T04:54:57.391572+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-completion.json",
+          "sha256": "0c744cf7d4fcd654d6e8f1f456cf19f305ce561dd5f9786fd131ba024418d965"
+        }
+      },
+      "record_hash": "1553258e920572fb7333c0396e8c4fb9b13fffc9eb02806f5ff0e8d1e81c2a89"
+    },
+    {
+      "at": "2026-09-11T05:01:51.362116+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {},
+      "record_hash": "a76d7c27f9016db4af0bdad2cc758464e2f25dee5c1d109d24628e594299c21e"
+    },
+    {
+      "at": "2026-09-11T05:01:51.867882+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-CI-01-readiness.json",
+          "sha256": "6ce2ab5870c6a07c11329a31a6f08494a1a55d83014aa82bd96f8994deb147c7"
+        },
+        "dependencies": {
+          "PH01-BE-PLATFORM-01": "2865b4a17564e3ae3da68d09c9e192d441ace539954909d7ce3b4b151c84ff2b"
+        },
+        "updated_at": "2026-09-11T05:01:51.362116+00:00"
+      },
+      "record_hash": "5a136b17e4e32104b3bb4016ecea761e54942c93c69f2e99008ae4ccc487f4f4"
+    },
+    {
+      "at": "2026-09-11T05:07:31.302328+00:00",
+      "action": "reopen",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-CI-01-readiness.json",
+          "sha256": "6ce2ab5870c6a07c11329a31a6f08494a1a55d83014aa82bd96f8994deb147c7"
+        },
+        "dependencies": {
+          "PH01-BE-PLATFORM-01": "2865b4a17564e3ae3da68d09c9e192d441ace539954909d7ce3b4b151c84ff2b"
+        },
+        "updated_at": "2026-09-11T05:01:51.867882+00:00"
+      },
+      "record_hash": "277576936aede8264df9a279d5aaff4e514cc7b2acf153d4835fe4e04c1d8645"
+    },
+    {
+      "at": "2026-09-11T05:08:59.468936+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Workflow CI is an owned task output; regenerate plan source hashes and renew DoR before continuing.",
+        "updated_at": "2026-09-11T05:07:31.302328+00:00"
+      },
+      "record_hash": "e1ab6dd2acc0bd3dbbab85d544a423061862d33b80c6b461a5d173d02e5a16b3"
+    },
+    {
+      "at": "2026-09-11T05:08:59.914008+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-CI-01-readiness.json",
+          "sha256": "8da0a7b21c05134b8e053df0c60f859e18dcb570552668553a20c13be0847dda"
+        },
+        "dependencies": {
+          "PH01-BE-PLATFORM-01": "2865b4a17564e3ae3da68d09c9e192d441ace539954909d7ce3b4b151c84ff2b"
+        },
+        "updated_at": "2026-09-11T05:08:59.468936+00:00"
+      },
+      "record_hash": "d6a4f9034a839760777d602bec369e488a447cdf70e8ddf2003ca12e25129dbc"
+    },
+    {
+      "at": "2026-09-11T05:10:38.497909+00:00",
+      "action": "block",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-CI-01-readiness.json",
+          "sha256": "8da0a7b21c05134b8e053df0c60f859e18dcb570552668553a20c13be0847dda"
+        },
+        "dependencies": {
+          "PH01-BE-PLATFORM-01": "2865b4a17564e3ae3da68d09c9e192d441ace539954909d7ce3b4b151c84ff2b"
+        },
+        "updated_at": "2026-09-11T05:08:59.914008+00:00"
+      },
+      "record_hash": "1af817c9b2b7b0e323928870481c91dd198dea7ea044624f86317d6458c5826a"
+    }
+  ]
+}

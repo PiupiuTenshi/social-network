@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id='title'>Luồng báo cáo và điều hành</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="900" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="110" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="56" y="54" font-size="30" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Luồng báo cáo và điều hành</text>
+<text x="56" y="84" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.92">Báo cáo thủ công, bằng chứng tối thiểu, hành động và audit</text>
+<rect x="60" y="220" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="165.0" y="254" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Người dùng báo cáo</text>
+<text x="78" y="280" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Reason + mô tả tối thiểu</text>
+<rect x="330" y="220" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="435.0" y="254" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">ContentReport</text>
+<text x="348" y="280" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Dedupe + rate limit</text>
+<rect x="600" y="130" width="210" height="120" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" rx="16" opacity="1"/>
+<text x="705.0" y="164" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Hàng đợi</text>
+<text x="618" y="190" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Priority + assignment</text>
+<rect x="600" y="330" width="210" height="120" fill="#FEF2F2" stroke="#FECACA" stroke-width="1" rx="16" opacity="1"/>
+<text x="705.0" y="364" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Báo cáo trùng/sai</text>
+<text x="618" y="390" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Rejected</text>
+<rect x="870" y="130" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="975.0" y="164" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Duyệt bằng chứng</text>
+<text x="888" y="190" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">PII che, access audit</text>
+<rect x="1140" y="130" width="220" height="120" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" rx="16" opacity="1"/>
+<text x="1250.0" y="164" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Yêu cầu hành động</text>
+<text x="1158" y="190" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Target service áp dụng</text>
+<rect x="870" y="410" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="975.0" y="444" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Không vi phạm</text>
+<text x="888" y="470" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Reject + reason</text>
+<rect x="1140" y="410" width="220" height="120" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1250.0" y="444" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Đóng hồ sơ</text>
+<text x="1158" y="470" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Audit append-only</text>
+<rect x="600" y="590" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="705.0" y="624" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Retention</text>
+<text x="618" y="650" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Evidence theo policy/hold</text>
+<line x1="270" y1="280" x2="330" y2="280" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="330,280 321.5567207449798,285.35826794979 321.5567207449798,274.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="540" y1="260" x2="600" y2="190" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="600,190 598.5734870152736,199.8977300783769 590.4368863790328,192.92350096159907" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="540" y1="300" x2="600" y2="390" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="600,390 590.8581629156921,385.94699929385973 599.7748597652197,380.002534727508" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="810" y1="190" x2="870" y2="190" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="870,190 861.5567207449799,195.35826794978996 861.5567207449799,184.64173205021004" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1080" y1="190" x2="1140" y2="190" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1140,190 1131.5567207449799,195.35826794978996 1131.5567207449799,184.64173205021004" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="980" y1="250" x2="980" y2="410" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="980,410 974.6417320502101,401.5567207449798 985.3582679497899,401.5567207449798" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1080" y1="470" x2="1140" y2="470" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1140,470 1131.5567207449799,475.35826794979 1131.5567207449799,464.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1250" y1="250" x2="1250" y2="410" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1250,410 1244.64173205021,401.5567207449798 1255.35826794979,401.5567207449798" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1250" y1="530" x2="705" y2="590" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="705,590 712.8062142673999,583.7499584952225 713.9789310131368,594.4021356023331" fill="#64748B" stroke="none" stroke-width="1"/>
+</svg>

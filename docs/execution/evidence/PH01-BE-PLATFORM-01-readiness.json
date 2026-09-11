@@ -1,0 +1,67 @@
+{
+    "version":  1,
+    "kind":  "readiness",
+    "task_id":  "PH01-BE-PLATFORM-01",
+    "task_fingerprint":  "4fc633bab6c36a4a9caafc03cd3c5aa7766576878d239223d837939a4febf618",
+    "actor":  "Codex",
+    "recorded_at":  "2026-09-11T09:02:39.1465411+07:00",
+    "environment":  "Windows PowerShell; .NET SDK 10.0.204; accepted PH01-DATA-INFRA-01 local infrastructure.",
+    "baseline":  "Local working tree after PH01-DATA-INFRA-01 reacceptance and ADR-0013 scope decision.",
+    "checks":  {
+                   "DOR01":  {
+                                 "passed":  true,
+                                 "detail":  "MÃ¡Â»Â¥c tiÃƒÂªu, trong/ngoÃƒÂ i phÃ¡ÂºÂ¡m vi vÃƒÂ  acceptance Ã„â€˜ÃƒÂ£ rÃƒÂµ",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR02":  {
+                                 "passed":  true,
+                                 "detail":  "P0 contracts, service ownership, PH01-DATA-INFRA-01 and ADR-0013 lock Platform inputs and explicitly allocate resource-runtime tests to later owning services.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR03":  {
+                                 "passed":  true,
+                                 "detail":  "PhÃƒÂ¢n quyÃ¡Â»Ân, PII, concurrency/idempotency vÃƒÂ  failure modes Ã„â€˜ÃƒÂ£ xÃƒÂ©t",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR04":  {
+                                 "passed":  true,
+                                 "detail":  "PH01-DATA-INFRA-01 is DONE with current reviewed handoff; G0-01 is also valid.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR05":  {
+                                 "passed":  true,
+                                 "detail":  "LÃ¡Â»â€¡nh kiÃ¡Â»Æ’m chÃ¡Â»Â©ng vÃƒÂ  mÃƒÂ´i trÃ†Â°Ã¡Â»Âng thÃ¡ÂºÂ­t Ã„â€˜ÃƒÂ£ xÃƒÂ¡c Ã„â€˜Ã¡Â»â€¹nh",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR06":  {
+                                 "passed":  true,
+                                 "detail":  "Migration/rollback hoÃ¡ÂºÂ·c lÃƒÂ½ do khÃƒÂ´ng ÃƒÂ¡p dÃ¡Â»Â¥ng Ã„â€˜Ã†Â°Ã¡Â»Â£c review",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR07":  {
+                                 "passed":  true,
+                                 "detail":  "NgÃ†Â°Ã¡Â»Âi thÃ¡Â»Â±c hiÃ¡Â»â€¡n, phÃ¡ÂºÂ¡m vi quyÃ¡Â»Ân vÃƒÂ  Ã„â€˜iÃ¡Â»Âu kiÃ¡Â»â€¡n dÃ¡Â»Â«ng Ã„â€˜ÃƒÂ£ xÃƒÂ¡c Ã„â€˜Ã¡Â»â€¹nh",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md"
+                                               ]
+                             }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md",
+                          "sha256":  "26a8aae748ab1cb85ba65904edfcc18f41647f79b15721b07ad5f4e71e779d1c"
+                      }
+                  ]
+}

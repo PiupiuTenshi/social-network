@@ -1,0 +1,53 @@
+# .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+coverage/
+
+# Node/Angular
+node_modules/
+dist/
+.angular/
+.nx/
+
+# IDE/AI local state
+.idea/
+.vscode/*.log
+.cursor/cache/
+.claude/settings.local.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+secrets/
+*.pfx
+*.pem
+*.key
+
+# Runtime data
+volumes/
+/data/
+logs/
+*.log
+
+# Generated task work
+work/tasks/*/context.generated.md
+work/tasks/*/artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache and execution gate transient lock
+.venv/
+__pycache__/
+*.pyc
+/docs/execution/state.json.lock
+/docs/execution/state.json.tmp
+/work/document-audit/
+/work/toolchain-migration/
+/artifacts/

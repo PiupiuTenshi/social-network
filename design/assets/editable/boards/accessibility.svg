@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id='title'>Accessibility</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="1100" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="120" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="64" y="62" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Accessibility</text>
+<text x="64" y="94" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.9">WCAG 2.2 AA cho luồng P0/P1</text>
+<rect x="64" y="190" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="289" cy="260" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="289" y="272" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">⌨</text>
+<text x="289" y="330" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Bàn phím</text>
+<text x="124" y="366" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Focus rõ, thứ tự logic, dialog giữ và trả focus.</text>
+<rect x="154" y="422" width="270" height="34" fill="#FFFFFF" stroke="#5B4AD1" stroke-width="3" rx="8" opacity="1"/>
+<text x="289" y="444" font-size="12" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">Focus visible</text>
+<rect x="564" y="190" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="789" cy="260" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="789" y="272" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">◉</text>
+<text x="789" y="330" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Trình đọc màn hình</text>
+<text x="624" y="366" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Landmark, heading, label, live region hợp lý.</text>
+<rect x="1064" y="190" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="1289" cy="260" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1289" y="272" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">◐</text>
+<text x="1289" y="330" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Màu và tương phản</text>
+<text x="1124" y="366" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Không dùng màu đơn độc; text &gt;= 4.5:1.</text>
+<rect x="64" y="520" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="289" cy="590" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="289" y="602" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">☝</text>
+<text x="289" y="660" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Touch target</text>
+<text x="124" y="696" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Tối thiểu 44 x 44 px, đủ khoảng cách.</text>
+<rect x="267" y="742" width="44" height="44" fill="#5B4AD1" stroke="none" stroke-width="0" rx="10" opacity="1"/>
+<text x="289" y="770" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" opacity="1">44</text>
+<rect x="564" y="520" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="789" cy="590" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="789" y="602" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">↝</text>
+<text x="789" y="660" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Motion</text>
+<text x="624" y="696" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Tôn trọng prefers-reduced-motion.</text>
+<rect x="1064" y="520" width="450" height="280" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="18" opacity="1"/>
+<circle cx="1289" cy="590" r="42" fill="#EEF2FF" stroke="none" stroke-width="1" opacity="1"/>
+<text x="1289" y="602" font-size="32" font-weight="700" fill="#5B4AD1" text-anchor="middle" opacity="1">✓</text>
+<text x="1289" y="660" font-size="19" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Form</text>
+<text x="1124" y="696" font-size="13" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Label luôn có; lỗi gắn trường và có summary.</text>
+</svg>

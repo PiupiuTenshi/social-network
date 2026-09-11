@@ -1,0 +1,53 @@
+<a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+<header class="topbar">
+  <a
+    class="brand"
+    routerLink="/home"
+    aria-label="Twight Light - Trang chủ"
+    (click)="state.closeNavigation()"
+    ><span aria-hidden="true">✦</span><span>Twight Light</span></a
+  >
+  <div class="topbar-actions">
+    <span class="connection" [class.offline]="!state.online()" aria-live="polite">{{
+      state.online() ? 'Đã kết nối' : 'Ngoại tuyến'
+    }}</span>
+    <button
+      class="icon-button"
+      type="button"
+      (click)="state.toggleTheme()"
+      [attr.aria-label]="state.themeLabel()"
+    >
+      <span aria-hidden="true">◐</span>
+    </button>
+    <button
+      class="icon-button menu-button"
+      type="button"
+      (click)="state.toggleNavigation()"
+      [attr.aria-expanded]="state.navigationOpen()"
+      aria-controls="primary-navigation"
+      aria-label="Mở điều hướng"
+    >
+      <span aria-hidden="true">☰</span>
+    </button>
+  </div>
+</header>
+<div class="layout">
+  <nav
+    id="primary-navigation"
+    class="sidebar"
+    aria-label="Điều hướng chính"
+    [class.is-open]="state.navigationOpen()"
+  >
+    @for (item of navigation; track item.route) {
+      <a
+        class="nav-link"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        (click)="state.closeNavigation()"
+        ><span aria-hidden="true">{{ item.icon }}</span
+        ><span>{{ item.label }}</span></a
+      >
+    }
+  </nav>
+  <main id="main-content" tabindex="-1" class="content"><router-outlet /></main>
+</div>

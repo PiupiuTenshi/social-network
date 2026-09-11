@@ -1,0 +1,1102 @@
+{
+    "openapi":  "3.1.0",
+    "info":  {
+                 "title":  "TwightLight P0 API",
+                 "version":  "1.0.0-p0",
+                 "description":  "Accepted by ADR-0011; text-only P0."
+             },
+    "paths":  {
+                  "/auth/register":  {
+                                         "post":  {
+                                                      "operationId":  "register",
+                                                      "x-permission":  "anonymous",
+                                                      "requestBody":  {
+                                                                          "required":  true,
+                                                                          "content":  {
+                                                                                          "application/json":  {
+                                                                                                                   "schema":  {
+                                                                                                                                  "$ref":  "#/components/schemas/RegisterRequest"
+                                                                                                                              }
+                                                                                                               }
+                                                                                      }
+                                                                      },
+                                                      "responses":  {
+                                                                        "201":  {
+                                                                                    "$ref":  "#/components/responses/User"
+                                                                                },
+                                                                        "409":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "422":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "429":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "503":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                }
+                                                                    }
+                                                  }
+                                     },
+                  "/auth/login":  {
+                                      "post":  {
+                                                   "operationId":  "login",
+                                                   "x-permission":  "anonymous",
+                                                   "requestBody":  {
+                                                                       "required":  true,
+                                                                       "content":  {
+                                                                                       "application/json":  {
+                                                                                                                "schema":  {
+                                                                                                                               "$ref":  "#/components/schemas/LoginRequest"
+                                                                                                                           }
+                                                                                                            }
+                                                                                   }
+                                                                   },
+                                                   "responses":  {
+                                                                     "200":  {
+                                                                                 "$ref":  "#/components/responses/Session"
+                                                                             },
+                                                                     "401":  {
+                                                                                 "$ref":  "#/components/responses/Error"
+                                                                             },
+                                                                     "429":  {
+                                                                                 "$ref":  "#/components/responses/Error"
+                                                                             },
+                                                                     "503":  {
+                                                                                 "$ref":  "#/components/responses/Error"
+                                                                             }
+                                                                 }
+                                               }
+                                  },
+                  "/auth/logout":  {
+                                       "post":  {
+                                                    "operationId":  "logout",
+                                                    "x-permission":  "authenticated",
+                                                    "responses":  {
+                                                                      "204":  {
+                                                                                  "description":  "Session revoked"
+                                                                              },
+                                                                      "401":  {
+                                                                                  "$ref":  "#/components/responses/Error"
+                                                                              },
+                                                                      "503":  {
+                                                                                  "$ref":  "#/components/responses/Error"
+                                                                              }
+                                                                  }
+                                                }
+                                   },
+                  "/users/me":  {
+                                    "get":  {
+                                                "operationId":  "getCurrentUser",
+                                                "x-permission":  "authenticated",
+                                                "responses":  {
+                                                                  "200":  {
+                                                                              "$ref":  "#/components/responses/User"
+                                                                          },
+                                                                  "401":  {
+                                                                              "$ref":  "#/components/responses/Error"
+                                                                          },
+                                                                  "503":  {
+                                                                              "$ref":  "#/components/responses/Error"
+                                                                          }
+                                                              }
+                                            }
+                                },
+                  "/users/me/settings":  {
+                                             "get":  {
+                                                         "operationId":  "getCurrentSettings",
+                                                         "x-permission":  "authenticated",
+                                                         "responses":  {
+                                                                           "200":  {
+                                                                                       "$ref":  "#/components/responses/Settings"
+                                                                                   },
+                                                                           "401":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "503":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   }
+                                                                       }
+                                                     },
+                                             "patch":  {
+                                                           "operationId":  "patchCurrentSettings",
+                                                           "x-permission":  "self",
+                                                           "parameters":  [
+                                                                              {
+                                                                                  "$ref":  "#/components/parameters/IfMatch"
+                                                                              }
+                                                                          ],
+                                                           "requestBody":  {
+                                                                               "required":  true,
+                                                                               "content":  {
+                                                                                               "application/json":  {
+                                                                                                                        "schema":  {
+                                                                                                                                       "$ref":  "#/components/schemas/SettingsPatch"
+                                                                                                                                   }
+                                                                                                                    }
+                                                                                           }
+                                                                           },
+                                                           "responses":  {
+                                                                             "200":  {
+                                                                                         "$ref":  "#/components/responses/Settings"
+                                                                                     },
+                                                                             "401":  {
+                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                     },
+                                                                             "412":  {
+                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                     },
+                                                                             "422":  {
+                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                     },
+                                                                             "503":  {
+                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                     }
+                                                                         }
+                                                       }
+                                         },
+                  "/users/me/relationships":  {
+                                                  "get":  {
+                                                              "operationId":  "listRelationships",
+                                                              "x-permission":  "self",
+                                                              "responses":  {
+                                                                                "200":  {
+                                                                                            "$ref":  "#/components/responses/Collection"
+                                                                                        },
+                                                                                "401":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "503":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        }
+                                                                            }
+                                                          }
+                                              },
+                  "/users/me/blocks":  {
+                                           "get":  {
+                                                       "operationId":  "listBlocks",
+                                                       "x-permission":  "self",
+                                                       "responses":  {
+                                                                         "200":  {
+                                                                                     "$ref":  "#/components/responses/Collection"
+                                                                                 },
+                                                                         "401":  {
+                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                 },
+                                                                         "503":  {
+                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                 }
+                                                                     }
+                                                   }
+                                       },
+                  "/users/{userId}/relationships":  {
+                                                        "post":  {
+                                                                     "operationId":  "createRelationship",
+                                                                     "x-permission":  "self",
+                                                                     "parameters":  [
+                                                                                        {
+                                                                                            "$ref":  "#/components/parameters/UserId"
+                                                                                        },
+                                                                                        {
+                                                                                            "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                                        }
+                                                                                    ],
+                                                                     "responses":  {
+                                                                                       "201":  {
+                                                                                                   "$ref":  "#/components/responses/Resource"
+                                                                                               },
+                                                                                       "401":  {
+                                                                                                   "$ref":  "#/components/responses/Error"
+                                                                                               },
+                                                                                       "403":  {
+                                                                                                   "$ref":  "#/components/responses/Error"
+                                                                                               },
+                                                                                       "409":  {
+                                                                                                   "$ref":  "#/components/responses/Error"
+                                                                                               },
+                                                                                       "503":  {
+                                                                                                   "$ref":  "#/components/responses/Error"
+                                                                                               }
+                                                                                   }
+                                                                 },
+                                                        "delete":  {
+                                                                       "operationId":  "deleteRelationship",
+                                                                       "x-permission":  "self",
+                                                                       "parameters":  [
+                                                                                          {
+                                                                                              "$ref":  "#/components/parameters/UserId"
+                                                                                          },
+                                                                                          {
+                                                                                              "$ref":  "#/components/parameters/IfMatch"
+                                                                                          }
+                                                                                      ],
+                                                                       "responses":  {
+                                                                                         "204":  {
+                                                                                                     "description":  "Deleted"
+                                                                                                 },
+                                                                                         "401":  {
+                                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                                 },
+                                                                                         "403":  {
+                                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                                 },
+                                                                                         "404":  {
+                                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                                 },
+                                                                                         "412":  {
+                                                                                                     "$ref":  "#/components/responses/Error"
+                                                                                                 }
+                                                                                     }
+                                                                   }
+                                                    },
+                  "/users/{userId}/blocks":  {
+                                                 "post":  {
+                                                              "operationId":  "blockUser",
+                                                              "x-permission":  "self",
+                                                              "parameters":  [
+                                                                                 {
+                                                                                     "$ref":  "#/components/parameters/UserId"
+                                                                                 },
+                                                                                 {
+                                                                                     "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                                 }
+                                                                             ],
+                                                              "responses":  {
+                                                                                "201":  {
+                                                                                            "$ref":  "#/components/responses/Resource"
+                                                                                        },
+                                                                                "401":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "409":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "503":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        }
+                                                                            }
+                                                          },
+                                                 "delete":  {
+                                                                "operationId":  "unblockUser",
+                                                                "x-permission":  "self",
+                                                                "parameters":  [
+                                                                                   {
+                                                                                       "$ref":  "#/components/parameters/UserId"
+                                                                                   },
+                                                                                   {
+                                                                                       "$ref":  "#/components/parameters/IfMatch"
+                                                                                   }
+                                                                               ],
+                                                                "responses":  {
+                                                                                  "204":  {
+                                                                                              "description":  "Deleted"
+                                                                                          },
+                                                                                  "401":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          },
+                                                                                  "404":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          },
+                                                                                  "412":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          }
+                                                                              }
+                                                            }
+                                             },
+                  "/posts":  {
+                                 "get":  {
+                                             "operationId":  "listPosts",
+                                             "x-permission":  "authenticated",
+                                             "responses":  {
+                                                               "200":  {
+                                                                           "$ref":  "#/components/responses/Collection"
+                                                                       },
+                                                               "401":  {
+                                                                           "$ref":  "#/components/responses/Error"
+                                                                       },
+                                                               "503":  {
+                                                                           "$ref":  "#/components/responses/Error"
+                                                                       }
+                                                           }
+                                         },
+                                 "post":  {
+                                              "operationId":  "createPost",
+                                              "x-permission":  "authenticated",
+                                              "parameters":  [
+                                                                 {
+                                                                     "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                 }
+                                                             ],
+                                              "requestBody":  {
+                                                                  "required":  true,
+                                                                  "content":  {
+                                                                                  "application/json":  {
+                                                                                                           "schema":  {
+                                                                                                                          "$ref":  "#/components/schemas/TextPostCreateRequest"
+                                                                                                                      }
+                                                                                                       }
+                                                                              }
+                                                              },
+                                              "responses":  {
+                                                                "201":  {
+                                                                            "$ref":  "#/components/responses/Resource"
+                                                                        },
+                                                                "401":  {
+                                                                            "$ref":  "#/components/responses/Error"
+                                                                        },
+                                                                "403":  {
+                                                                            "$ref":  "#/components/responses/Error"
+                                                                        },
+                                                                "409":  {
+                                                                            "$ref":  "#/components/responses/Error"
+                                                                        },
+                                                                "422":  {
+                                                                            "$ref":  "#/components/responses/Error"
+                                                                        },
+                                                                "503":  {
+                                                                            "$ref":  "#/components/responses/Error"
+                                                                        }
+                                                            }
+                                          }
+                             },
+                  "/posts/{postId}":  {
+                                          "get":  {
+                                                      "operationId":  "getPost",
+                                                      "x-permission":  "authorized-viewer",
+                                                      "parameters":  [
+                                                                         {
+                                                                             "$ref":  "#/components/parameters/PostId"
+                                                                         }
+                                                                     ],
+                                                      "responses":  {
+                                                                        "200":  {
+                                                                                    "$ref":  "#/components/responses/Resource"
+                                                                                },
+                                                                        "401":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "403":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "404":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                }
+                                                                    }
+                                                  },
+                                          "patch":  {
+                                                        "operationId":  "patchPost",
+                                                        "x-permission":  "post-owner",
+                                                        "parameters":  [
+                                                                           {
+                                                                               "$ref":  "#/components/parameters/PostId"
+                                                                           },
+                                                                           {
+                                                                               "$ref":  "#/components/parameters/IfMatch"
+                                                                           }
+                                                                       ],
+                                                        "responses":  {
+                                                                          "200":  {
+                                                                                      "$ref":  "#/components/responses/Resource"
+                                                                                  },
+                                                                          "401":  {
+                                                                                      "$ref":  "#/components/responses/Error"
+                                                                                  },
+                                                                          "403":  {
+                                                                                      "$ref":  "#/components/responses/Error"
+                                                                                  },
+                                                                          "404":  {
+                                                                                      "$ref":  "#/components/responses/Error"
+                                                                                  },
+                                                                          "412":  {
+                                                                                      "$ref":  "#/components/responses/Error"
+                                                                                  }
+                                                                      }
+                                                    },
+                                          "delete":  {
+                                                         "operationId":  "deletePost",
+                                                         "x-permission":  "post-owner",
+                                                         "parameters":  [
+                                                                            {
+                                                                                "$ref":  "#/components/parameters/PostId"
+                                                                            },
+                                                                            {
+                                                                                "$ref":  "#/components/parameters/IfMatch"
+                                                                            }
+                                                                        ],
+                                                         "responses":  {
+                                                                           "204":  {
+                                                                                       "description":  "Deleted"
+                                                                                   },
+                                                                           "401":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "403":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "404":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "412":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   }
+                                                                       }
+                                                     }
+                                      },
+                  "/posts/{postId}/comments":  {
+                                                   "get":  {
+                                                               "operationId":  "listPostComments",
+                                                               "x-permission":  "authorized-viewer",
+                                                               "parameters":  [
+                                                                                  {
+                                                                                      "$ref":  "#/components/parameters/PostId"
+                                                                                  }
+                                                                              ],
+                                                               "responses":  {
+                                                                                 "200":  {
+                                                                                             "$ref":  "#/components/responses/Collection"
+                                                                                         },
+                                                                                 "401":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         },
+                                                                                 "403":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         },
+                                                                                 "404":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         }
+                                                                             }
+                                                           },
+                                                   "post":  {
+                                                                "operationId":  "createComment",
+                                                                "x-permission":  "authorized-viewer",
+                                                                "parameters":  [
+                                                                                   {
+                                                                                       "$ref":  "#/components/parameters/PostId"
+                                                                                   },
+                                                                                   {
+                                                                                       "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                                   }
+                                                                               ],
+                                                                "responses":  {
+                                                                                  "201":  {
+                                                                                              "$ref":  "#/components/responses/Resource"
+                                                                                          },
+                                                                                  "401":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          },
+                                                                                  "403":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          },
+                                                                                  "404":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          },
+                                                                                  "409":  {
+                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                          }
+                                                                              }
+                                                            }
+                                               },
+                  "/conversations":  {
+                                         "get":  {
+                                                     "operationId":  "listConversations",
+                                                     "x-permission":  "participant",
+                                                     "responses":  {
+                                                                       "200":  {
+                                                                                   "$ref":  "#/components/responses/Collection"
+                                                                               },
+                                                                       "401":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               },
+                                                                       "503":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               }
+                                                                   }
+                                                 },
+                                         "post":  {
+                                                      "operationId":  "createConversation",
+                                                      "x-permission":  "authenticated",
+                                                      "parameters":  [
+                                                                         {
+                                                                             "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                         }
+                                                                     ],
+                                                      "responses":  {
+                                                                        "201":  {
+                                                                                    "$ref":  "#/components/responses/Resource"
+                                                                                },
+                                                                        "401":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "409":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                },
+                                                                        "422":  {
+                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                }
+                                                                    }
+                                                  }
+                                     },
+                  "/conversations/{conversationId}":  {
+                                                          "get":  {
+                                                                      "operationId":  "getConversation",
+                                                                      "x-permission":  "participant",
+                                                                      "parameters":  [
+                                                                                         {
+                                                                                             "$ref":  "#/components/parameters/ConversationId"
+                                                                                         }
+                                                                                     ],
+                                                                      "responses":  {
+                                                                                        "200":  {
+                                                                                                    "$ref":  "#/components/responses/Resource"
+                                                                                                },
+                                                                                        "401":  {
+                                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                                },
+                                                                                        "403":  {
+                                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                                },
+                                                                                        "404":  {
+                                                                                                    "$ref":  "#/components/responses/Error"
+                                                                                                }
+                                                                                    }
+                                                                  }
+                                                      },
+                  "/conversations/{conversationId}/messages":  {
+                                                                   "get":  {
+                                                                               "operationId":  "listMessages",
+                                                                               "x-permission":  "participant",
+                                                                               "parameters":  [
+                                                                                                  {
+                                                                                                      "$ref":  "#/components/parameters/ConversationId"
+                                                                                                  }
+                                                                                              ],
+                                                                               "responses":  {
+                                                                                                 "200":  {
+                                                                                                             "$ref":  "#/components/responses/Collection"
+                                                                                                         },
+                                                                                                 "401":  {
+                                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                                         },
+                                                                                                 "403":  {
+                                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                                         }
+                                                                                             }
+                                                                           },
+                                                                   "post":  {
+                                                                                "operationId":  "createMessage",
+                                                                                "x-permission":  "participant",
+                                                                                "parameters":  [
+                                                                                                   {
+                                                                                                       "$ref":  "#/components/parameters/ConversationId"
+                                                                                                   },
+                                                                                                   {
+                                                                                                       "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                                                   }
+                                                                                               ],
+                                                                                "responses":  {
+                                                                                                  "201":  {
+                                                                                                              "$ref":  "#/components/responses/Resource"
+                                                                                                          },
+                                                                                                  "401":  {
+                                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                                          },
+                                                                                                  "403":  {
+                                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                                          },
+                                                                                                  "409":  {
+                                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                                          },
+                                                                                                  "422":  {
+                                                                                                              "$ref":  "#/components/responses/Error"
+                                                                                                          }
+                                                                                              }
+                                                                            }
+                                                               },
+                  "/messages/{messageId}":  {
+                                                "patch":  {
+                                                              "operationId":  "editMessage",
+                                                              "x-permission":  "message-author",
+                                                              "parameters":  [
+                                                                                 {
+                                                                                     "$ref":  "#/components/parameters/MessageId"
+                                                                                 },
+                                                                                 {
+                                                                                     "$ref":  "#/components/parameters/IfMatch"
+                                                                                 }
+                                                                             ],
+                                                              "responses":  {
+                                                                                "200":  {
+                                                                                            "$ref":  "#/components/responses/Resource"
+                                                                                        },
+                                                                                "401":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "403":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "404":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        },
+                                                                                "412":  {
+                                                                                            "$ref":  "#/components/responses/Error"
+                                                                                        }
+                                                                            }
+                                                          },
+                                                "delete":  {
+                                                               "operationId":  "deleteMessage",
+                                                               "x-permission":  "message-author",
+                                                               "parameters":  [
+                                                                                  {
+                                                                                      "$ref":  "#/components/parameters/MessageId"
+                                                                                  },
+                                                                                  {
+                                                                                      "$ref":  "#/components/parameters/IfMatch"
+                                                                                  }
+                                                                              ],
+                                                               "responses":  {
+                                                                                 "204":  {
+                                                                                             "description":  "Deleted"
+                                                                                         },
+                                                                                 "401":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         },
+                                                                                 "403":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         },
+                                                                                 "404":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         },
+                                                                                 "412":  {
+                                                                                             "$ref":  "#/components/responses/Error"
+                                                                                         }
+                                                                             }
+                                                           }
+                                            },
+                  "/federation/actors/{handle}":  {
+                                                      "get":  {
+                                                                  "operationId":  "discoverFederatedActor",
+                                                                  "x-permission":  "authenticated",
+                                                                  "responses":  {
+                                                                                    "200":  {
+                                                                                                "$ref":  "#/components/responses/Resource"
+                                                                                            },
+                                                                                    "401":  {
+                                                                                                "$ref":  "#/components/responses/Error"
+                                                                                            },
+                                                                                    "404":  {
+                                                                                                "$ref":  "#/components/responses/Error"
+                                                                                            },
+                                                                                    "503":  {
+                                                                                                "$ref":  "#/components/responses/Error"
+                                                                                            }
+                                                                                }
+                                                              }
+                                                  },
+                  "/federation/actors/{handle}/document":  {
+                                                               "get":  {
+                                                                           "operationId":  "getFederatedActorDocument",
+                                                                           "x-permission":  "authenticated",
+                                                                           "responses":  {
+                                                                                             "200":  {
+                                                                                                         "$ref":  "#/components/responses/Resource"
+                                                                                                     },
+                                                                                             "401":  {
+                                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                                     },
+                                                                                             "404":  {
+                                                                                                         "$ref":  "#/components/responses/Error"
+                                                                                                     }
+                                                                                         }
+                                                                       }
+                                                           },
+                  "/federation/inbox":  {
+                                            "post":  {
+                                                         "operationId":  "receiveFederationInbox",
+                                                         "x-permission":  "verified-federation-peer",
+                                                         "parameters":  [
+                                                                            {
+                                                                                "$ref":  "#/components/parameters/IdempotencyKey"
+                                                                            }
+                                                                        ],
+                                                         "responses":  {
+                                                                           "202":  {
+                                                                                       "description":  "Accepted"
+                                                                                   },
+                                                                           "401":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "403":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "409":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "422":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   },
+                                                                           "503":  {
+                                                                                       "$ref":  "#/components/responses/Error"
+                                                                                   }
+                                                                       }
+                                                     }
+                                        },
+                  "/auth/refresh":  {
+                                        "post":  {
+                                                     "operationId":  "refreshSession",
+                                                     "x-permission":  "refresh-cookie",
+                                                     "x-browser-credential":  "HttpOnly; SameSite=Lax; Secure outside local development",
+                                                     "responses":  {
+                                                                       "200":  {
+                                                                                   "$ref":  "#/components/responses/Session"
+                                                                               },
+                                                                       "401":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               },
+                                                                       "403":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               },
+                                                                       "429":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               },
+                                                                       "503":  {
+                                                                                   "$ref":  "#/components/responses/Error"
+                                                                               }
+                                                                   }
+                                                 }
+                                    }
+              },
+    "components":  {
+                       "parameters":  {
+                                          "IfMatch":  {
+                                                          "name":  "If-Match",
+                                                          "in":  "header",
+                                                          "required":  true,
+                                                          "schema":  {
+                                                                         "type":  "string"
+                                                                     }
+                                                      },
+                                          "IdempotencyKey":  {
+                                                                 "name":  "Idempotency-Key",
+                                                                 "in":  "header",
+                                                                 "required":  true,
+                                                                 "schema":  {
+                                                                                "type":  "string",
+                                                                                "minLength":  16
+                                                                            }
+                                                             },
+                                          "UserId":  {
+                                                         "name":  "userId",
+                                                         "in":  "path",
+                                                         "required":  true,
+                                                         "schema":  {
+                                                                        "type":  "string"
+                                                                    }
+                                                     },
+                                          "PostId":  {
+                                                         "name":  "postId",
+                                                         "in":  "path",
+                                                         "required":  true,
+                                                         "schema":  {
+                                                                        "type":  "string"
+                                                                    }
+                                                     },
+                                          "ConversationId":  {
+                                                                 "name":  "conversationId",
+                                                                 "in":  "path",
+                                                                 "required":  true,
+                                                                 "schema":  {
+                                                                                "type":  "string"
+                                                                            }
+                                                             },
+                                          "MessageId":  {
+                                                            "name":  "messageId",
+                                                            "in":  "path",
+                                                            "required":  true,
+                                                            "schema":  {
+                                                                           "type":  "string"
+                                                                       }
+                                                        }
+                                      },
+                       "responses":  {
+                                         "Error":  {
+                                                       "description":  "Error envelope",
+                                                       "content":  {
+                                                                       "application/json":  {
+                                                                                                "schema":  {
+                                                                                                               "$ref":  "#/components/schemas/Error"
+                                                                                                           }
+                                                                                            }
+                                                                   }
+                                                   },
+                                         "User":  {
+                                                      "description":  "Current user",
+                                                      "headers":  {
+                                                                      "ETag":  {
+                                                                                   "schema":  {
+                                                                                                  "type":  "string"
+                                                                                              }
+                                                                               }
+                                                                  },
+                                                      "content":  {
+                                                                      "application/json":  {
+                                                                                               "schema":  {
+                                                                                                              "$ref":  "#/components/schemas/User"
+                                                                                                          }
+                                                                                           }
+                                                                  }
+                                                  },
+                                         "Settings":  {
+                                                          "description":  "Settings",
+                                                          "headers":  {
+                                                                          "ETag":  {
+                                                                                       "schema":  {
+                                                                                                      "type":  "string"
+                                                                                                  }
+                                                                                   }
+                                                                      },
+                                                          "content":  {
+                                                                          "application/json":  {
+                                                                                                   "schema":  {
+                                                                                                                  "$ref":  "#/components/schemas/Settings"
+                                                                                                              }
+                                                                                               }
+                                                                      }
+                                                      },
+                                         "Session":  {
+                                                         "description":  "Session",
+                                                         "content":  {
+                                                                         "application/json":  {
+                                                                                                  "schema":  {
+                                                                                                                 "$ref":  "#/components/schemas/Session"
+                                                                                                             }
+                                                                                              }
+                                                                     },
+                                                         "headers":  {
+                                                                         "Set-Cookie":  {
+                                                                                            "description":  "Refresh credential only; HttpOnly, SameSite=Lax, Secure outside local development, Path=/auth."
+                                                                                        }
+                                                                     }
+                                                     },
+                                         "Resource":  {
+                                                          "description":  "Resource",
+                                                          "headers":  {
+                                                                          "ETag":  {
+                                                                                       "schema":  {
+                                                                                                      "type":  "string"
+                                                                                                  }
+                                                                                   }
+                                                                      },
+                                                          "content":  {
+                                                                          "application/json":  {
+                                                                                                   "schema":  {
+                                                                                                                  "$ref":  "#/components/schemas/Resource"
+                                                                                                              }
+                                                                                               }
+                                                                      }
+                                                      },
+                                         "Collection":  {
+                                                            "description":  "Cursor collection",
+                                                            "content":  {
+                                                                            "application/json":  {
+                                                                                                     "schema":  {
+                                                                                                                    "$ref":  "#/components/schemas/Collection"
+                                                                                                                }
+                                                                                                 }
+                                                                        }
+                                                        }
+                                     },
+                       "schemas":  {
+                                       "RegisterRequest":  {
+                                                               "type":  "object",
+                                                               "required":  [
+                                                                                "handle",
+                                                                                "password"
+                                                                            ],
+                                                               "properties":  {
+                                                                                  "handle":  {
+                                                                                                 "type":  "string"
+                                                                                             },
+                                                                                  "password":  {
+                                                                                                   "type":  "string",
+                                                                                                   "minLength":  12
+                                                                                               }
+                                                                              }
+                                                           },
+                                       "LoginRequest":  {
+                                                            "type":  "object",
+                                                            "required":  [
+                                                                             "handle",
+                                                                             "password"
+                                                                         ],
+                                                            "properties":  {
+                                                                               "handle":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                                               "password":  {
+                                                                                                "type":  "string"
+                                                                                            }
+                                                                           }
+                                                        },
+                                       "TextPostCreateRequest":  {
+                                                                     "type":  "object",
+                                                                     "required":  [
+                                                                                      "content",
+                                                                                      "visibility"
+                                                                                  ],
+                                                                     "additionalProperties":  false,
+                                                                     "properties":  {
+                                                                                        "content":  {
+                                                                                                        "type":  "string",
+                                                                                                        "minLength":  1,
+                                                                                                        "maxLength":  5000
+                                                                                                    },
+                                                                                        "visibility":  {
+                                                                                                           "enum":  [
+                                                                                                                        "public",
+                                                                                                                        "followers",
+                                                                                                                        "private"
+                                                                                                                    ]
+                                                                                                       }
+                                                                                    }
+                                                                 },
+                                       "SettingsPatch":  {
+                                                             "type":  "object",
+                                                             "additionalProperties":  false,
+                                                             "properties":  {
+                                                                                "profileVisibility":  {
+                                                                                                          "enum":  [
+                                                                                                                       "public",
+                                                                                                                       "followers",
+                                                                                                                       "private"
+                                                                                                                   ]
+                                                                                                      },
+                                                                                "allowMessages":  {
+                                                                                                      "type":  "boolean"
+                                                                                                  }
+                                                                            }
+                                                         },
+                                       "User":  {
+                                                    "type":  "object",
+                                                    "required":  [
+                                                                     "id",
+                                                                     "handle",
+                                                                     "policyVersion"
+                                                                 ],
+                                                    "properties":  {
+                                                                       "id":  {
+                                                                                  "type":  "string"
+                                                                              },
+                                                                       "handle":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                       "policyVersion":  {
+                                                                                             "type":  "integer",
+                                                                                             "minimum":  1
+                                                                                         }
+                                                                   }
+                                                },
+                                       "Settings":  {
+                                                        "type":  "object",
+                                                        "required":  [
+                                                                         "profileVisibility",
+                                                                         "allowMessages",
+                                                                         "policyVersion"
+                                                                     ],
+                                                        "properties":  {
+                                                                           "profileVisibility":  {
+                                                                                                     "type":  "string"
+                                                                                                 },
+                                                                           "allowMessages":  {
+                                                                                                 "type":  "boolean"
+                                                                                             },
+                                                                           "policyVersion":  {
+                                                                                                 "type":  "integer"
+                                                                                             }
+                                                                       }
+                                                    },
+                                       "Session":  {
+                                                       "type":  "object",
+                                                       "required":  [
+                                                                        "accessToken",
+                                                                        "expiresAt"
+                                                                    ],
+                                                       "properties":  {
+                                                                          "accessToken":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                                          "expiresAt":  {
+                                                                                            "type":  "string",
+                                                                                            "format":  "date-time"
+                                                                                        }
+                                                                      },
+                                                       "description":  "Short-lived access token returned to the browser and held only in application memory. Refresh credential is never in this body.",
+                                                       "x-client-storage":  "memory-only"
+                                                   },
+                                       "Resource":  {
+                                                        "type":  "object",
+                                                        "required":  [
+                                                                         "id",
+                                                                         "version"
+                                                                     ],
+                                                        "properties":  {
+                                                                           "id":  {
+                                                                                      "type":  "string"
+                                                                                  },
+                                                                           "version":  {
+                                                                                           "type":  "integer",
+                                                                                           "minimum":  1
+                                                                                       }
+                                                                       }
+                                                    },
+                                       "Collection":  {
+                                                          "type":  "object",
+                                                          "required":  [
+                                                                           "items",
+                                                                           "nextCursor"
+                                                                       ],
+                                                          "properties":  {
+                                                                             "items":  {
+                                                                                           "type":  "array",
+                                                                                           "items":  {
+                                                                                                         "type":  "object"
+                                                                                                     }
+                                                                                       },
+                                                                             "nextCursor":  {
+                                                                                                "type":  [
+                                                                                                             "string",
+                                                                                                             "null"
+                                                                                                         ]
+                                                                                            }
+                                                                         }
+                                                      },
+                                       "Error":  {
+                                                     "type":  "object",
+                                                     "required":  [
+                                                                      "error"
+                                                                  ],
+                                                     "properties":  {
+                                                                        "error":  {
+                                                                                      "type":  "object",
+                                                                                      "required":  [
+                                                                                                       "code",
+                                                                                                       "message",
+                                                                                                       "correlationId"
+                                                                                                   ],
+                                                                                      "properties":  {
+                                                                                                         "code":  {
+                                                                                                                      "type":  "string"
+                                                                                                                  },
+                                                                                                         "message":  {
+                                                                                                                         "type":  "string"
+                                                                                                                     },
+                                                                                                         "correlationId":  {
+                                                                                                                               "type":  "string"
+                                                                                                                           }
+                                                                                                     }
+                                                                                  }
+                                                                    }
+                                                 }
+                                   }
+                   }
+}

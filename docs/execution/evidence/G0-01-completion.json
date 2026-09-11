@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "G0-01",
+  "task_fingerprint": "85e4e8247d271ef9ddd972ac126d982edf1d9da17b079703bc1d6fbcf3590387",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T04:31:49.934327+00:00",
+  "environment": "Windows PowerShell; Python UTF-8; .NET SDK 10.0.204/runtime 10.0.8",
+  "baseline": "Current accepted PH00 receipts, ADR-0014 refresh policy and ADR-0015 impact-scoped invalidation policy.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "ADR-0011, ADR-0012 and ADR-0014 plus machine-readable P0 contracts and data blueprint lock ownership, schema, API/event/error, privacy, concurrency, refresh transport and rebuild rules.",
+      "artifacts": [
+        "docs/execution/gates/G0-01-ARCHITECTURE-ACCEPTANCE.md",
+        "docs/adr/0011-p0-contract-baseline.md",
+        "docs/adr/0012-p0-data-boundary-and-rebuild.md",
+        "docs/contracts/p0/openapi.json",
+        "docs/contracts/p0/asyncapi.json",
+        "docs/data/p0/data-blueprint.json",
+        "docs/adr/0014-browser-refresh-cookie-policy.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "The accepted data diagram, ADRs, empty migration and executable architecture/migration harnesses were reviewed and rerun during G0.",
+      "artifacts": [
+        "docs/execution/gates/G0-01-ARCHITECTURE-ACCEPTANCE.md",
+        "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
+        "tests/Architecture/Architecture.Harness/Program.cs",
+        "scripts/verify_toolchain.ps1"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/execution/gates/G0-01-ARCHITECTURE-ACCEPTANCE.md",
+      "sha256": "f4ecd5b4fc715c7c980cf28836c22a3796320549ef3054441ce7fcba1b66660e"
+    },
+    {
+      "path": "docs/adr/0011-p0-contract-baseline.md",
+      "sha256": "032f3bd582387fe87a722f82d02b346060a2ff5bb46440f575746853707e1349"
+    },
+    {
+      "path": "docs/adr/0012-p0-data-boundary-and-rebuild.md",
+      "sha256": "4f553d4be0c0c3bb625ce49f88c117b7677e103a59300aaf3a605ce18fa56b80"
+    },
+    {
+      "path": "docs/contracts/p0/openapi.json",
+      "sha256": "82e5863cf2d487049bef361402b8c57f4fba50865828084ad9ea929a4c5337e5"
+    },
+    {
+      "path": "docs/contracts/p0/asyncapi.json",
+      "sha256": "730bc839bbe6f20d26477dcae2690f7df3e183fb6f603c5fd1e9136a5ea75e9f"
+    },
+    {
+      "path": "docs/data/p0/data-blueprint.json",
+      "sha256": "10db504e6f89f39c05720bcc6d0b327e7a9f14d2820d616f179cfb33570a7cc6"
+    },
+    {
+      "path": "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
+      "sha256": "44a6991f4006eae89a1abef35b7e2e2b95104dcd5f2271c8c13bdf00be263033"
+    },
+    {
+      "path": "tests/Architecture/Architecture.Harness/Program.cs",
+      "sha256": "b055c1533285df47f060d8a7428cbd29baadaef657f5d8df3435d7061c1adcf1"
+    },
+    {
+      "path": "scripts/verify_toolchain.ps1",
+      "sha256": "e62364535d9783c7663f7029fa3666a52dc51c19b4891fac8070ca1b3c09bda8"
+    },
+    {
+      "path": "docs/execution/evidence/G0-01-completion-report.md",
+      "sha256": "e3a6823d86e72ed9d5ba6b85676fc69efe3fa7ac6bb0ff08133e40261ba34fdc"
+    },
+    {
+      "path": "docs/adr/0013-platform-scope-and-service-runtime-tests.md",
+      "sha256": "a72c7d9b8c0213c7862afde4f58c96d99fd86e6e38a24d1755c4b16236be5a00"
+    },
+    {
+      "path": "docs/adr/0014-browser-refresh-cookie-policy.md",
+      "sha256": "713a0017bacee27f7e8b8829ee6661ae7a4df16666b178585177f7c4820cd85c"
+    },
+    {
+      "path": "docs/contracts/p0/fixtures.json",
+      "sha256": "e3c3a3d61c7b5c5f2295766f6b9bc909905b20b8f2ea47becdf2b63d524c41cf"
+    }
+  ],
+  "commands": [
+    {
+      "command": "python -X utf8 scripts/validate_p0_contracts.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_p0_data_blueprint.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/build_execution_plan.py --check",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "dotnet build TwightLight.slnx --no-restore",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "dotnet run --project tests/Architecture/Architecture.Harness/Architecture.Harness.csproj --no-build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "dotnet run --project tests/Integration/Migration.Harness/Migration.Harness.csproj --no-build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/refresh_kit_inventory.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    },
+    {
+      "command": "PYTHONPATH=work/document-audit/python-deps python -X utf8 scripts/validate_vibe_kit.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/G0-01-completion-report.md"
+    }
+  ],
+  "impact": {
+    "classification": "additive",
+    "scopes": [
+      "contract:auth:refresh"
+    ],
+    "summary": "The G0 output changed only to record the approved browser refresh-session contract; data-infrastructure and frontend-foundation architecture decisions are unchanged.",
+    "artifacts": [
+      "docs/adr/0014-browser-refresh-cookie-policy.md",
+      "docs/contracts/p0/openapi.json",
+      "docs/contracts/p0/fixtures.json",
+      "docs/execution/evidence/G0-01-completion-report.md"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id='title'>Luồng cộng đồng và RTC</title>
+<desc id='desc'>Bản thiết kế UI/UX có thể chỉnh sửa.</desc>
+<defs>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity=".10"/>
+          </filter>
+          <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#6C5CE7"/><stop offset="100%" stop-color="#496DFF"/>
+          </linearGradient>
+          <style>
+            text { font-family: "DejaVu Sans", Arial, sans-serif; }
+            .t { fill: #0F172A; }
+            .m { fill: #64748B; }
+          </style>
+        </defs>
+<rect x="0" y="0" width="1600" height="900" fill="#F8FAFC" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<rect x="0" y="0" width="1600" height="110" fill="url(#brandGrad)" stroke="none" stroke-width="1" rx="0" opacity="1"/>
+<text x="56" y="54" font-size="30" font-weight="800" fill="#FFFFFF" text-anchor="start" opacity="1">Luồng cộng đồng và RTC</text>
+<text x="56" y="84" font-size="14" font-weight="500" fill="#FFFFFF" text-anchor="start" opacity="0.92">Membership, permission, token ngắn hạn và LiveKit trực tiếp</text>
+<rect x="60" y="210" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="165.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Mở cộng đồng</text>
+<text x="78" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Xem kênh theo quyền</text>
+<rect x="340" y="210" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="445.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Chọn phòng</text>
+<text x="358" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Thoại / video / screen</text>
+<rect x="620" y="210" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="725.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Xin RTC token</text>
+<text x="638" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Không tin userId client</text>
+<rect x="900" y="210" width="210" height="120" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" rx="16" opacity="1"/>
+<text x="1005.0" y="244" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Kiểm tra quyền</text>
+<text x="918" y="270" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">JoinVoice/Speak/ScreenShar</text>
+<text x="918" y="287" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">e</text>
+<rect x="1180" y="140" width="220" height="120" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1290.0" y="174" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Cấp token</text>
+<text x="1198" y="200" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">TTL ngắn, scoped capability</text>
+<rect x="1180" y="330" width="220" height="120" fill="#FEF2F2" stroke="#FECACA" stroke-width="1" rx="16" opacity="1"/>
+<text x="1290.0" y="364" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Từ chối</text>
+<text x="1198" y="390" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">403, không lộ dữ liệu</text>
+<rect x="620" y="500" width="210" height="120" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" rx="16" opacity="1"/>
+<text x="725.0" y="534" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">Kết nối LiveKit</text>
+<text x="638" y="560" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Client kết nối trực tiếp</text>
+<rect x="900" y="500" width="210" height="120" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="16" opacity="1"/>
+<text x="1005.0" y="534" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">ICE/STUN</text>
+<text x="918" y="560" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Ưu tiên đường trực tiếp</text>
+<rect x="1180" y="500" width="220" height="120" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" rx="16" opacity="1"/>
+<text x="1290.0" y="534" font-size="15" font-weight="800" fill="#0F172A" text-anchor="middle" opacity="1">TURN fallback</text>
+<text x="1198" y="560" font-size="11" font-weight="500" fill="#64748B" text-anchor="start" opacity="1">Khi NAT/firewall chặn</text>
+<line x1="270" y1="270" x2="340" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="340,270 331.5567207449798,275.35826794979 331.5567207449798,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="550" y1="270" x2="620" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="620,270 611.5567207449799,275.35826794979 611.5567207449799,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="830" y1="270" x2="900" y2="270" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="900,270 891.5567207449799,275.35826794979 891.5567207449799,264.64173205021" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1110" y1="250" x2="1180" y2="200" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1180,200 1176.2438510480436,209.26775836169222 1170.0149910788457,200.54735440481545" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1110" y1="290" x2="1180" y2="390" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1180,390 1170.76843314114,386.1557610206447 1179.547761427464,380.0102312202178" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1290" y1="260" x2="725" y2="500" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="725,500 730.6763175775803,491.7671743150695 734.8661418748428,501.63071901487467" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="830" y1="560" x2="900" y2="560" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="900,560 891.5567207449799,565.3582679497899 891.5567207449799,554.6417320502101" fill="#64748B" stroke="none" stroke-width="1"/>
+<line x1="1110" y1="560" x2="1180" y2="560" stroke="#64748B" stroke-width="2" opacity="1"/>
+<polygon points="1180,560 1171.5567207449799,565.3582679497899 1171.5567207449799,554.6417320502101" fill="#64748B" stroke="none" stroke-width="1"/>
+<text x="60" y="760" font-size="14" font-weight="700" fill="#64748B" text-anchor="start" opacity="1">LiveKit mang media; SignalR chỉ mang metadata/lời mời. RTC lỗi không làm hỏng kênh văn bản.</text>
+</svg>

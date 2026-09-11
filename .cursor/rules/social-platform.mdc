@@ -1,0 +1,10 @@
+---
+description: Quy tắc bắt buộc cho kho mã Social Platform
+alwaysApply: true
+---
+
+Đọc `AGENTS.md` và `RULES.md` trước mọi thay đổi. Nạp thêm tài liệu đúng miền và loại nhiệm vụ theo `docs/CONTEXT_LOADING.md` cùng `.ai/context-map.yaml`.
+
+Bắt buộc xác định mã chức năng, dịch vụ sở hữu, nguồn sự thật, tiêu chí chấp nhận và phạm vi trước khi viết mã. Không truy vấn chéo cơ sở dữ liệu, không đổi hợp đồng, lược đồ, quyền sở hữu hoặc bảo mật âm thầm. Bên phát dùng Outbox; bên nhận dùng Inbox và xử lý lặp an toàn. Kiểm tra phân quyền tại dịch vụ sở hữu tài nguyên. Mọi thay đổi phải có kiểm thử và tài liệu tương ứng.
+
+Không tự commit, push, merge, deploy, thay đổi secret, chạy di trú phá hủy hoặc thao tác môi trường vận hành. Chỉ báo biên dịch hay kiểm thử thành công khi đã chạy lệnh và có kết quả thật.

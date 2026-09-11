@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH00-BE-TOOLCHAIN-01",
+  "task_fingerprint": "a898bb42d53435ef221286f26f7eeaf70dcee3a6b277bf9b6ef7a838da5cebdc",
+  "actor": "Codex",
+  "recorded_at": "2026-09-11T04:24:03.370668+00:00",
+  "environment": "Windows PowerShell; .NET 10.0.204; Node 22.19.0/npm 11.6.0; Docker Desktop available",
+  "baseline": "Accepted current PH00-DATA-BOUNDARY-01 receipt; no toolchain source change. Revalidation includes an external-network rerun after documented sandbox NuGet denial.",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "SDK, central NuGet, npm and image pins are present; restored locks include the non-vulnerable SQLitePCLRaw 2.1.13 transitive pin.",
+      "artifacts": [
+        "global.json",
+        "Directory.Packages.props",
+        "frontend/package-lock.json",
+        "deploy/compose/compose.toolchain.yml",
+        "docs/toolchain/VERSION_SELECTION.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "Architecture harness passed against project and compiled references; InitialEmpty applied to a disposable local SQLite test database.",
+      "artifacts": [
+        "tests/Architecture/Architecture.Harness/Program.cs",
+        "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+      ]
+    },
+    "AC03": {
+      "passed": true,
+      "detail": "Locked restore, build, both .NET harnesses, npm ci and Angular build all exited 0; verified commands are documented at their actual repository paths.",
+      "artifacts": [
+        "scripts/verify_toolchain.ps1",
+        "docs/toolchain/LOCAL_DEVELOPMENT.md",
+        "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "global.json",
+      "sha256": "10bfc156a855e0793806480c82415e9aca2b5f63407d844961bcb6fd5d065fb2"
+    },
+    {
+      "path": "Directory.Packages.props",
+      "sha256": "7038412bd1ba7660b7942a4d4a97c225df0f79d9373539427e2d53d32f0d133b"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "494f0ee4b5c93c9cc15e84efc89c4af26af418429d961913cc96108e030c746d"
+    },
+    {
+      "path": "deploy/compose/compose.toolchain.yml",
+      "sha256": "28eacedd7a365edea18e0e9d1c44a7a6e0f14a4273c1db49549be789b8d6575e"
+    },
+    {
+      "path": "docs/toolchain/VERSION_SELECTION.md",
+      "sha256": "af37cbccdf2f7d1493be4de56baf6e62c61868b239beb6fd3d80ca43cf9d22e5"
+    },
+    {
+      "path": "tests/Architecture/Architecture.Harness/Program.cs",
+      "sha256": "b055c1533285df47f060d8a7428cbd29baadaef657f5d8df3435d7061c1adcf1"
+    },
+    {
+      "path": "src/Services/Account/Account.Infrastructure/Persistence/Migrations/20260907223643_InitialEmpty.cs",
+      "sha256": "44a6991f4006eae89a1abef35b7e2e2b95104dcd5f2271c8c13bdf00be263033"
+    },
+    {
+      "path": "scripts/verify_toolchain.ps1",
+      "sha256": "e62364535d9783c7663f7029fa3666a52dc51c19b4891fac8070ca1b3c09bda8"
+    },
+    {
+      "path": "docs/toolchain/LOCAL_DEVELOPMENT.md",
+      "sha256": "647ed04e4b1fcd83777572b33417be695e8a64727253a64ad70a8efd7658183c"
+    },
+    {
+      "path": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md",
+      "sha256": "0e69149668ef7809281a6ec093b7b4d5cf950e4d67ffd17017ecec97c8e3193c"
+    }
+  ],
+  "commands": [
+    {
+      "command": "powershell -ExecutionPolicy Bypass -File scripts/verify_toolchain.ps1 (approved external-network rerun)",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend ci",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+    },
+    {
+      "command": "npm.cmd --prefix frontend run build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/refresh_kit_inventory.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+    },
+    {
+      "command": "PYTHONPATH=work/document-audit/python-deps python -X utf8 scripts/validate_vibe_kit.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH00-BE-TOOLCHAIN-01-completion-report.md"
+    }
+  ]
+}

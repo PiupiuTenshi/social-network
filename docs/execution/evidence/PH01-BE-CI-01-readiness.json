@@ -1,0 +1,106 @@
+{
+    "version":  1,
+    "kind":  "readiness",
+    "task_id":  "PH01-BE-CI-01",
+    "task_fingerprint":  "90ad66ff630a0c077d616742b57f1ad4439dd5484376f8c587bdb8636449a698",
+    "actor":  "Codex under project owner delegation",
+    "recorded_at":  "2026-09-11T05:08:59.2136797Z",
+    "environment":  "Windows PowerShell; .NET SDK 10.0.204; Node v22.19.0; npm 11.6.0; GitHub CLI remote metadata read.",
+    "baseline":  "PH01-BE-PLATFORM-01 DONE; refreshed CI workflow local; public remote remains empty with no default branch or ruleset.",
+    "checks":  {
+                   "DOR01":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR02":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-review.json",
+                                                   ".github/workflows/ci.yml",
+                                                   "TwightLight.slnx",
+                                                   "frontend/package.json"
+                                               ]
+                             },
+                   "DOR03":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR04":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+                                                   ".github/workflows/ci.yml",
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR05":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR06":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md"
+                                               ]
+                             },
+                   "DOR07":  {
+                                 "passed":  true,
+                                 "detail":  "Current CI scope, inputs, commands and stop conditions are documented in the readiness report.",
+                                 "artifacts":  [
+                                                   "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md",
+                                                   "docs/GIT_FLOW.md"
+                                               ]
+                             }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-CI-01-readiness-report.md",
+                          "sha256":  "db1d9198caa9e3dabf1e53ef4054320a3a4efac355535775389653e859c48946"
+                      },
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+                          "sha256":  "7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858"
+                      },
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-review.json",
+                          "sha256":  "0cd79bd672e819dc83f78e14fea2c41f59550def6a8262822d6617a51085c466"
+                      },
+                      {
+                          "path":  ".github/workflows/ci.yml",
+                          "sha256":  "cf5ff5fcd98fa6814ffbbde73f3296e977faac203de1ad1d98f53c0de74b5e3e"
+                      },
+                      {
+                          "path":  ".github/workflows/docs-validation.yml",
+                          "sha256":  "520648562dec3d3740be3dda1882e260f84d09cad5cf7cdc5720766565885848"
+                      },
+                      {
+                          "path":  "docs/GIT_FLOW.md",
+                          "sha256":  "7e834fa83bb582574daadee4a1a71cba6e9c91730d243d33b7441ad633b318cc"
+                      },
+                      {
+                          "path":  "docs/reference/QUALITY_GATES.md",
+                          "sha256":  "43311b34a0f7d98b860b8b414f4d0c4f42d8f61d01bd55ee0cedf246d990222d"
+                      },
+                      {
+                          "path":  "TwightLight.slnx",
+                          "sha256":  "ee48f0bcfaf8ce3f11f59954c88c8d3c8cf8decb14c70a99cf9397a5c04c8c59"
+                      },
+                      {
+                          "path":  "frontend/package.json",
+                          "sha256":  "de551b02ad1f811d677763965e13e268605f41f40fafb43e964c2ebcfcf84675"
+                      }
+                  ]
+}

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlocks.DomainPrimitives\BuildingBlocks.DomainPrimitives.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,55 @@
+{
+  "state_sha256": "a6406368c7b712bf892b56c97c368db03891b05420f57ec38382a98c21510ac0",
+  "state_unchanged": true,
+  "runs": [
+    {
+      "command": "python -X utf8 scripts/task_gate.py check PH00-GOV-AUDIT-01",
+      "exit_code": 1,
+      "expected": 1,
+      "stdout": "NOT_READY PH00-GOV-AUDIT-01: NEEDS_READY\n- Chưa có hồ sơ Definition of Ready\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py start PH00-GOV-AUDIT-01",
+      "exit_code": 2,
+      "expected": 2,
+      "stdout": "",
+      "stderr": "GATE_ERROR: NEEDS_READY: Chưa có hồ sơ Definition of Ready\n"
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py check PH03-BE-SOC-03-01",
+      "exit_code": 1,
+      "expected": 1,
+      "stdout": "NOT_READY PH03-BE-SOC-03-01: BLOCKED\n- Dependency PH03-DATA-SOC-P0-03: BLOCKED\n- Dependency PH01-BE-PLATFORM-01: BLOCKED\n- Dependency PH01-BE-CI-01: BLOCKED\n- Dependency PH03-BE-SOC-01-02: BLOCKED\n- Dependency PH02-GATE-ACCOUNT-01: BLOCKED\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py start PH03-BE-SOC-03-01",
+      "exit_code": 2,
+      "expected": 2,
+      "stdout": "",
+      "stderr": "GATE_ERROR: BLOCKED: Dependency PH03-DATA-SOC-P0-03: BLOCKED; Dependency PH01-BE-PLATFORM-01: BLOCKED; Dependency PH01-BE-CI-01: BLOCKED; Dependency PH03-BE-SOC-01-02: BLOCKED; Dependency PH02-GATE-ACCOUNT-01: BLOCKED\n"
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py prompt PH03-BE-SOC-03-01",
+      "exit_code": 1,
+      "expected": 1,
+      "stdout": "NOT_READY PH03-BE-SOC-03-01: BLOCKED\n- Dependency PH03-DATA-SOC-P0-03: BLOCKED\n- Dependency PH01-BE-PLATFORM-01: BLOCKED\n- Dependency PH01-BE-CI-01: BLOCKED\n- Dependency PH03-BE-SOC-01-02: BLOCKED\n- Dependency PH02-GATE-ACCOUNT-01: BLOCKED\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py check NOT-A-TASK",
+      "exit_code": 2,
+      "expected": 2,
+      "stdout": "",
+      "stderr": "GATE_ERROR: ID không tồn tại: NOT-A-TASK\n"
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py prompt PH00-GOV-AUDIT-01 --preview",
+      "exit_code": 0,
+      "expected": 0,
+      "stdout": "PREVIEW ONLY — không được triển khai khi chưa READY\n[Ph?n prompt xem t?i docs/execution/prompts/PH00-GOV-AUDIT-01.md]\n",
+      "stderr": ""
+    }
+  ]
+}
