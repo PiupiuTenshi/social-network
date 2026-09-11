@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1058**
+- Tổng tệp không tính `MANIFEST.md`: **1067**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -470,6 +470,8 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/contracts/p0/fixtures.json`
 - `docs/contracts/p0/openapi.json`
 - `docs/data/p0/README.md`
+- `docs/data/p0/account-schema.json`
+- `docs/data/p0/account-schema.md`
 - `docs/data/p0/data-blueprint.json`
 - `docs/data/p0/migration-and-recovery.md`
 - `docs/execution/BACKEND.md`
@@ -568,6 +570,12 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-review.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-review-report.md`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-review.json`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-completion.json`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-readiness-report.md`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-readiness.json`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-review-report.md`
+- `docs/execution/evidence/PH02-DATA-ACC-P0-01-review.json`
 - `docs/execution/evidence/README.md`
 - `docs/execution/evidence/ph00-be-toolchain-01-completion.json`
 - `docs/execution/evidence/ph00-be-toolchain-01-readiness.json`
@@ -1000,6 +1008,7 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `scripts/task_gate.py`
 - `scripts/test_ci_helpers.py`
 - `scripts/test_task_gate.py`
+- `scripts/validate_account_p0_schema.py`
 - `scripts/validate_all.py`
 - `scripts/validate_commit_message.py`
 - `scripts/validate_p0_contracts.py`

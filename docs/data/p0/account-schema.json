@@ -1,0 +1,98 @@
+{
+  "version": "1.0.0-p0",
+  "task": "PH02-DATA-ACC-P0-01",
+  "database": {
+    "name": "account_db",
+    "owner": "Account",
+    "credentialBoundary": "account migration/runtime identities"
+  },
+  "tables": [
+    {
+      "name": "account",
+      "aggregate": "Account",
+      "primaryKey": ["id"],
+      "columns": {
+        "id": "uuid",
+        "email": "text canonical email",
+        "password_hash": "text nullable for future OAuth-only accounts",
+        "status": "text approved account-status enum",
+        "version": "bigint optimistic concurrency token",
+        "created_at": "timestamp with time zone",
+        "updated_at": "timestamp with time zone"
+      },
+      "constraints": ["email is unique", "version >= 1"],
+      "indexes": [{"columns": ["status"], "accessPattern": "administrative account-status filtering"}],
+      "retention": "account lifecycle"
+    },
+    {
+      "name": "profile",
+      "aggregate": "Account",
+      "primaryKey": ["account_id"],
+      "foreignKeys": [{"columns": ["account_id"], "target": "account"}],
+      "externalReferences": ["avatar_media_id through the Media contract only"],
+      "columns": {
+        "account_id": "uuid",
+        "username": "text canonical username",
+        "display_name": "text",
+        "bio": "text nullable",
+        "avatar_media_id": "uuid nullable external contract reference",
+        "privacy_level": "text approved profile-visibility enum",
+        "version": "bigint optimistic concurrency token",
+        "updated_at": "timestamp with time zone"
+      },
+      "constraints": ["username is unique", "version >= 1"],
+      "indexes": [{"columns": ["username"], "accessPattern": "public profile lookup"}],
+      "retention": "account lifecycle"
+    },
+    {
+      "name": "account_setting",
+      "aggregate": "Account",
+      "primaryKey": ["account_id"],
+      "foreignKeys": [{"columns": ["account_id"], "target": "account"}],
+      "columns": {
+        "account_id": "uuid",
+        "notification_json": "jsonb approved notification keys only",
+        "locale": "text",
+        "timezone": "text IANA timezone",
+        "policy_version": "bigint propagated privacy policy version",
+        "version": "bigint optimistic concurrency token",
+        "updated_at": "timestamp with time zone"
+      },
+      "constraints": ["policy_version >= 1", "version >= 1"],
+      "indexes": [],
+      "retention": "account lifecycle"
+    },
+    {
+      "name": "refresh_token",
+      "aggregate": "Session",
+      "primaryKey": ["id"],
+      "foreignKeys": [{"columns": ["account_id"], "target": "account"}],
+      "columns": {
+        "id": "uuid",
+        "account_id": "uuid",
+        "token_hash": "text hash only; raw credential forbidden",
+        "family_id": "uuid rotation/reuse-detection family",
+        "version": "bigint optimistic concurrency token",
+        "expires_at": "timestamp with time zone",
+        "revoked_at": "timestamp with time zone nullable",
+        "replaced_by_id": "uuid nullable successor token id",
+        "created_at": "timestamp with time zone",
+        "updated_at": "timestamp with time zone"
+      },
+      "constraints": ["token_hash is unique", "version >= 1", "expires_at > created_at"],
+      "indexes": [
+        {"columns": ["token_hash"], "accessPattern": "hashed refresh credential lookup"},
+        {"columns": ["family_id", "revoked_at"], "accessPattern": "replay detection and family revocation"},
+        {"columns": ["account_id", "expires_at"], "accessPattern": "account session expiry and account-wide revocation"}
+      ],
+      "retention": "until expiry plus approved security-retention window"
+    }
+  ],
+  "migration": {
+    "runner": "one approved Account runner",
+    "applicationStartupMigration": false,
+    "strategy": ["expand", "backfill", "switch", "contract"],
+    "implementationTask": "PH02-DATA-ACC-P0-02"
+  },
+  "recovery": {"rpoHours": 24, "rtoHours": 4}
+}

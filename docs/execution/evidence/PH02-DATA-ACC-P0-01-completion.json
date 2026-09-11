@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "kind": "completion",
+  "task_id": "PH02-DATA-ACC-P0-01",
+  "task_fingerprint": "d1ac3e1a91a4fb2d190a2c62ede1de5cea8008af4ac95df2eb415a8217fa9abd",
+  "actor": "Codex under project owner approval",
+  "recorded_at": "2026-09-11T16:42:12.7162622Z",
+  "environment": "Windows PowerShell; Python 3; .NET migration harness.",
+  "baseline": "0ae17ea on feat/PH01-BE-CI-01-receipt",
+  "checks": {
+    "AC01": {
+      "passed": true,
+      "detail": "The Account P0 mapping defines the four Account-owned tables, local foreign keys, unique email and username, and hash-only refresh-token family/version fields.",
+      "artifacts": [
+        "docs/data/p0/account-schema.json",
+        "docs/data/p0/account-schema.md",
+        "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+      ]
+    },
+    "AC02": {
+      "passed": true,
+      "detail": "The mapping records every constraint and access-pattern index, plus one-runner migration, retention and P0 recovery policy; the validator enforces those decisions.",
+      "artifacts": [
+        "docs/data/p0/account-schema.json",
+        "scripts/validate_account_p0_schema.py",
+        "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+      ]
+    }
+  },
+  "artifacts": [
+    {
+      "path": "docs/data/p0/account-schema.md",
+      "sha256": "8e9d808f870e913283a81df98e0674c6ef951e123990b259e320fdd1ebd0f24b"
+    },
+    {
+      "path": "docs/data/p0/account-schema.json",
+      "sha256": "cf4042c7ed42403bbc5c9578362cc6d29c09ed13b6da635a047dd44466ef76a9"
+    },
+    {
+      "path": "scripts/validate_account_p0_schema.py",
+      "sha256": "3f96285fa3ccf55a30d159ca8c90acf8d36a17307e86688490d29f3932bbe90c"
+    },
+    {
+      "path": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md",
+      "sha256": "33c31e36f7a42081aa1b5a009f43d1c28090d25f92ca202c84a2441f8709f41a"
+    }
+  ],
+  "impact": {
+    "classification": "additive",
+    "scopes": ["data:account"],
+    "summary": "Adds the reviewed Account P0 schema-design artifact only; no upstream baseline or runtime schema was changed.",
+    "artifacts": ["docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"]
+  },
+  "commands": [
+    {
+      "command": "python -X utf8 scripts/validate_account_p0_schema.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_p0_data_blueprint.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+    },
+    {
+      "command": "dotnet run --project tests/Integration/Migration.Harness/Migration.Harness.csproj --no-build",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/test_task_gate.py",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+    },
+    {
+      "command": "python -X utf8 scripts/task_gate.py validate",
+      "exit_code": 0,
+      "artifact": "docs/execution/evidence/PH02-DATA-ACC-P0-01-completion-report.md"
+    }
+  ]
+}
