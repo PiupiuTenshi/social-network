@@ -1,0 +1,103 @@
+{
+    "version":  1,
+    "kind":  "completion",
+    "task_id":  "PH01-BE-CI-01",
+    "task_fingerprint":  "90ad66ff630a0c077d616742b57f1ad4439dd5484376f8c587bdb8636449a698",
+    "actor":  "Codex under project owner approval",
+    "recorded_at":  "2026-09-11T16:18:47.9691795Z",
+    "environment":  "Windows PowerShell and GitHub Actions Ubuntu/Windows.",
+    "baseline":  "GitHub commit 5eed2a9; ruleset 22938676 active.",
+    "checks":  {
+                   "AC01":  {
+                                "passed":  true,
+                                "detail":  "Verified AC01 by current source, local validators and successful GitHub Actions/ruleset evidence.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                                              ]
+                            },
+                   "AC02":  {
+                                "passed":  true,
+                                "detail":  "Verified AC02 by current source, local validators and successful GitHub Actions/ruleset evidence.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                                              ]
+                            },
+                   "AC03":  {
+                                "passed":  true,
+                                "detail":  "Verified AC03 by current source, local validators and successful GitHub Actions/ruleset evidence.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                                              ]
+                            }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md",
+                          "sha256":  "ad87c0c4d123c077b85c857ab80d1a823c2160a16c19c4c6511ab5394e528588"
+                      },
+                      {
+                          "path":  ".github/workflows/ci.yml",
+                          "sha256":  "cf5ff5fcd98fa6814ffbbde73f3296e977faac203de1ad1d98f53c0de74b5e3e"
+                      },
+                      {
+                          "path":  ".github/workflows/docs-validation.yml",
+                          "sha256":  "520648562dec3d3740be3dda1882e260f84d09cad5cf7cdc5720766565885848"
+                      },
+                      {
+                          "path":  "scripts/task_gate.py",
+                          "sha256":  "5f94fe82728c2fb276eb7caf0786d5a4d8a9ee4a92ad92facf614aa1f0b8b616"
+                      },
+                      {
+                          "path":  "scripts/test_task_gate.py",
+                          "sha256":  "550a319d25238820ba66ca72fad86645cff3920534f07cb6139b701fedcba164"
+                      },
+                      {
+                          "path":  "scripts/test_ci_helpers.py",
+                          "sha256":  "70929d8b209035dd04f4278290b179433df637f8f46ccdec8691f88e60443146"
+                      },
+                      {
+                          "path":  "scripts/kit_inventory.py",
+                          "sha256":  "04ef0d7ef415356eb92c9a88a8655c8ad5ade99604cc9f8f9a29c5570eb71da1"
+                      },
+                      {
+                          "path":  "scripts/ci/generate_sbom.py",
+                          "sha256":  "9e3e7e3d8e78fa24b9333fcbf1adb12d9c15f814ea6e462d46f438bc3c7923ee"
+                      },
+                      {
+                          "path":  "scripts/ci/write_checksums.py",
+                          "sha256":  "b73533b5221c318b2f92e1e526dc1d04aae979b172c514b6a7ca25bf82b209cf"
+                      }
+                  ],
+    "impact":  {
+                   "classification":  "none",
+                   "scopes":  [
+
+                              ],
+                   "summary":  "CI receipt completion; no product behavior change.",
+                   "artifacts":  [
+                                     "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                                 ]
+               },
+    "commands":  [
+                     {
+                         "command":  "python -X utf8 scripts/validate_vibe_kit.py",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                     },
+                     {
+                         "command":  "python -X utf8 scripts/task_gate.py validate",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                     },
+                     {
+                         "command":  "python -X utf8 scripts/test_task_gate.py",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                     },
+                     {
+                         "command":  "GitHub Actions CI run 34619953173",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-CI-01-completion-report.md"
+                     }
+                 ]
+}

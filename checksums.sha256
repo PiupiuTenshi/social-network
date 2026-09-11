@@ -39,7 +39,7 @@ c3fb75a42a65601fa5a964d177cdd8915609643f6dad9d5f01dc159875602a35  ./CONTRIBUTING
 7038412bd1ba7660b7942a4d4a97c225df0f79d9373539427e2d53d32f0d133b  ./Directory.Packages.props
 269d94adb9c9ccd07592b7ab0952853440d596aab10e44cdc349f84895b63755  ./FRONTEND_START_HERE.md
 5086e95fd3a736efdd182d33b0a6ed879b5a6ed7da7a22896063f3f5f2014b23  ./GEMINI.md
-b4e02a09b652bd34c3c2cef21b8aab0b907bccb3cd901be2f3f4eaf8bfdae78d  ./MANIFEST.md
+a383ea83bbe6e6faabb80d3b33d9349bf482de3101ca3ca7874ece11ca1b4b61  ./MANIFEST.md
 5ca024710572bad837b138e49d420a2e07a1669a4e3ba542de26f06ced3f5baa  ./README.md
 0b82b80be6a9ace69e85f709fa8f331145e9b711331d96fc3b96f3288b8eed26  ./RULES.md
 b2fc6d691ea96764687e0ba20e8f4a4928e828168c577871eb98d229bbe7773b  ./SECURITY.md
@@ -503,12 +503,16 @@ f72f56b8d92d5a7b2b12010ba62910433794b5b20d513bed250277125f2e92eb  ./docs/executi
 15a41d10d5ce521fb45826ae77dd88f345c1abd9ef942c3cc35a774ad4952a8f  ./docs/execution/evidence/PH00-GOV-AUDIT-01-review.json
 42928313d68ee063883f5a2f75187cc5a4162b50203804b4c45de0cd1f0cfb35  ./docs/execution/evidence/PH00-GOV-AUDIT-01-review.md
 c180cb9697035b6d666e7bea584505ecbc5f6d81cccf690f7be54fe4826901e1  ./docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md
+ad87c0c4d123c077b85c857ab80d1a823c2160a16c19c4c6511ab5394e528588  ./docs/execution/evidence/PH01-BE-CI-01-completion-report.md
+4126b77cbf0d7f86606ab2d757a3368a0d3b6a6538653b1724f0139ebc6e3733  ./docs/execution/evidence/PH01-BE-CI-01-completion.json
 db1d9198caa9e3dabf1e53ef4054320a3a4efac355535775389653e859c48946  ./docs/execution/evidence/PH01-BE-CI-01-readiness-report.md
 8dd299a1d516035e2c9bb0e885bd941c8a3bd4ac3ef20ef630d70f934445f88d  ./docs/execution/evidence/PH01-BE-CI-01-readiness.initial.json
 8da0a7b21c05134b8e053df0c60f859e18dcb570552668553a20c13be0847dda  ./docs/execution/evidence/PH01-BE-CI-01-readiness.json
 e1e1f5c0c66df83c460999044aae4fc16277ccdf00e887906d0cbf558bc3957a  ./docs/execution/evidence/PH01-BE-CI-01-remote-blocker.md
 712aff13cd4efe607fb087bf48c7635ca559b0bb7bfaefd7bf49ddc437d527b1  ./docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness-report.md
 d517a0b24fe615a7777e17b9c84896525c57c7d43b056b3f78a2502a18c30bc4  ./docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json
+f0fc4796583a5abf5303436f592741ad07d0cbf69199dafc247e86e07ca0d0ab  ./docs/execution/evidence/PH01-BE-CI-01-review-report.md
+86333fd5d08a0990270b33e9b11407f06f240d7ffc375a6b6c3faff2096b409a  ./docs/execution/evidence/PH01-BE-CI-01-review.json
 ece7e4fcc59e9f67046d78e7742775c9c5e205988959e724eedb3b321b65fd0b  ./docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md
 7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858  ./docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json
 26a8aae748ab1cb85ba65904edfcc18f41647f79b15721b07ad5f4e71e779d1c  ./docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md
@@ -876,7 +880,7 @@ d2399f9e792236a9175947789a6c3a7fc356965fe5b6b36411e6330488d88a40  ./docs/executi
 1a695eb7e3ea5bda97fd97967e8d33ee61b15c0a3287df51a191c065b5bf91cf  ./docs/execution/prompts/PH07-GOV-HARDEN-03.md
 284fed1bfa6711c1ac1f1d39f04b060f75cb3ef33beefa88f3e5a0fc214cd676  ./docs/execution/prompts/PH07-GOV-HARDEN-04.md
 7bd0d47fb553e7feaa55bdfb07931f2ad85ef03e57f58b09cfe008c45ed5c6d4  ./docs/execution/prompts/PH08-GOV-REHEARSAL-01.md
-7cdbb6144447ea7b019e6b16d71ad549bc25ffae444802fe4392546e09a2ba78  ./docs/execution/state.json
+74ac81243a217b84aaa75686562a94d2f2da138538a25ce31aa195ffb49a0f85  ./docs/execution/state.json
 832559d7341c9d85676e6d6b09a9b3ce8026036feb9accb26e9c3b8606a2da96  ./docs/execution/validation/gate-cli.json
 4c15bc4679e8242de493e72fabd2efe2fbaaded17a1549dc9a662c1c7fc96894  ./docs/execution/validation/validate-all.txt
 1b0f9083febe70f61bea4358aedd4e0ee60fe42293970f272239c339603c1c43  ./docs/infra/IMAGE_SELECTION.md

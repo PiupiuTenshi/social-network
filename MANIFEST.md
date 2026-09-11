@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1054**
+- Tổng tệp không tính `MANIFEST.md`: **1058**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -515,12 +515,16 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-review.json`
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-review.md`
 - `docs/execution/evidence/PH00-GOV-AUDIT-01-validation.md`
+- `docs/execution/evidence/PH01-BE-CI-01-completion-report.md`
+- `docs/execution/evidence/PH01-BE-CI-01-completion.json`
 - `docs/execution/evidence/PH01-BE-CI-01-readiness-report.md`
 - `docs/execution/evidence/PH01-BE-CI-01-readiness.initial.json`
 - `docs/execution/evidence/PH01-BE-CI-01-readiness.json`
 - `docs/execution/evidence/PH01-BE-CI-01-remote-blocker.md`
 - `docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness-report.md`
 - `docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json`
+- `docs/execution/evidence/PH01-BE-CI-01-review-report.md`
+- `docs/execution/evidence/PH01-BE-CI-01-review.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md`
