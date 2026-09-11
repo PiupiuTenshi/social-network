@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1045**
+- Tổng tệp không tính `MANIFEST.md`: **1035**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -55,8 +55,6 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `RULES.md`
 - `SECURITY.md`
 - `TwightLight.slnx`
-- `artifacts/security/SHA256SUMS`
-- `artifacts/security/sbom.cdx.json`
 - `checksums.sha256`
 - `deploy/compose/.env`
 - `deploy/compose/.env.example`
@@ -892,14 +890,6 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/reference/TRACEABILITY_MATRIX.md`
 - `docs/toolchain/LOCAL_DEVELOPMENT.md`
 - `docs/toolchain/VERSION_SELECTION.md`
-- `frontend/.adapter-harness/src/app/core/api/p0-contract.types.js`
-- `frontend/.adapter-harness/src/app/core/auth/access-token-store.js`
-- `frontend/.adapter-harness/src/app/core/auth/auth-refresh-coordinator.js`
-- `frontend/.adapter-harness/src/app/core/http/browser-refresh-transport.js`
-- `frontend/.adapter-harness/src/app/core/http/p0-api-client.js`
-- `frontend/.adapter-harness/src/app/core/http/problem-details.js`
-- `frontend/.adapter-harness/src/app/core/realtime/realtime-adapter.js`
-- `frontend/.adapter-harness/tests/adapter-harness.js`
 - `frontend/.editorconfig`
 - `frontend/.gitignore`
 - `frontend/.prettierrc`
