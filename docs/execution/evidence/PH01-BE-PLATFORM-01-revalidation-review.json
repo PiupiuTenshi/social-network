@@ -1,0 +1,32 @@
+{
+    "version":  1,
+    "kind":  "review",
+    "task_id":  "PH01-BE-PLATFORM-01",
+    "task_fingerprint":  "4fc633bab6c36a4a9caafc03cd3c5aa7766576878d239223d837939a4febf618",
+    "actor":  "Codex under project owner approval",
+    "recorded_at":  "2026-09-11T15:41:55.1849817Z",
+    "environment":  "Windows PowerShell review; .NET SDK local harness environment.",
+    "baseline":  "Current completion receipt for PH01-BE-PLATFORM-01.",
+    "checks":  {
+                   "REVIEW01":  {
+                                    "passed":  true,
+                                    "detail":  "Reviewed AC01–AC03, ADR-0013 allocation, source hashes and successful build/architecture/migration harness output.",
+                                    "artifacts":  [
+                                                      "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review-report.md",
+                                                      "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json"
+                                                  ]
+                                }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review-report.md",
+                          "sha256":  "1d81f6bff010a8aad75594036d41580ba3e31e836951149bd0ba8ad64b636d0d"
+                      },
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json",
+                          "sha256":  "f0fef288fbad2f6081e17cc88f13eef7ca5173d455e30d597301b2afa844138b"
+                      }
+                  ],
+    "decision":  "approved",
+    "completion_sha256":  "f0fef288fbad2f6081e17cc88f13eef7ca5173d455e30d597301b2afa844138b"
+}

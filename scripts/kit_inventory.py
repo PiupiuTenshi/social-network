@@ -1,7 +1,7 @@
 """Danh mục tệp của kit, loại Git metadata và artifact phát triển."""
 from pathlib import Path
 
-IGNORED_PARTS = {".git", "work", "__pycache__", "node_modules", ".venv", "venv", "bin", "obj", "dist", ".angular", "TestResults", "coverage"}
+IGNORED_PARTS = {".git", "work", "__pycache__", "node_modules", ".venv", "venv", "bin", "obj", "dist", ".angular", "TestResults", "coverage", ".adapter-harness"}
 
 
 def kit_files(root: Path):

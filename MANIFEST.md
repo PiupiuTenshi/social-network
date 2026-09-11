@@ -2,7 +2,7 @@
 
 ## Thống kê
 
-- Tổng tệp không tính `MANIFEST.md`: **1034**
+- Tổng tệp không tính `MANIFEST.md`: **1054**
 - Prompt subtask: **318**
 - Màn hình UI/UX: **47**
 
@@ -519,10 +519,18 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH01-BE-CI-01-readiness.initial.json`
 - `docs/execution/evidence/PH01-BE-CI-01-readiness.json`
 - `docs/execution/evidence/PH01-BE-CI-01-remote-blocker.md`
+- `docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness-report.md`
+- `docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-readiness-report.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness-report.md`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review-report.md`
+- `docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review.json`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-review-report.md`
 - `docs/execution/evidence/PH01-BE-PLATFORM-01-review.json`
 - `docs/execution/evidence/PH01-DATA-INFRA-01-completion-report.md`
@@ -535,6 +543,12 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness-report.md`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-review-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-review.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-01-review-report.md`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-01-review.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-blocker.md`
@@ -542,6 +556,12 @@ Không liệt kê .git, work, cache hoặc artifact build/test.
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-completion.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness-report.md`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-review-report.md`
+- `docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-review.json`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-review-report.md`
 - `docs/execution/evidence/PH01-FE-FOUNDATION-02-review.json`
 - `docs/execution/evidence/README.md`

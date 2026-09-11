@@ -1,0 +1,134 @@
+{
+    "version":  1,
+    "kind":  "completion",
+    "task_id":  "PH01-BE-PLATFORM-01",
+    "task_fingerprint":  "4fc633bab6c36a4a9caafc03cd3c5aa7766576878d239223d837939a4febf618",
+    "actor":  "Codex under project owner approval",
+    "recorded_at":  "2026-09-11T15:41:43.8045481Z",
+    "environment":  "Windows PowerShell; .NET SDK local harness environment.",
+    "baseline":  "Current worktree; platform revalidation in progress.",
+    "checks":  {
+                   "AC01":  {
+                                "passed":  true,
+                                "detail":  "Revalidated AC01 against current source artifacts, ADR-0013 and successful build/harness output.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                                              ]
+                            },
+                   "AC02":  {
+                                "passed":  true,
+                                "detail":  "Revalidated AC02 against current source artifacts, ADR-0013 and successful build/harness output.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                                              ]
+                            },
+                   "AC03":  {
+                                "passed":  true,
+                                "detail":  "Revalidated AC03 against current source artifacts, ADR-0013 and successful build/harness output.",
+                                "artifacts":  [
+                                                  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                                              ]
+                            }
+               },
+    "artifacts":  [
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-completion-report.md",
+                          "sha256":  "ece7e4fcc59e9f67046d78e7742775c9c5e205988959e724eedb3b321b65fd0b"
+                      },
+                      {
+                          "path":  "docs/adr/0013-platform-scope-and-service-runtime-tests.md",
+                          "sha256":  "a72c7d9b8c0213c7862afde4f58c96d99fd86e6e38a24d1755c4b16236be5a00"
+                      },
+                      {
+                          "path":  "Directory.Packages.props",
+                          "sha256":  "7038412bd1ba7660b7942a4d4a97c225df0f79d9373539427e2d53d32f0d133b"
+                      },
+                      {
+                          "path":  "src/BuildingBlocks/BuildingBlocks.DomainPrimitives/Messaging/EventEnvelope.cs",
+                          "sha256":  "9d264b4ebc0af3b0b363eaf3ca26bce6c004f0c8c3b3069f099db989f85a2463"
+                      },
+                      {
+                          "path":  "src/BuildingBlocks/BuildingBlocks.DomainPrimitives/Messaging/OutboxMessage.cs",
+                          "sha256":  "634aa634f92bc8a4cdda7cb1cd61b89227f31c6c8a1ec0b948e1cd779b649f01"
+                      },
+                      {
+                          "path":  "src/BuildingBlocks/BuildingBlocks.DomainPrimitives/Messaging/InboxMessage.cs",
+                          "sha256":  "031a67c743c08d759cd62a3ec45f18d328beecbbcecf12ad376f6b94b2ad04af"
+                      },
+                      {
+                          "path":  "src/BuildingBlocks/BuildingBlocks.DomainPrimitives/Http/IdempotencyRecord.cs",
+                          "sha256":  "256b1e0c5051a0647073cce7d69de8c1fb6d38ca3a7ceab855b9f059dfe7acd4"
+                      },
+                      {
+                          "path":  "src/BuildingBlocks/BuildingBlocks.DomainPrimitives/Observability/PlatformMetrics.cs",
+                          "sha256":  "fb5fba9f55c362309473c2adbcf7685f9de43d08d7e0f026140dd91942156f60"
+                      },
+                      {
+                          "path":  "src/Services/Account/Account.Infrastructure/Persistence/PlatformRecords.cs",
+                          "sha256":  "3a2afd0b14ed5081bc1dfe6d61f7ce49f0623e5370331f9798b9763c44261a86"
+                      },
+                      {
+                          "path":  "src/Services/Account/Account.Infrastructure/Persistence/AccountDbContext.cs",
+                          "sha256":  "018ac482a107f88b751f0f016897a9a5f4503031fea76f00522ad9c6672373e9"
+                      },
+                      {
+                          "path":  "src/Services/Account/Account.Infrastructure/Messaging/KafkaOutboxPublisher.cs",
+                          "sha256":  "4a887790d5127fa870a4faffd073fcd79110de5de134da932c6b67eea15c5664"
+                      },
+                      {
+                          "path":  "src/Services/Account/Account.Infrastructure/Messaging/AccountInboxProcessor.cs",
+                          "sha256":  "6591f6a3002418e40b6d99e9f7b80d8debbe7f3ae068dedd9af0e05ae8552fe0"
+                      },
+                      {
+                          "path":  "src/Services/Account/Account.Api/Program.cs",
+                          "sha256":  "34451f84e8bb791c3bd529b3871f86ffda6ead85a93b58c549e8cb67a198d1e4"
+                      },
+                      {
+                          "path":  "src/Gateway/Gateway.Api/Program.cs",
+                          "sha256":  "085c870126f739ac374a8936afe85fbaad67e23148c73126acd1ce0b6b1bf0f3"
+                      },
+                      {
+                          "path":  "src/Gateway/Gateway.Api/appsettings.json",
+                          "sha256":  "88f11528065f1a6c5a3eeddcdb44bcf5e2e26540f140c9e8aacc56e68f763198"
+                      },
+                      {
+                          "path":  "tests/Architecture/Architecture.Harness/Program.cs",
+                          "sha256":  "b055c1533285df47f060d8a7428cbd29baadaef657f5d8df3435d7061c1adcf1"
+                      },
+                      {
+                          "path":  "tests/Integration/Migration.Harness/Program.cs",
+                          "sha256":  "a3ed9d0afd16ad5304e177f514e71c180a21160b03b03ce7c8844a940c8cef2d"
+                      },
+                      {
+                          "path":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md",
+                          "sha256":  "407539372151f4646cfdc9581dcddff0e517c035dc759d8b632c3597050a4f09"
+                      }
+                  ],
+    "impact":  {
+                   "classification":  "none",
+                   "scopes":  [
+
+                              ],
+                   "summary":  "Receipt-only revalidation after predecessor acceptance; no Platform implementation or contract behavior changed.",
+                   "artifacts":  [
+                                     "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                                 ]
+               },
+    "commands":  [
+                     {
+                         "command":  "dotnet build TwightLight.slnx --no-restore",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                     },
+                     {
+                         "command":  "dotnet run --project tests/Architecture/Architecture.Harness/Architecture.Harness.csproj --no-build",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                     },
+                     {
+                         "command":  "dotnet run --project tests/Integration/Migration.Harness/Migration.Harness.csproj --no-build",
+                         "exit_code":  0,
+                         "artifact":  "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion-report.md"
+                     }
+                 ]
+}

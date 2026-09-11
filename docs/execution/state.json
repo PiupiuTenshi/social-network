@@ -116,64 +116,70 @@
     "PH01-FE-FOUNDATION-01": {
       "status": "DONE",
       "readiness": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
-        "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json",
+        "sha256": "9d0cefd37a8e4c6d0e3b49c3a9de66946cac67f942021948c354f40bf33a1ed0"
       },
       "dependencies": {
-        "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        "G0-01": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
       },
-      "updated_at": "2026-09-10T19:33:35.831125+00:00",
+      "updated_at": "2026-09-11T15:38:31.058904+00:00",
       "completion": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
-        "sha256": "f09c6c84b575178b2f577898330b07ee5cedd8e6de80eded025edf5f6f5f878a"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion.json",
+        "sha256": "9af419c179063712e9fafc1f175e991239176873786ece180e008df9727a987b"
       },
       "review": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-review.json",
-        "sha256": "7d144dcc8a396713d5fe0d3a6dbba061ae74d5e0733bb262fe357ed431c9af64"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-review.json",
+        "sha256": "8357435eda4346a918e766da79c0765f37c44c04fec32a0d6a1e8ef07118615e"
       }
     },
     "PH01-BE-PLATFORM-01": {
       "status": "DONE",
       "readiness": {
-        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
-        "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json",
+        "sha256": "8e45ac5f22880e5d3e490ab9cb4c9cbb165e51ecd6a6283f8cd6f87d0bd2b38c"
       },
       "dependencies": {
         "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
       },
-      "updated_at": "2026-09-11T02:05:30.244567+00:00",
+      "updated_at": "2026-09-11T15:41:55.388845+00:00",
       "completion": {
-        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
-        "sha256": "7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858"
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json",
+        "sha256": "f0fef288fbad2f6081e17cc88f13eef7ca5173d455e30d597301b2afa844138b"
       },
       "review": {
-        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-review.json",
-        "sha256": "0cd79bd672e819dc83f78e14fea2c41f59550def6a8262822d6617a51085c466"
+        "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-review.json",
+        "sha256": "cc91d14956dc03025153dcc053614607f2d224faaf185d7f47e474532d2c18e7"
       }
     },
     "PH01-FE-FOUNDATION-02": {
       "status": "DONE",
       "readiness": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
-        "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json",
+        "sha256": "bc6662f820c60250fda3251653e8477d6ce581e45c9fd4f7c0dba2d96e6581c1"
       },
       "dependencies": {
-        "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+        "PH01-FE-FOUNDATION-01": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
       },
-      "updated_at": "2026-09-11T04:55:54.912833+00:00",
+      "updated_at": "2026-09-11T15:40:16.027879+00:00",
       "completion": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-completion.json",
-        "sha256": "0c744cf7d4fcd654d6e8f1f456cf19f305ce561dd5f9786fd131ba024418d965"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion.json",
+        "sha256": "80d7914f9c54ae9154e75bf437a791c5b138700d2f378ba6daaf09df29743eb2"
       },
       "review": {
-        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-review.json",
-        "sha256": "d50c058a66dec5a7e90ba382fed0f69e433d7eab794e355bcc8b414abf0c3c66"
+        "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-review.json",
+        "sha256": "1e6e6e09c974f5d24115c1559e11949d8ecdf8a75f0496ca62d5c6292f164cf3"
       }
     },
     "PH01-BE-CI-01": {
-      "status": "BLOCKED",
-      "reason": "Remote is empty; initial commit/push to git@github.com:PiupiuTenshi/social-network.git was rejected by automatic approval review. See PH01-BE-CI-01-remote-blocker.md.",
-      "updated_at": "2026-09-11T05:10:38.497909+00:00"
+      "status": "IN_PROGRESS",
+      "readiness": {
+        "path": "docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json",
+        "sha256": "967038bc38f967ad676f6647434e5e583d90b376340290559245451eae80f77a"
+      },
+      "dependencies": {
+        "PH01-BE-PLATFORM-01": "bf4637fb762bc13f94779afc7b001c48fea0b0025facc71cd244e9cedfa96641"
+      },
+      "updated_at": "2026-09-11T15:42:58.337210+00:00"
     }
   },
   "history": [
@@ -1626,6 +1632,329 @@
         "updated_at": "2026-09-11T05:08:59.914008+00:00"
       },
       "record_hash": "1af817c9b2b7b0e323928870481c91dd198dea7ea044624f86317d6458c5826a"
+    },
+    {
+      "at": "2026-09-11T05:19:12.834338+00:00",
+      "action": "block",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Remote is empty; initial commit/push to git@github.com:PiupiuTenshi/social-network.git was rejected by automatic approval review. See PH01-BE-CI-01-remote-blocker.md.",
+        "updated_at": "2026-09-11T05:10:38.497909+00:00"
+      },
+      "record_hash": "cd192f48b6fc497df2081838746e04df373411c6d8d06abc80a916043293039b"
+    },
+    {
+      "at": "2026-09-11T15:35:30.856186+00:00",
+      "action": "reopen",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-readiness.json",
+          "sha256": "ced0b999363e219ce8dfc202acbcef8ad27fc61eaec4289736ffe3109057f42d"
+        },
+        "dependencies": {
+          "G0-01": "151ef913e9366aac8605c7ceea90aeafb85635792a9a7b1a50fcf0012706276a"
+        },
+        "updated_at": "2026-09-10T19:33:35.831125+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-completion.json",
+          "sha256": "f09c6c84b575178b2f577898330b07ee5cedd8e6de80eded025edf5f6f5f878a"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-review.json",
+          "sha256": "7d144dcc8a396713d5fe0d3a6dbba061ae74d5e0733bb262fe357ed431c9af64"
+        }
+      },
+      "record_hash": "f6fab5a3a679a1a58825ddb616b49f40964dcbbbeec4f3bccadaadfdcd146cb5"
+    },
+    {
+      "at": "2026-09-11T15:36:10.417177+00:00",
+      "action": "prepare",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate after approved additive frontend adapter scripts changed the locked package manifest.",
+        "updated_at": "2026-09-11T15:35:30.856186+00:00"
+      },
+      "record_hash": "694c6b382fe2f73e962a84c551a42d723b157bce339976a0aea595d9f7025033"
+    },
+    {
+      "at": "2026-09-11T15:36:10.778331+00:00",
+      "action": "start",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json",
+          "sha256": "9d0cefd37a8e4c6d0e3b49c3a9de66946cac67f942021948c354f40bf33a1ed0"
+        },
+        "dependencies": {
+          "G0-01": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
+        },
+        "updated_at": "2026-09-11T15:36:10.417177+00:00"
+      },
+      "record_hash": "900b24d9ff50df489dfd5b2d5b0ae0e82286ac8b10e7f58d6d20a1ffbe255068"
+    },
+    {
+      "at": "2026-09-11T15:38:12.987959+00:00",
+      "action": "submit",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json",
+          "sha256": "9d0cefd37a8e4c6d0e3b49c3a9de66946cac67f942021948c354f40bf33a1ed0"
+        },
+        "dependencies": {
+          "G0-01": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
+        },
+        "updated_at": "2026-09-11T15:36:10.778331+00:00"
+      },
+      "record_hash": "04ae5aca580e8b4bf396e376748b7a0bbd35202d7ceb640502a8ab46594eabfe"
+    },
+    {
+      "at": "2026-09-11T15:38:31.058904+00:00",
+      "action": "accept",
+      "task_id": "PH01-FE-FOUNDATION-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-readiness.json",
+          "sha256": "9d0cefd37a8e4c6d0e3b49c3a9de66946cac67f942021948c354f40bf33a1ed0"
+        },
+        "dependencies": {
+          "G0-01": "ecc75a12391163ff0cc985129d130af982400016210404c1c6dabbd03a153fe5"
+        },
+        "updated_at": "2026-09-11T15:38:12.987959+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-01-revalidation-completion.json",
+          "sha256": "9af419c179063712e9fafc1f175e991239176873786ece180e008df9727a987b"
+        }
+      },
+      "record_hash": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
+    },
+    {
+      "at": "2026-09-11T15:38:36.543124+00:00",
+      "action": "reopen",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-readiness.json",
+          "sha256": "68cf419fb2d9dab91e4def1809735fef01e3b14a46f613d3709baf842f576578"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "b2f24a4c3e136f6ddabbc86cfcf70a0682572b2b9a98ffd445f3ba5a1c5c2801"
+        },
+        "updated_at": "2026-09-11T04:55:54.912833+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-completion.json",
+          "sha256": "0c744cf7d4fcd654d6e8f1f456cf19f305ce561dd5f9786fd131ba024418d965"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-review.json",
+          "sha256": "d50c058a66dec5a7e90ba382fed0f69e433d7eab794e355bcc8b414abf0c3c66"
+        }
+      },
+      "record_hash": "8fac963b6b4a8906c2a91a7c95b73f1ca6a8e9af03d6e30007b779ab9042e199"
+    },
+    {
+      "at": "2026-09-11T15:38:57.375315+00:00",
+      "action": "prepare",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Revalidate after predecessor receipt and strict gate implementation changed; product adapter sources are unchanged.",
+        "updated_at": "2026-09-11T15:38:36.543124+00:00"
+      },
+      "record_hash": "7881c05302968c191989a0e6642a5dc9b82da625d9dd69ed938526afa4d6018e"
+    },
+    {
+      "at": "2026-09-11T15:38:57.760723+00:00",
+      "action": "start",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json",
+          "sha256": "bc6662f820c60250fda3251653e8477d6ce581e45c9fd4f7c0dba2d96e6581c1"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
+        },
+        "updated_at": "2026-09-11T15:38:57.375315+00:00"
+      },
+      "record_hash": "c7618975aff7d63e8e111d90f5cbb0c355011cc546798ee483bf5923414a499b"
+    },
+    {
+      "at": "2026-09-11T15:39:57.172351+00:00",
+      "action": "submit",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json",
+          "sha256": "bc6662f820c60250fda3251653e8477d6ce581e45c9fd4f7c0dba2d96e6581c1"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
+        },
+        "updated_at": "2026-09-11T15:38:57.760723+00:00"
+      },
+      "record_hash": "621867fdde424e9b17eb62978c0c1e0a52ffab345485bf4a65fb5559f4c01539"
+    },
+    {
+      "at": "2026-09-11T15:40:16.027879+00:00",
+      "action": "accept",
+      "task_id": "PH01-FE-FOUNDATION-02",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-readiness.json",
+          "sha256": "bc6662f820c60250fda3251653e8477d6ce581e45c9fd4f7c0dba2d96e6581c1"
+        },
+        "dependencies": {
+          "PH01-FE-FOUNDATION-01": "039fa44a9b3403659599b6d3dbc94cc1ad0cfd48c8b0751dfac077f7dfca645e"
+        },
+        "updated_at": "2026-09-11T15:39:57.172351+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-FE-FOUNDATION-02-revalidation-completion.json",
+          "sha256": "80d7914f9c54ae9154e75bf437a791c5b138700d2f378ba6daaf09df29743eb2"
+        }
+      },
+      "record_hash": "16e4ba5392763fa7fe3c394d7ee2ea9f546d919c1770e588b3b1fe240a7cc6d3"
+    },
+    {
+      "at": "2026-09-11T15:40:46.448381+00:00",
+      "action": "reopen",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "DONE",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-readiness.json",
+          "sha256": "80cb447914e1069ad88237b4906c47dfc5511eb86eeef30473017c213e215da2"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T02:05:30.244567+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-completion.json",
+          "sha256": "7383dfbe453379a0149c64b94d3aa4649b38e43f215531b0fa89ddb353583858"
+        },
+        "review": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-review.json",
+          "sha256": "0cd79bd672e819dc83f78e14fea2c41f59550def6a8262822d6617a51085c466"
+        }
+      },
+      "record_hash": "918c233e74089ffb6c6db45b250a2762eb1999391ba60182ef84cd529e07df41"
+    },
+    {
+      "at": "2026-09-11T15:41:13.760762+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Refresh dependency receipt after PH01-DATA-INFRA-01 reacceptance so CI records the current predecessor digest.",
+        "updated_at": "2026-09-11T15:40:46.448381+00:00"
+      },
+      "record_hash": "a33b03d13bd941ee97466e8a4731d9fc248b088b03ae12dab52132e5a9e2931e"
+    },
+    {
+      "at": "2026-09-11T15:41:13.982888+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json",
+          "sha256": "8e45ac5f22880e5d3e490ab9cb4c9cbb165e51ecd6a6283f8cd6f87d0bd2b38c"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T15:41:13.760762+00:00"
+      },
+      "record_hash": "772c0ee38c4b0abe79f5fd2c505e8c796f9faf99286a884ab10d9c4d402b7608"
+    },
+    {
+      "at": "2026-09-11T15:41:44.042045+00:00",
+      "action": "submit",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "IN_PROGRESS",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json",
+          "sha256": "8e45ac5f22880e5d3e490ab9cb4c9cbb165e51ecd6a6283f8cd6f87d0bd2b38c"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T15:41:13.982888+00:00"
+      },
+      "record_hash": "176419c051b4c7d860f81a934dbacdc207aa00acb5e53d17fc9e15992687267a"
+    },
+    {
+      "at": "2026-09-11T15:41:55.388845+00:00",
+      "action": "accept",
+      "task_id": "PH01-BE-PLATFORM-01",
+      "previous": {
+        "status": "REVIEW",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-readiness.json",
+          "sha256": "8e45ac5f22880e5d3e490ab9cb4c9cbb165e51ecd6a6283f8cd6f87d0bd2b38c"
+        },
+        "dependencies": {
+          "PH01-DATA-INFRA-01": "9763d1a20f364d8a57251b0f5ed4d3aad657c52d219d5680cc3924c96754622d"
+        },
+        "updated_at": "2026-09-11T15:41:44.042045+00:00",
+        "completion": {
+          "path": "docs/execution/evidence/PH01-BE-PLATFORM-01-revalidation-completion.json",
+          "sha256": "f0fef288fbad2f6081e17cc88f13eef7ca5173d455e30d597301b2afa844138b"
+        }
+      },
+      "record_hash": "bf4637fb762bc13f94779afc7b001c48fea0b0025facc71cd244e9cedfa96641"
+    },
+    {
+      "at": "2026-09-11T15:42:33.578945+00:00",
+      "action": "reopen",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "GitHub CI governance job is failing on main; do not apply branch ruleset until its exact failure is corrected and all required checks pass.",
+        "updated_at": "2026-09-11T05:19:12.834338+00:00"
+      },
+      "record_hash": "b2131218af6175e162490fe2b147e62b8248e3e95a22b920bb1354d734860bab"
+    },
+    {
+      "at": "2026-09-11T15:42:57.914842+00:00",
+      "action": "prepare",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "BLOCKED",
+        "reason": "Renew CI readiness after Platform reacceptance; refresh inventory and validate the remote workflow before enabling remote rules.",
+        "updated_at": "2026-09-11T15:42:33.578945+00:00"
+      },
+      "record_hash": "3d191947d83afb3df127b620d8708988f2b9e8b4115a6ee0085197bde4bf0379"
+    },
+    {
+      "at": "2026-09-11T15:42:58.337210+00:00",
+      "action": "start",
+      "task_id": "PH01-BE-CI-01",
+      "previous": {
+        "status": "PREPARED",
+        "readiness": {
+          "path": "docs/execution/evidence/PH01-BE-CI-01-revalidation-readiness.json",
+          "sha256": "967038bc38f967ad676f6647434e5e583d90b376340290559245451eae80f77a"
+        },
+        "dependencies": {
+          "PH01-BE-PLATFORM-01": "bf4637fb762bc13f94779afc7b001c48fea0b0025facc71cd244e9cedfa96641"
+        },
+        "updated_at": "2026-09-11T15:42:57.914842+00:00"
+      },
+      "record_hash": "cfc83b0511982451419564c1f246f9b774a8378f3c9158984a104791e3670229"
     }
   ]
 }
